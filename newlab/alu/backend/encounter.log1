@@ -1,0 +1,445 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+This Encounter release has been compiled with OA version 22.43-p033.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.14-s028_1 (64bit) 09/15/2014 13:21 (Linux 2.6)
+@(#)CDS: NanoRoute v14.14-s012 NR140903-2301/14_14-UB (database version 2.30, 241.6.1) {superthreading v1.19}
+@(#)CDS: CeltIC v14.14-s011_1 (64bit) 09/01/2014 04:04:31 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.14-s011 (64bit) 09/15/2014 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.14-s011_1 (64bit) Sep  3 2014 06:24:39 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.14-s022
+@(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v14.14-s028_1" on Tue May 30 14:38:27 2017 (mem=96.9M) ---
+--- Running on selina.ece.northwestern.edu (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) ---
+This version was compiled on Mon Sep 15 13:21:48 PDT 2014.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Loading global variable file /home/bwj4163/eecs303/newlab/alu/backend/alu_final_layout.enc.dat/alu_conv.globals ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.11min, fe_real=0.55min, fe_mem=392.2M) ***
+Loading preference file /home/bwj4163/eecs303/newlab/alu/backend/alu_final_layout.enc.dat/enc.pref.tcl ...
+Loading mode file /home/bwj4163/eecs303/newlab/alu/backend/alu_final_layout.enc.dat/alu_conv.mode ...
+**WARN: (ENCEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.38 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in the cap table. LEF value 0.03 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in the cap table. LEF value 0.03 will be used.
+alu_conv
+an
+Loading place ...
+Loading route ...
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (ENCSYC-6163):	Command 'freeDesign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+Reset to color id 0 for add_28_48 (G2C_DP_add_unsigned) and all their descendants.
+Reset to color id 0 for add_33_48 (G2C_DP_add_unsigned_2) and all their descendants.
+Free PSO.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Loading global variable file /home/bwj4163/eecs303/newlab/alu/backend/alu_power.enc.dat/alu_conv.globals ...
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.17min, fe_real=0.95min, fe_mem=410.9M) ***
+Loading preference file /home/bwj4163/eecs303/newlab/alu/backend/alu_power.enc.dat/enc.pref.tcl ...
+Loading mode file /home/bwj4163/eecs303/newlab/alu/backend/alu_power.enc.dat/alu_conv.mode ...
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: (ENCEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.38 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in the cap table. LEF value 0.03 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in the cap table. LEF value 0.03 will be used.
+alu_conv
+**WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+an
+Loading place ...
+**WARN: (ENCSP-311):	From restore design about 100.00% of instances are not placed. 
+Most probably the design imported is partially placed. Rerun full placement to place these instances.
+Loading route ...
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (ENCSYC-6163):	Command 'freeDesign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+Reset to color id 0 for add_28_48 (G2C_DP_add_unsigned) and all their descendants.
+Reset to color id 0 for add_33_48 (G2C_DP_add_unsigned_2) and all their descendants.
+Free PSO.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Loading global variable file /home/bwj4163/eecs303/newlab/alu/backend/alu_conv_power.enc.dat/alu_conv.globals ...
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.25min, fe_real=1.28min, fe_mem=416.6M) ***
+Loading preference file /home/bwj4163/eecs303/newlab/alu/backend/alu_conv_power.enc.dat/enc.pref.tcl ...
+Loading mode file /home/bwj4163/eecs303/newlab/alu/backend/alu_conv_power.enc.dat/alu_conv.mode ...
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: (ENCEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.38 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in the cap table. LEF value 0.03 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in the cap table. LEF value 0.03 will be used.
+alu_conv
+**WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+an
+Loading place ...
+**WARN: (ENCSP-311):	From restore design about 100.00% of instances are not placed. 
+Most probably the design imported is partially placed. Rerun full placement to place these instances.
+Loading route ...
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (ENCSYC-6163):	Command 'freeDesign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+Reset to color id 0 for add_28_48 (G2C_DP_add_unsigned) and all their descendants.
+Reset to color id 0 for add_33_48 (G2C_DP_add_unsigned_2) and all their descendants.
+Free PSO.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Loading global variable file /home/bwj4163/eecs303/newlab/alu/backend/alu_powerroute_clk_filler.enc.dat/alu_conv.globals ...
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.31min, fe_real=1.53min, fe_mem=421.8M) ***
+Loading preference file /home/bwj4163/eecs303/newlab/alu/backend/alu_powerroute_clk_filler.enc.dat/enc.pref.tcl ...
+Loading mode file /home/bwj4163/eecs303/newlab/alu/backend/alu_powerroute_clk_filler.enc.dat/alu_conv.mode ...
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: (ENCEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.38 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in the cap table. LEF value 0.03 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in the cap table. LEF value 0.03 will be used.
+alu_conv
+an
+Loading place ...
+Loading route ...
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (ENCSYC-6163):	Command 'freeDesign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+Reset to color id 0 for add_28_48 (G2C_DP_add_unsigned) and all their descendants.
+Reset to color id 0 for add_33_48 (G2C_DP_add_unsigned_2) and all their descendants.
+Free PSO.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Loading global variable file /home/bwj4163/eecs303/newlab/alu/backend/alu_powerroute_clk_filler.enc.dat/alu_conv.globals ...
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.45min, fe_real=2.28min, fe_mem=424.5M) ***
+Loading preference file /home/bwj4163/eecs303/newlab/alu/backend/alu_powerroute_clk_filler.enc.dat/enc.pref.tcl ...
+Loading mode file /home/bwj4163/eecs303/newlab/alu/backend/alu_powerroute_clk_filler.enc.dat/alu_conv.mode ...
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: (ENCEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.38 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in the cap table. LEF value 0.03 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in the cap table. LEF value 0.03 will be used.
+alu_conv
+an
+Loading place ...
+Loading route ...
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (ENCSYC-6163):	Command 'freeDesign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+Reset to color id 0 for add_28_48 (G2C_DP_add_unsigned) and all their descendants.
+Reset to color id 0 for add_33_48 (G2C_DP_add_unsigned_2) and all their descendants.
+Free PSO.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Loading global variable file /home/bwj4163/eecs303/newlab/alu/backend/alu_powerroute_clk_filler.enc.dat/alu_conv.globals ...
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.46min, fe_real=2.32min, fe_mem=425.2M) ***
+Loading preference file /home/bwj4163/eecs303/newlab/alu/backend/alu_powerroute_clk_filler.enc.dat/enc.pref.tcl ...
+Loading mode file /home/bwj4163/eecs303/newlab/alu/backend/alu_powerroute_clk_filler.enc.dat/alu_conv.mode ...
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: (ENCEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.38 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in the cap table. LEF value 0.03 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in the cap table. LEF value 0.03 will be used.
+alu_conv
+an
+Loading place ...
+Loading route ...
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (ENCSYC-6163):	Command 'freeDesign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+Reset to color id 0 for add_28_48 (G2C_DP_add_unsigned) and all their descendants.
+Reset to color id 0 for add_33_48 (G2C_DP_add_unsigned_2) and all their descendants.
+Free PSO.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Loading global variable file /home/bwj4163/eecs303/newlab/alu/backend/alu_final_layout.enc.dat/alu_conv.globals ...
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.53min, fe_real=2.63min, fe_mem=427.9M) ***
+Loading preference file /home/bwj4163/eecs303/newlab/alu/backend/alu_final_layout.enc.dat/enc.pref.tcl ...
+Loading mode file /home/bwj4163/eecs303/newlab/alu/backend/alu_final_layout.enc.dat/alu_conv.mode ...
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: analysis view an not found, use default_view_setup
+an
+**WARN: (ENCEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.38 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in the cap table. LEF value 0.03 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in the cap table. LEF value 0.03 will be used.
+alu_conv
+an
+Loading place ...
+Loading route ...
+
+*** Memory Usage v#1 (Current mem = 543.141M, initial mem = 96.863M) ***
+*** Message Summary: 169 warning(s), 0 error(s)
+
+--- Ending "Encounter" (totcpu=0:00:36.3, real=0:03:23, mem=543.1M) ---

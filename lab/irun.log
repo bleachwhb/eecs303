@@ -1,0 +1,5 @@
+irun: *W,BADPRF: The linedebug option may have an adverse performance impact.
+	Top level design units:
+		alu_conv_test
+ncelab: *F,CUMSTS: Timescale directive missing on one or more modules.
+irun: *E,ELBERR: Error during elaboration (status 2), exiting.

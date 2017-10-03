@@ -1,0 +1,241 @@
+Checking out Encounter license ...
+[05/15 15:29:20     0s] Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+[05/15 15:29:20     0s] 	Maximum number of instance allowed (1 x 50000).
+[05/15 15:29:20     0s] SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+[05/15 15:29:20     0s] This Encounter release has been compiled with OA version 22.43-p033.
+[05/15 15:29:21     0s] 
+[05/15 15:29:22     1s] *******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+[05/15 15:29:26     3s] @(#)CDS: Encounter v14.14-s028_1 (64bit) 09/15/2014 13:21 (Linux 2.6)
+[05/15 15:29:26     3s] @(#)CDS: NanoRoute v14.14-s012 NR140903-2301/14_14-UB (database version 2.30, 241.6.1) {superthreading v1.19}
+[05/15 15:29:26     3s] @(#)CDS: CeltIC v14.14-s011_1 (64bit) 09/01/2014 04:04:31 (Linux 2.6.18-194.el5)
+[05/15 15:29:26     3s] @(#)CDS: AAE 14.14-s011 (64bit) 09/15/2014 (Linux 2.6.18-194.el5)
+[05/15 15:29:26     3s] @(#)CDS: CTE 14.14-s011_1 (64bit) Sep  3 2014 06:24:39 (Linux 2.6.18-194.el5)
+[05/15 15:29:26     3s] @(#)CDS: CPE v14.14-s022
+[05/15 15:29:26     3s] @(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+[05/15 15:29:26     3s] --- Starting "Encounter v14.14-s028_1" on Mon May 15 15:29:26 2017 (mem=97.7M) ---
+[05/15 15:29:26     3s] --- Running on clayface.ece.northwestern.edu (x86_64 w/Linux 2.6.32-642.6.2.el6.x86_64) ---
+[05/15 15:29:26     3s] This version was compiled on Mon Sep 15 13:21:48 PDT 2014.
+[05/15 15:29:26     3s] Set DBUPerIGU to 1000.
+[05/15 15:29:26     3s] Set net toggle Scale Factor to 1.00
+[05/15 15:29:26     3s] Set Shrink Factor to 1.00000
+[05/15 15:29:26     3s] 
+[05/15 15:29:26     3s] **INFO:  MMMC transition support version v31-84 
+[05/15 15:29:26     3s] 
+[05/15 15:29:26     3s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/15 15:29:26     3s] <CMD> suppressMessage ENCEXT-2799
+[05/15 15:29:26     3s] <CMD> win
+[05/15 15:29:26     3s] <CMD> set init_gnd_net VSS
+[05/15 15:32:13    39s] <CMD> set init_lef_file /vol/ece303/encounter_tutorial/NangateOpenCellLibrary.lef
+[05/15 15:32:13    39s] <CMD> set init_design_settop 0
+[05/15 15:32:13    39s] <CMD> set init_verilog ../synthesis/r2g_output/r2g.v
+[05/15 15:32:13    39s] <CMD> set init_mmmc_file ../../alu_conv.view
+[05/15 15:32:13    39s] <CMD> set init_pwr_net VDD
+[05/15 15:32:13    39s] <CMD> init_design
+[05/15 15:32:13    39s] 
+[05/15 15:32:13    39s] Loading LEF file /vol/ece303/encounter_tutorial/NangateOpenCellLibrary.lef ...
+[05/15 15:32:13    39s] Set DBUPerIGU to M2 pitch 380.
+[05/15 15:32:13    39s] 
+[05/15 15:32:13    39s] viaInitial starts at Mon May 15 15:32:13 2017
+viaInitial ends at Mon May 15 15:32:13 2017
+*** Begin netlist parsing (mem=386.3M) ***
+[05/15 15:32:13    39s] Reading netlist ...
+[05/15 15:32:13    39s] Backslashed names will retain backslash and a trailing blank character.
+[05/15 15:32:13    39s] Reading verilog netlist '../synthesis/r2g_output/r2g.v'
+[05/15 15:32:13    39s] 
+[05/15 15:32:13    39s] *** Memory Usage v#1 (Current mem = 386.281M, initial mem = 97.723M) ***
+[05/15 15:32:13    39s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=386.3M) ***
+[05/15 15:32:13    39s] Top level cell is alu_conv.
+[05/15 15:32:13    39s] Reading lib timing library '/vol/ece303/encounter_tutorial/NangateOpenCellLibrary_typical.lib' ...
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library.
+[05/15 15:32:13    39s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library.
+[05/15 15:32:13    40s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library.
+[05/15 15:32:13    40s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library.
+[05/15 15:32:13    40s] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[05/15 15:32:13    40s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[05/15 15:32:13    40s] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.67min, fe_real=2.90min, fe_mem=395.2M) ***
+[05/15 15:32:14    40s] Starting recursive module instantiation check.
+[05/15 15:32:14    40s] No recursion found.
+[05/15 15:32:14    40s] Building hierarchical netlist for Cell alu_conv ...
+[05/15 15:32:14    40s] *** Netlist is unique.
+[05/15 15:32:14    40s] ** info: there are 135 modules.
+[05/15 15:32:14    40s] ** info: there are 203 stdCell insts.
+[05/15 15:32:14    40s] 
+[05/15 15:32:14    40s] *** Memory Usage v#1 (Current mem = 404.781M, initial mem = 97.723M) ***
+[05/15 15:32:14    40s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[05/15 15:32:14    40s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[05/15 15:32:14    40s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[05/15 15:32:14    40s] Set Using Default Delay Limit as 1000.
+[05/15 15:32:14    40s] Set Default Net Delay as 1000 ps.
+[05/15 15:32:14    40s] Set Default Net Load as 0.5 pF. 
+[05/15 15:32:14    40s] Set Input Pin Transition Delay as 0.1 ps.
+[05/15 15:32:14    40s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 15:32:14    40s] Type 'man ENCEXT-2773' for more detail.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.38 will be used.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.25 will be used.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.25 will be used.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in the cap table. LEF value 0.21 will be used.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in the cap table. LEF value 0.21 will be used.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in the cap table. LEF value 0.21 will be used.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in the cap table. LEF value 0.075 will be used.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in the cap table. LEF value 0.075 will be used.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in the cap table. LEF value 0.03 will be used.
+[05/15 15:32:14    40s] **WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in the cap table. LEF value 0.03 will be used.
+[05/15 15:32:14    40s] Summary of Active RC-Corners : 
+[05/15 15:32:14    40s]  
+[05/15 15:32:14    40s]  Analysis View: an
+[05/15 15:32:14    40s]     RC-Corner Name        : rc
+[05/15 15:32:14    40s]     RC-Corner Index       : 0
+[05/15 15:32:14    40s]     RC-Corner Temperature : 25 Celsius
+[05/15 15:32:14    40s]     RC-Corner Cap Table   : ''
+[05/15 15:32:14    40s]     RC-Corner PreRoute Res Factor         : 1
+[05/15 15:32:14    40s]     RC-Corner PreRoute Cap Factor         : 1
+[05/15 15:32:14    40s]     RC-Corner PostRoute Res Factor        : 1
+[05/15 15:32:14    40s]     RC-Corner PostRoute Cap Factor        : 1
+[05/15 15:32:14    40s]     RC-Corner PostRoute XCap Factor       : 1
+[05/15 15:32:14    40s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[05/15 15:32:14    40s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[05/15 15:32:14    40s]     RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+[05/15 15:32:14    40s]     RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+[05/15 15:32:14    40s] *Info: initialize multi-corner CTS.
+[05/15 15:32:14    40s] CTE reading timing constraint file '../synthesis/r2g_output/r2g.sdc' ...
+[05/15 15:32:14    40s] Current (total cpu=0:00:40.4, real=0:02:54, peak res=382.0M, current mem=500.0M)
+[05/15 15:32:14    40s] INFO (CTE): Constraints read successfully.
+[05/15 15:32:14    40s] WARNING (CTE-25): Line: 9, 10 of File ../synthesis/r2g_output/r2g.sdc : Skipped unsupported command: set_units
+[05/15 15:32:14    40s] 
+[05/15 15:32:14    40s] 
+[05/15 15:32:14    40s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=388.9M, current mem=506.5M)
+[05/15 15:32:14    40s] Current (total cpu=0:00:40.5, real=0:02:54, peak res=388.9M, current mem=506.5M)
+[05/15 15:32:14    40s] **WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+[05/15 15:32:14    40s] Total number of combinational cells: 99
+[05/15 15:32:14    40s] Total number of sequential cells: 29
+[05/15 15:32:14    40s] Total number of tristate cells: 6
+[05/15 15:32:14    40s] Total number of level shifter cells: 0
+[05/15 15:32:14    40s] Total number of power gating cells: 0
+[05/15 15:32:14    40s] Total number of isolation cells: 0
+[05/15 15:32:14    40s] Total number of power switch cells: 0
+[05/15 15:32:14    40s] Total number of pulse generator cells: 0
+[05/15 15:32:14    40s] Total number of always on buffers: 0
+[05/15 15:32:14    40s] Total number of retention cells: 0
+[05/15 15:32:14    40s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+[05/15 15:32:14    40s] Total number of usable buffers: 9
+[05/15 15:32:14    40s] List of unusable buffers:
+[05/15 15:32:14    40s] Total number of unusable buffers: 0
+[05/15 15:32:14    40s] List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+[05/15 15:32:14    40s] Total number of usable inverters: 6
+[05/15 15:32:14    40s] List of unusable inverters:
+[05/15 15:32:14    40s] Total number of unusable inverters: 0
+[05/15 15:32:14    40s] List of identified usable delay cells:
+[05/15 15:32:14    40s] Total number of identified usable delay cells: 0
+[05/15 15:32:14    40s] List of identified unusable delay cells:
+[05/15 15:32:14    40s] Total number of identified unusable delay cells: 0
+[05/15 15:32:14    40s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[05/15 15:32:14    40s] 
+[05/15 15:32:14    40s] *** Summary of all messages that are not suppressed in this session:
+[05/15 15:32:14    40s] Severity  ID               Count  Summary                                  
+[05/15 15:32:14    40s] WARNING   ENCEXT-2766         10  Sheet resistance for layer %s is not def...
+[05/15 15:32:14    40s] WARNING   ENCEXT-2773         10  The via resistance between layers %s and...
+[05/15 15:32:14    40s] WARNING   TA-976               1  Path groups asserted by the group_path c...
+[05/15 15:32:14    40s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[05/15 15:32:14    40s] *** Message Summary: 41 warning(s), 0 error(s)
+[05/15 15:32:14    40s] 
+[05/15 15:32:14    40s] <CMD> fit
+[05/15 15:33:27    46s] <CMD> setDrawView fplan
+[05/15 15:33:40    47s] <CMD> getIoFlowFlag
+[05/15 15:33:57    48s] <CMD> floorPlan -site CORE -r 1.0 0.63 0 0 0 0
+[05/15 15:34:46    53s] **ERROR: (ENCFP-993):	Cannot find site 'CORE'  to create rows. Check there is a specified site for rows.
+[05/15 15:34:46    53s] 
+[05/15 15:34:46    53s] <CMD> floorPlan -site CORE -r 1.0 0.63 0 0 0 0
+[05/15 15:35:23    55s] **ERROR: (ENCFP-993):	Cannot find site 'CORE'  to create rows. Check there is a specified site for rows.
+[05/15 15:35:23    55s] 
+[05/15 15:35:23    55s] <CMD> fit
+[05/15 15:35:30    56s] <CMD> setDrawView fplan
+[05/15 15:35:42    57s] <CMD> getIoFlowFlag
+[05/15 15:35:52    58s] <CMD> floorPlan -site CORE -r 1.0 0.63 0 0 0 0
+[05/15 15:36:18    60s] **ERROR: (ENCFP-993):	Cannot find site 'CORE'  to create rows. Check there is a specified site for rows.
+[05/15 15:36:18    60s] 
+[05/15 15:36:18    60s] <CMD> uiSetTool select
+[05/15 15:36:32    61s] <CMD> getIoFlowFlag
+[05/15 15:36:42    61s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst*
+[05/15 15:37:32    65s] **ERROR: (ENCTCM-21):	Ambiguous option name "-inst*", found "-inst" and "-instBasename".
+[05/15 15:37:32    65s] 
+[05/15 15:37:32    65s] Usage: globalNetConnect [-help] [<globalNetName>] [-all] [-autoTie]
+[05/15 15:37:32    65s]                         [-disconnect] [-hierarchicalInstance <string>]
+[05/15 15:37:32    65s]                         [-instanceBasename <string>] [-net <string>]
+[05/15 15:37:32    65s]                         [-netlistOverride] [-nonHierarchical] [-override]
+[05/15 15:37:32    65s]                         [-pin <string>] [-powerDomain <string>]
+[05/15 15:37:32    65s]                         [-region {x1 y1 x2 y2}] [-singleInstance <string>]
+[05/15 15:37:32    65s]                         [-type {pgpin tiehi tielo net}] [-verbose]
+[05/15 15:37:32    65s] 
+[05/15 15:37:32    65s] **ERROR: (ENCTCM-6):	Missing string value for option "-instBasename".  
+[05/15 15:37:32    65s] 
+[05/15 15:37:32    65s] 
+[05/15 15:38:51    71s] *** Memory Usage v#1 (Current mem = 514.461M, initial mem = 97.723M) ***
+[05/15 15:38:51    71s] 
+[05/15 15:38:51    71s] *** Summary of all messages that are not suppressed in this session:
+[05/15 15:38:51    71s] Severity  ID               Count  Summary                                  
+[05/15 15:38:51    71s] ERROR     ENCFP-993            3  Cannot find site '%s'  to create rows. C...
+[05/15 15:38:51    71s] WARNING   ENCEXT-2766         10  Sheet resistance for layer %s is not def...
+[05/15 15:38:51    71s] WARNING   ENCEXT-2773         10  The via resistance between layers %s and...
+[05/15 15:38:51    71s] ERROR     ENCTCM-6             1  Missing %s value for option "%s". %s     
+[05/15 15:38:51    71s] ERROR     ENCTCM-21            1  Ambiguous option name "%s", found "%s" a...
+[05/15 15:38:51    71s] WARNING   TA-976               1  Path groups asserted by the group_path c...
+[05/15 15:38:51    71s] WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+[05/15 15:38:51    71s] *** Message Summary: 41 warning(s), 5 error(s)
+[05/15 15:38:51    71s] 
+[05/15 15:38:51    71s] --- Ending "Encounter" (totcpu=0:01:12, real=0:09:31, mem=514.5M) ---
+[05/15 15:38:51    71s] 

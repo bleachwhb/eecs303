@@ -1,0 +1,859 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+This Encounter release has been compiled with OA version 22.43-p033.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.14-s028_1 (64bit) 09/15/2014 13:21 (Linux 2.6)
+@(#)CDS: NanoRoute v14.14-s012 NR140903-2301/14_14-UB (database version 2.30, 241.6.1) {superthreading v1.19}
+@(#)CDS: CeltIC v14.14-s011_1 (64bit) 09/01/2014 04:04:31 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.14-s011 (64bit) 09/15/2014 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.14-s011_1 (64bit) Sep  3 2014 06:24:39 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.14-s022
+@(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v14.14-s028_1" on Mon May 15 16:26:06 2017 (mem=97.7M) ---
+--- Running on tlab-01.ece.northwestern.edu (x86_64 w/Linux 2.6.32-642.6.2.el6.x86_64) ---
+This version was compiled on Mon Sep 15 13:21:48 PDT 2014.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file /vol/ece303/encounter_tutorial/NangateOpenCellLibrary.lef
+<CMD> set init_verilog ../synthesis/r2g_output/r2g.v
+<CMD> set init_mmmc_file ../../alu_conv.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading LEF file /vol/ece303/encounter_tutorial/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Mon May 15 16:28:26 2017
+viaInitial ends at Mon May 15 16:28:26 2017
+*** Begin netlist parsing (mem=384.9M) ***
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../synthesis/r2g_output/r2g.v'
+
+*** Memory Usage v#1 (Current mem = 384.945M, initial mem = 97.723M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=384.9M) ***
+Top level cell is alu_conv.
+Reading lib timing library '/vol/ece303/encounter_tutorial/NangateOpenCellLibrary_typical.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+Read 134 cells in library 'NangateOpenCellLibrary' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.27min, fe_real=2.47min, fe_mem=393.9M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell alu_conv ...
+*** Netlist is unique.
+** info: there are 135 modules.
+** info: there are 203 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 403.445M, initial mem = 97.723M) ***
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (ENCEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man ENCEXT-2773' for more detail.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M1 is not defined in the cap table. LEF value 0.38 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M2 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M3 is not defined in the cap table. LEF value 0.25 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M4 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M5 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M6 is not defined in the cap table. LEF value 0.21 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M7 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M8 is not defined in the cap table. LEF value 0.075 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M9 is not defined in the cap table. LEF value 0.03 will be used.
+**WARN: (ENCEXT-2766):	Sheet resistance for layer M10 is not defined in the cap table. LEF value 0.03 will be used.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: an
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+CTE reading timing constraint file '../synthesis/r2g_output/r2g.sdc' ...
+Current (total cpu=0:00:16.3, real=0:02:29, peak res=381.2M, current mem=497.9M)
+alu_conv
+INFO (CTE): Constraints read successfully.
+WARNING (CTE-25): Line: 9, 10 of File ../synthesis/r2g_output/r2g.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=388.3M, current mem=505.4M)
+Current (total cpu=0:00:16.3, real=0:02:29, peak res=388.3M, current mem=505.4M)
+**WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+an
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCEXT-2766         10  Sheet resistance for layer %s is not def...
+WARNING   ENCEXT-2773         10  The via resistance between layers %s and...
+WARNING   TA-976               1  Path groups asserted by the group_path c...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+*** Message Summary: 41 warning(s), 0 error(s)
+
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> getIoFlowFlag
+<CMD> floorPlan -site CORE -r 1.0 0.63 0 0 0 0
+**ERROR: (ENCFP-993):	Cannot find site 'CORE'  to create rows. Check there is a specified site for rows.
+
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst*
+**ERROR: (ENCTCM-21):	Ambiguous option name "-inst*", found "-inst" and "-instBasename".
+
+Usage: globalNetConnect [-help] [<globalNetName>] [-all] [-autoTie]
+                        [-disconnect] [-hierarchicalInstance <string>]
+                        [-instanceBasename <string>] [-net <string>]
+                        [-netlistOverride] [-nonHierarchical] [-override]
+                        [-pin <string>] [-powerDomain <string>]
+                        [-region {x1 y1 x2 y2}] [-singleInstance <string>]
+                        [-type {pgpin tiehi tielo net}] [-verbose]
+
+**ERROR: (ENCTCM-6):	Missing string value for option "-instBasename".  
+
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst*
+**ERROR: (ENCTCM-21):	Ambiguous option name "-inst*", found "-inst" and "-instBasename".
+
+Usage: globalNetConnect [-help] [<globalNetName>] [-all] [-autoTie]
+                        [-disconnect] [-hierarchicalInstance <string>]
+                        [-instanceBasename <string>] [-net <string>]
+                        [-netlistOverride] [-nonHierarchical] [-override]
+                        [-pin <string>] [-powerDomain <string>]
+                        [-region {x1 y1 x2 y2}] [-singleInstance <string>]
+                        [-type {pgpin tiehi tielo net}] [-verbose]
+
+**ERROR: (ENCTCM-6):	Missing string value for option "-instBasename".  
+
+<CMD> globalNetConnect VDD -type tiehi
+<CMD> globalNetConnect VSS -type tielo
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType start -spacing 0.5 -start 0.0 0.0 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 514.5M).
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType start -spacing -0.56 -start 19.315 18.13 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+**ERROR: (ENCPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType start -spacing -0.56 -start 19.315 18.13 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+**ERROR: (ENCPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType start -spacing -0.56 -start 19.315 18.13 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+**ERROR: (ENCPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType start -spacing -0.56 -start 19.315 18.13 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+**ERROR: (ENCPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType start -spacing -0.56 -start 19.315 18.13 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+**ERROR: (ENCPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType start -spacing -0.56 -start 19.315 18.13 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+**ERROR: (ENCPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType start -spacing -0.56 -start 19.315 18.13 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+**ERROR: (ENCPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 3 -spreadType start -spacing -0.56 -start 19.315 18.13 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+**ERROR: (ENCPTN-1668):	Specifying negative spacing value to spread the pins along the partition fence in anti-clockwise direction is obsolete. Use [-spreadDirection counterclockwise] option to specify the spreading direction.
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Right -layer 3 -spreadType center -spacing 0.5 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 514.5M).
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Right -layer 3 -spreadType center -spacing 0.5 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 514.5M).
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Right -layer 3 -spreadType center -spacing 0.5 -pin {{out[0]} {out[1]} {out[2]} {out[3]} {out[4]} {out[5]} {out[6]} {out[7]}}
+Successfully spread [8] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 514.5M).
+<CMD> setPinAssignMode -pinEditInBatch true
+<CMD> editPin -pinWidth 0.07 -pinDepth 0.07 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.4 -pin {{a0_mux[0]} {a0_mux[1]} {a0_mux[2]} {a0_mux[3]} {a0_mux[4]} {a0_mux[5]} {a0_mux[6]} {a0_mux[7]} {a1_mux[0]} {a1_mux[1]} {a1_mux[2]} {a1_mux[3]} {a1_mux[4]} {a1_mux[5]} {a1_mux[6]} {a1_mux[7]} a_sel {b[0]} {b[1]} {b[2]} {b[3]} {b[4]} {b[5]} {b[6]} {b[7]} {ctrl[0]} {ctrl[1]} {ctrl[2]} sel VDD VSS}
+Successfully spread [31] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 515.5M).
+**ERROR: Output Library name is missing.
+**ERROR: (ENCOAX-685):	Either library definition file is missing or the library 'alu_conv_fl.enc' entry is not present in library definition file cds.lib. cannot get cellView path for cells from this library.
+<CMD> saveDesign -cellview {alu_conv_fl.enc alu_conv layout}
+----- oaOut ---------------------------
+Saving OA database: Lib: alu_conv_fl.enc, Cell: alu_conv, View: layout
+**ERROR: (ENCOAX-1258):	OpenAccess based databases cannot be created from LEF based libraries. To save a design database in OpenAccess cellview, first covert the LEF libraries to OpenAccess form and then reload the design using those OpenAccess libraries.
+TIMER: oaOut total process: 0h 0m  0.00s cpu {0h 0m 0s elapsed} Memory = 0.0
+**ERROR: (ENCSYT-7323):	Could not save design into OA database.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     ENCSYT-7323          1  Could not save design into OA database.  
+ERROR     ENCOAX-1258          1  OpenAccess based databases cannot be cre...
+*** Message Summary: 0 warning(s), 2 error(s)
+
+<CMD> saveDesign alu_conv_fl.enc
+Writing Netlist "alu_conv_fl.enc.dat/alu_conv.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file alu_conv_fl.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=519.5M) ***
+Writing DEF file 'alu_conv_fl.enc.dat/alu_conv.def.gz', current time is Mon May 15 16:44:19 2017 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'alu_conv_fl.enc.dat/alu_conv.def.gz' is written, current time is Mon May 15 16:44:19 2017 ...
+Copying timing libraries...
+.
+Copying LEF files...
+.
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: r2g.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /home/bwj4163/eecs303/lab/alu/backend
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> addStripe -block_ring_top_layer_limit metal5 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal3 -
+
+Usage: addStripe [-help] [-all_blocks <0|1>] [-area <x1 y1 x2 y2 ...>]
+                 [-area_blockage < {x1 y1 x2 y2}... {x1 y1 x2 y2 x3 y3 x4 y4 ...} ...>]
+                 [-between_bumps <0|1>] [-block_ring_bottom_layer_limit <layer>]
+                 [-block_ring_top_layer_limit <layer>] [-create_pins <0|1>]
+                 [-direction {horizontal vertical}]
+                 [-extend_to {design_boundary first_padring last_padring all_domains}]
+                 -layer <layer> [-master <master_cell>]
+                 [-max_pin_width <real_value>]
+                 [-max_same_layer_jog_length <real_value>]
+                 [-merge_stripes_value <auto|value>] -nets <list_of_nets>
+                 [-number_of_sets <integer_value>] [-over_bumps <0|1>]
+                 [-over_pins <0|1>] [-over_power_domain <0|1>]
+                 [-padcore_ring_bottom_layer_limit <layer>]
+                 [-padcore_ring_top_layer_limit <layer>] [-pin_layer <layer>]
+                 [-pin_offset <real_value>] [-same_layer_target_only <0|1>]
+                 [-set_to_set_distance <real_value>]
+                 [-snap_wire_center_to_grid {None Grid Half_Grid Either}]
+                 -spacing <name_or_value> [-start_from {left right bottom top}]
+                 [-start_x <real_value>] [-start_y <real_value>]
+                 [-stop_x <real_value>] [-stop_y <real_value>]
+                 [-switch_layer_over_obs <0|1>] [-uda <subclass_string>]
+                 [-use_interleaving_wire_group <0|1>] [-use_wire_group {-1 0 1}]
+                 [-use_wire_group_bits <integer_value>] -width <name_or_value>
+                 [-xleft_offset <real_value>] [-xright_offset <real_value>]
+                 [-ybottom_offset <real_value>] [-ytop_offset <real_value>]
+
+**ERROR: (ENCTCM-48):	"-" is not a legal option for command "addStripe". Either the current option or an option prior to it is not specified correctly.
+  
+invalid command name "set_to_set_distance"
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 10 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 10 -crossoverViaTopLayer 10 -targetViaBottomLayer 1 -nets { VSS VDD }
+**WARN: (ENCSR-4054):	Option -checkAlignedSecondaryPin is obsolete. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove -checkAlignedSecondaryPin from the script.
+**WARN: (ENCSR-4053):	Option -crossoverViaBottomLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaTopLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+**WARN: (ENCSR-4053):	Option -crossoverViaTopLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaBottomLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+*** Begin SPECIAL ROUTE on Mon May 15 16:46:06 2017 ***
+SPECIAL ROUTE ran on directory: /home/bwj4163/eecs303/lab/alu/backend
+SPECIAL ROUTE ran on machine: tlab-01.ece.northwestern.edu (Linux 2.6.32-642.6.2.el6.x86_64 Xeon 1.60Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VSS VDD"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteLevelShifterMaxGap set to 1
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1070.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 22 layers, 10 routing layers, 1 overlap layer
+Read in 134 macros, 21 used
+Read in 21 components
+  21 core components: 21 unplaced, 0 placed, 0 fixed
+Read in 39 physical pins
+  39 physical pins: 0 unplaced, 39 placed, 0 fixed
+Read in 39 nets
+Read in 2 special nets
+Read in 39 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0  open: 14
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 14
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1078.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 39 io pins ...
+ Updating DB with 27 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 6.30 megs
+sroute: Total Peak Memory used = 526.82 megs
+<CMD> addStripe -block_ring_top_layer_limit metal5 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal3 -
+
+Usage: addStripe [-help] [-all_blocks <0|1>] [-area <x1 y1 x2 y2 ...>]
+                 [-area_blockage < {x1 y1 x2 y2}... {x1 y1 x2 y2 x3 y3 x4 y4 ...} ...>]
+                 [-between_bumps <0|1>] [-block_ring_bottom_layer_limit <layer>]
+                 [-block_ring_top_layer_limit <layer>] [-create_pins <0|1>]
+                 [-direction {horizontal vertical}]
+                 [-extend_to {design_boundary first_padring last_padring all_domains}]
+                 -layer <layer> [-master <master_cell>]
+                 [-max_pin_width <real_value>]
+                 [-max_same_layer_jog_length <real_value>]
+                 [-merge_stripes_value <auto|value>] -nets <list_of_nets>
+                 [-number_of_sets <integer_value>] [-over_bumps <0|1>]
+                 [-over_pins <0|1>] [-over_power_domain <0|1>]
+                 [-padcore_ring_bottom_layer_limit <layer>]
+                 [-padcore_ring_top_layer_limit <layer>] [-pin_layer <layer>]
+                 [-pin_offset <real_value>] [-same_layer_target_only <0|1>]
+                 [-set_to_set_distance <real_value>]
+                 [-snap_wire_center_to_grid {None Grid Half_Grid Either}]
+                 -spacing <name_or_value> [-start_from {left right bottom top}]
+                 [-start_x <real_value>] [-start_y <real_value>]
+                 [-stop_x <real_value>] [-stop_y <real_value>]
+                 [-switch_layer_over_obs <0|1>] [-uda <subclass_string>]
+                 [-use_interleaving_wire_group <0|1>] [-use_wire_group {-1 0 1}]
+                 [-use_wire_group_bits <integer_value>] -width <name_or_value>
+                 [-xleft_offset <real_value>] [-xright_offset <real_value>]
+                 [-ybottom_offset <real_value>] [-ytop_offset <real_value>]
+
+**ERROR: (ENCTCM-48):	"-" is not a legal option for command "addStripe". Either the current option or an option prior to it is not specified correctly.
+  
+invalid command name "set_to_set_distance"
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 10 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 10 -crossoverViaTopLayer 10 -targetViaBottomLayer 1 -nets { VSS VDD }
+**WARN: (ENCSR-4054):	Option -checkAlignedSecondaryPin is obsolete. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove -checkAlignedSecondaryPin from the script.
+**WARN: (ENCSR-4053):	Option -crossoverViaBottomLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaTopLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+**WARN: (ENCSR-4053):	Option -crossoverViaTopLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaBottomLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+*** Begin SPECIAL ROUTE on Mon May 15 16:46:57 2017 ***
+SPECIAL ROUTE ran on directory: /home/bwj4163/eecs303/lab/alu/backend
+SPECIAL ROUTE ran on machine: tlab-01.ece.northwestern.edu (Linux 2.6.32-642.6.2.el6.x86_64 Xeon 1.60Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VSS VDD"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteLevelShifterMaxGap set to 1
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1078.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 22 layers, 10 routing layers, 1 overlap layer
+Read in 134 macros, 21 used
+Read in 21 components
+  21 core components: 21 unplaced, 0 placed, 0 fixed
+Read in 39 physical pins
+  39 physical pins: 0 unplaced, 39 placed, 0 fixed
+Read in 39 nets
+Read in 2 special nets, 2 routed
+Read in 39 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1249):	Special wire at (0.000 -0.085) (19.190 0.085) is out of design boundary. Ignored.
+**WARN: (ENCSR-1249):	Special wire at (0.000 18.115) (19.190 18.285) is out of design boundary. Ignored.
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0  open: 14
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1079.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 39 io pins ...
+ Updating DB with 27 via definition ...
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = -0.62 megs
+sroute: Total Peak Memory used = 526.20 megs
+<CMD> addStripe -block_ring_top_layer_limit metal5 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal3 -
+
+Usage: addStripe [-help] [-all_blocks <0|1>] [-area <x1 y1 x2 y2 ...>]
+                 [-area_blockage < {x1 y1 x2 y2}... {x1 y1 x2 y2 x3 y3 x4 y4 ...} ...>]
+                 [-between_bumps <0|1>] [-block_ring_bottom_layer_limit <layer>]
+                 [-block_ring_top_layer_limit <layer>] [-create_pins <0|1>]
+                 [-direction {horizontal vertical}]
+                 [-extend_to {design_boundary first_padring last_padring all_domains}]
+                 -layer <layer> [-master <master_cell>]
+                 [-max_pin_width <real_value>]
+                 [-max_same_layer_jog_length <real_value>]
+                 [-merge_stripes_value <auto|value>] -nets <list_of_nets>
+                 [-number_of_sets <integer_value>] [-over_bumps <0|1>]
+                 [-over_pins <0|1>] [-over_power_domain <0|1>]
+                 [-padcore_ring_bottom_layer_limit <layer>]
+                 [-padcore_ring_top_layer_limit <layer>] [-pin_layer <layer>]
+                 [-pin_offset <real_value>] [-same_layer_target_only <0|1>]
+                 [-set_to_set_distance <real_value>]
+                 [-snap_wire_center_to_grid {None Grid Half_Grid Either}]
+                 -spacing <name_or_value> [-start_from {left right bottom top}]
+                 [-start_x <real_value>] [-start_y <real_value>]
+                 [-stop_x <real_value>] [-stop_y <real_value>]
+                 [-switch_layer_over_obs <0|1>] [-uda <subclass_string>]
+                 [-use_interleaving_wire_group <0|1>] [-use_wire_group {-1 0 1}]
+                 [-use_wire_group_bits <integer_value>] -width <name_or_value>
+                 [-xleft_offset <real_value>] [-xright_offset <real_value>]
+                 [-ybottom_offset <real_value>] [-ytop_offset <real_value>]
+
+**ERROR: (ENCTCM-48):	"-" is not a legal option for command "addStripe". Either the current option or an option prior to it is not specified correctly.
+  
+invalid command name "set_to_set_distance"
+<CMD> addStripe -block_ring_top_layer_limit metal5 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal3 -
+
+Usage: addStripe [-help] [-all_blocks <0|1>] [-area <x1 y1 x2 y2 ...>]
+                 [-area_blockage < {x1 y1 x2 y2}... {x1 y1 x2 y2 x3 y3 x4 y4 ...} ...>]
+                 [-between_bumps <0|1>] [-block_ring_bottom_layer_limit <layer>]
+                 [-block_ring_top_layer_limit <layer>] [-create_pins <0|1>]
+                 [-direction {horizontal vertical}]
+                 [-extend_to {design_boundary first_padring last_padring all_domains}]
+                 -layer <layer> [-master <master_cell>]
+                 [-max_pin_width <real_value>]
+                 [-max_same_layer_jog_length <real_value>]
+                 [-merge_stripes_value <auto|value>] -nets <list_of_nets>
+                 [-number_of_sets <integer_value>] [-over_bumps <0|1>]
+                 [-over_pins <0|1>] [-over_power_domain <0|1>]
+                 [-padcore_ring_bottom_layer_limit <layer>]
+                 [-padcore_ring_top_layer_limit <layer>] [-pin_layer <layer>]
+                 [-pin_offset <real_value>] [-same_layer_target_only <0|1>]
+                 [-set_to_set_distance <real_value>]
+                 [-snap_wire_center_to_grid {None Grid Half_Grid Either}]
+                 -spacing <name_or_value> [-start_from {left right bottom top}]
+                 [-start_x <real_value>] [-start_y <real_value>]
+                 [-stop_x <real_value>] [-stop_y <real_value>]
+                 [-switch_layer_over_obs <0|1>] [-uda <subclass_string>]
+                 [-use_interleaving_wire_group <0|1>] [-use_wire_group {-1 0 1}]
+                 [-use_wire_group_bits <integer_value>] -width <name_or_value>
+                 [-xleft_offset <real_value>] [-xright_offset <real_value>]
+                 [-ybottom_offset <real_value>] [-ytop_offset <real_value>]
+
+**ERROR: (ENCTCM-48):	"-" is not a legal option for command "addStripe". Either the current option or an option prior to it is not specified correctly.
+  
+invalid command name "set_to_set_distance"
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { 1 10 } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 10 -crossoverViaTopLayer 10 -targetViaBottomLayer 1 -nets { VSS VDD }
+**WARN: (ENCSR-4054):	Option -checkAlignedSecondaryPin is obsolete. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, remove -checkAlignedSecondaryPin from the script.
+**WARN: (ENCSR-4053):	Option -crossoverViaBottomLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaTopLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+**WARN: (ENCSR-4053):	Option -crossoverViaTopLayer is obsolete and has been replaced by -crossoverViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -crossoverViaLayerRange.
+**WARN: (ENCSR-4053):	Option -targetViaBottomLayer is obsolete and has been replaced by -targetViaLayerRange. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -targetViaLayerRange.
+*** Begin SPECIAL ROUTE on Mon May 15 16:49:31 2017 ***
+SPECIAL ROUTE ran on directory: /home/bwj4163/eecs303/lab/alu/backend
+SPECIAL ROUTE ran on machine: tlab-01.ece.northwestern.edu (Linux 2.6.32-642.6.2.el6.x86_64 Xeon 1.60Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VSS VDD"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteLevelShifterMaxGap set to 1
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1079.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 22 layers, 10 routing layers, 1 overlap layer
+Read in 134 macros, 21 used
+Read in 21 components
+  21 core components: 21 unplaced, 0 placed, 0 fixed
+Read in 39 physical pins
+  39 physical pins: 0 unplaced, 39 placed, 0 fixed
+Read in 39 nets
+Read in 2 special nets, 2 routed
+Read in 39 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1249):	Special wire at (0.000 -0.085) (19.190 0.085) is out of design boundary. Ignored.
+**WARN: (ENCSR-1249):	Special wire at (0.000 18.115) (19.190 18.285) is out of design boundary. Ignored.
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0  open: 14
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1079.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 39 io pins ...
+ Updating DB with 27 via definition ...
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 0.50 megs
+sroute: Total Peak Memory used = 526.70 megs
+<CMD> editPowerVia -skip_via_on_pin Standardcell -bottom_layer metal1 -add_vias 1 -top_layer metal8saveDesign alu_power.encsetEndCapMode -resetsetEndCapMode -boundary_tap falsesetPlaceMode -resetsetPlaceMode -congEffort auto -timingDriven 1 -modulePlan 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -
+
+Usage: editPowerVia [-help] [-bottom_layer <layername>]
+                    [-create_via_on_merged_target_on_layer <string>]
+                    [-create_via_on_merged_target_within <float>]
+                    [-orthogonal_only <0|1>] [-same_sized_stack_vias <0|1>]
+                    [-skip_via_on_pin {pad block cover standardcell}]
+                    [-skip_via_on_wire_shape {blockring stripe followpin corewire blockwire iowire padring ring fillwire noshape}]
+                    [-skip_via_on_wire_status {routed fixed cover shield}]
+                    [-split_long_via {threshold step offset height}]
+                    [-split_vias <0|1>] [-top_layer <layername>]
+                    [-uda <subclass_string>]
+                    [-via_using_exact_crossover_size <0|1>] [-add_vias <0|1> | -delete_vias <0|1> | -modify_vias <0|1> ] [-area {x1 y1 x2 y2} | -between_selected_wires <0|1> | -selected_blocks <0|1>] [[[-via_columns <integer>] [-via_rows <integer>]] | [[-via_height <float>] [-via_width <float>]] | [[-via_scale_height <float>] [-via_scale_width <float>]]]
+
+**ERROR: (ENCTCM-48):	"alu_power.encsetEndCapMode" is not a legal option for command "editPowerVia". Either the current option or an option prior to it is not specified correctly.
+  
+invalid command name "reorderScan"
+<CMD> setPlaceMode -fp falseplaceDesign timeDesign -preCTS -numPaths 200optDesign -preCTS -numPaths 200setDrawView placesaveDesign alu_conv_pl.enc
+
+Usage: setPlaceMode [-help] [-reset] [-adaptive {false|true|auto}]
+                    [-allowBorderPinAbut {true|false}]
+                    [-autoBlockageInChannel {none|soft|partial}]
+                    [-checkCutSpacing {true|false}]
+                    [-checkPinLayerForAccess <layer-list>]
+                    [-checkRoute {true|false}] [-clkGateAware {true|false}]
+                    [-clusterMode {true|false|auto}]
+                    [-colorAwareLegal {true|false}]
+                    [-congEffort {low|medium|high|auto}]
+                    [-congRepairEffort {medium|high}]
+                    [-contextAwareLegal {true|false}]
+                    [-coreEngineEffort {medium|high}] [-doRPlace {true|false}]
+                    [-dptFlow {false|true|auto}]
+                    [-fillerGapEffort {none|low|medium|high}]
+                    [-fillerGapMinGap <micron>] [-fillerGapRadius <micron>]
+                    [-fixedShifter {true|false}] [-fp {true|false}]
+                    [-groupFlopToGate {false|true|auto}]
+                    [-groupFlopToGateHalfPerim <value>]
+                    [-groupFlopToGateMaxFanout <value>]
+                    [-groupFlopToGateMinFanout <value>]
+                    [-groupFlopToMacro {true|false}]
+                    [-groupFlopToMacroLevel <value>]
+                    [-groupFlopToMacroList <value>] [-hardFence {true|false}]
+                    [-honorImplantSpacing {true|false}]
+                    [-ignoreScan {true|1|false|0|auto}]
+                    [-ignoreSpare {true|false}] [-ioPinBlockage {true|false}]
+                    [-maxDensity <value>] [-maxShifterColDepth <value>]
+                    [-maxShifterDepth <value>] [-maxShifterRowDepth <value>]
+                    [-moduleAwareSpare {true|false}]
+                    [-modulePadding <module factor>]
+                    [-padFixedInsts {true|false}]
+                    [-padForPinNearBorder {true|false}]
+                    [-placeIoPins {true|false}] [-powerDriven {true|false}]
+                    [-prerouteAsObs {layerNum ...}]
+                    [-preserveRouting {true|false}] [-quickCTS {true|false}]
+                    [-reorderScan {true|false}]
+                    [-rmAffectedRouting {true|false}]
+                    [-sdpAlignment {true|false}] [-sdpPlace {false|true}]
+                    [-selectiveBlockage {true|false}]
+                    [-slackDriven {true|false}]
+                    [-softGuideStrength {low|medium|high}]
+                    [-swapEEQ {true|false}] [-timingDriven {true|false}]
+                    [-uniformDensity {false|true}] [-viaInPin {true|false}]
+                    [-wireLenOptEffort {none|medium|high}]
+
+**ERROR: (ENCTCM-27):	"falseplaceDesign" is not a valid Boolean value for option "-fp". The allowed values are {true false}.
+
+<CMD> setCTSMode -engine ck clockDesign -specFile Clock.ctstch -outDir clock_report -unfixedInstBeforeCTScheckPlace alu.checkPlace
+
+Usage: setCTSMode [-help] [-reset] [-addClockRootProp {true|false}]
+                  [-checkAssumedInputTran <number>]
+                  [-checkAttribute {true|false}]
+                  [-checkDriveStrength {true|false}]
+                  [-checkGateAreaOverlappingRatio <double>]
+                  [-checkGateLocation {true|false}]
+                  [-checkGateLocationMargin <double>]
+                  [-checkGatingLevel {true|false}] [-checkInputCap {true|false}]
+                  [-checkMacroModel {true|false}]
+                  [-checkMacroModelMaxDelayScale <double>]
+                  [-checkMacroModelMaxSkewScale <double>]
+                  [-checkMacroModelVarianceStepSize <number>]
+                  [-checkMaxCapThreshold <double>]
+                  [-checkMaxGatingLevel <number>]
+                  [-checkMaxPlaceableDistanceThreshold <double>]
+                  [-checkMaxRefinePlaceDistance <double>]
+                  [-checkMaxRouteFollowsGuideDeviation <double>]
+                  [-checkMaxTranTimeFactor <double>]
+                  [-checkMinPrefLayerUtilization <double>]
+                  [-checkMinRouteLengthThreshold <double>]
+                  [-checkNetResistance {true|false}]
+                  [-checkNetResistanceMinLength <double>]
+                  [-checkPlaceableDistance {true|false}]
+                  [-checkPostCTSTiming {true|false}]
+                  [-checkPostCTSTimingDetail {true|false}]
+                  [-checkPostCTSTimingPathNum <number>]
+                  [-checkPostCTSTimingRptFile <filename>]
+                  [-checkReconvergentMux {true|false}]
+                  [-checkRefinePlaceDistance {true|false}]
+                  [-checkRootInputTran {true|false}]
+                  [-checkRouteFollowsGuide {true|false}]
+                  [-checkRouteLayerFollowsPreference {true|false}]
+                  [-checkRouteObstructOverClockPin {true|false}]
+                  [-checkSynSubTreeMaxSaveDesign <number>]
+                  [-checkSynSubTreeMaxTime <number>]
+                  [-detailReport {true|false}] [-engine {ck|ccopt}]
+                  [-fixLeafInst {true|false}] [-fixNonLeafInst {true|false}]
+                  [-flowPriority {timing|skew|none}] [-honorFence {true|false}]
+                  [-mmPrefix <prefixname>] [-moveGate {true|false}]
+                  [-nameAppendParentInClones {true|false}]
+                  [-nameSingleDelim {true|false}] [-opt {true|false}]
+                  [-optAddBuffer {true|false}] [-optArea {true|false}]
+                  [-optLatency {true|false}] [-optLatencyMoveGate {true|false}]
+                  [-powerAware {true|false}]
+                  [-rcCorrelationAutoMode {true|false}]
+                  [-reportHTML {true|false}]
+                  [-routeBottomPreferredLayer <LayerName>]
+                  [-routeClkNet {true|false}] [-routeGuide {true|false}]
+                  [-routeLeafBottomPreferredLayer <LayerName>]
+                  [-routeLeafMask <value>] [-routeLeafNonDefaultRule <rulename>]
+                  [-routeLeafPreferredExtraSpace <spaceValue>]
+                  [-routeLeafRouteTypeOnGate {true|false}]
+                  [-routeLeafShielding <netname>]
+                  [-routeLeafTopPreferredLayer <LayerName>] [-routeMask <value>]
+                  [-routeNonDefaultRule <rulename>]
+                  [-routePreferredExtraSpace <spaceValue>]
+                  [-routeShielding <netname>]
+                  [-routeTopPreferredLayer <LayerName>]
+                  [-specMultiMode {true|false}] [-synthFixDRVOnly {true|false}]
+                  [-synthLatencyEffort {high|low}]
+                  [-synthSnapGatingCell {true|false}]
+                  [-synthSubTreeDelayThreshold <num>]
+                  [-synthSubTreeLevelThreshold <num>]
+                  [-synthUpsizeClockGate {true|false}]
+                  [-traceAsyncSRPinAsLeaf {true|false}]
+                  [-traceBlackBoxPinAsLeaf {true|false}]
+                  [-traceDPinAsLeaf {true|false}]
+                  [-traceHonorConstants {true|false}]
+                  [-traceIoPinAsLeaf {true|false}]
+                  [-traceTriStateEnablePinAsLeaf {true|false}]
+                  [-useLefACLimit {true|false}] [-useLibMaxCap {true|false}]
+                  [-useLibMaxFanout {true|false}] [-verbose {true|false}]
+
+**ERROR: (ENCTCM-48):	"clockDesign" is not a legal option for command "setCTSMode". Either the current option or an option prior to it is not specified correctly.
+
+<CMD> timeDesign -postCTS -numPaths 200timeDesign -postCTS -hold -numPaths 200optDesign -postCTS -numPaths 200optDesign -postCTS -hold -numPaths 200timeDesign -postCTS -hold -numPaths 200timeDesign -postCTS -numPaths 200saveDesign alu_clk.enc
+
+Usage: timeDesign [-help] [-batch] [-drvReports] [-expandReg2Reg]
+                  [-expandedViews] [-hold] [-idealClock] [-ilm] [-noIlm]
+                  [-numPaths <integer>] [-outDir <string>] [-pathreports]
+                  [-prefix <string>] [-proto] [-reportOnly] [-si]
+                  [-slackReports] [-timingDebugReport] [-useTransitionFiles] [ -prePlace | -preCTS | -postCTS | -postRoute | -signOff ] 
+
+**ERROR: (ENCTCM-4):	The value "200timeDesign" specified for the int type of argument "-numPaths" is not valid. Review the command specification and remove the argument or specify a legal value.
+  
+
+*** Memory Usage v#1 (Current mem = 526.699M, initial mem = 97.723M) ***
+*** Message Summary: 90 warning(s), 24 error(s)
+
+--- Ending "Encounter" (totcpu=0:01:58, real=0:31:45, mem=526.7M) ---

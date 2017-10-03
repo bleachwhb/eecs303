@@ -1,0 +1,1 @@
+restoreDesign [file dirname [file normalize [info script]]]/alu_powerroute_clk_filler.enc.dat alu_conv

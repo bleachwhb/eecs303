@@ -1,0 +1,8 @@
+Total numbers of exceptions: 6
+
+/designs/alu_conv/timing/exceptions/path_delays/alu_conv.sdc_line_13
+/designs/alu_conv/timing/exceptions/path_groups/clk
+/designs/alu_conv/timing/exceptions/path_groups/C2C
+/designs/alu_conv/timing/exceptions/path_groups/C2O
+/designs/alu_conv/timing/exceptions/path_groups/I2C
+/designs/alu_conv/timing/exceptions/path_groups/I2O

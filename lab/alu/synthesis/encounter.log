@@ -1,0 +1,1998 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+This Encounter release has been compiled with OA version 22.43-p033.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.14-s028_1 (64bit) 09/15/2014 13:21 (Linux 2.6)
+@(#)CDS: NanoRoute v14.14-s012 NR140903-2301/14_14-UB (database version 2.30, 241.6.1) {superthreading v1.19}
+@(#)CDS: CeltIC v14.14-s011_1 (64bit) 09/01/2014 04:04:31 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.14-s011 (64bit) 09/15/2014 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.14-s011_1 (64bit) Sep  3 2014 06:24:39 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.14-s022
+@(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v14.14-s028_1" on Mon May 15 15:26:11 2017 (mem=97.7M) ---
+--- Running on clayface.ece.northwestern.edu (x86_64 w/Linux 2.6.32-642.6.2.el6.x86_64) ---
+This version was compiled on Mon Sep 15 13:21:48 PDT 2014.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> loadRTLConfig ../../alu_conv.conf
+Loaded in RTL config file ../../alu_conv.conf.
+<CMD> compileDesign -noCommit
+Prepare to launch compileDesign.
+      synEffort = medium
+      mapEffort = high
+      incrEffort = high
+      opCond = 
+      wlmName = 
+      wlmLibrary = 
+      wlmMode = 
+      rcVar = 
+      rcAttr = 
+      preloadInclude = 
+      postloadInclude = 
+      prewriteInclude = 
+      endInclude = 
+      report = all
+      outDir = ./r2g_output
+      setupOnly = 0
+      removeTempFiles = 0
+
+Launching rc -f ./r2g_input/r2g.tcl -logfile /dev/null ...
+Finished loading tool scripts (5 seconds elapsed)
+
+                       Cadence Encounter(R) RTL Compiler
+          Version RC14.20 - v14.20-p005_1 (64-bit), built Oct 28 2014
+
+
+Copyright notice: Copyright 1997-2014 Cadence Design Systems, Inc. All rights 
+reserved worldwide. 
+
+WARNING: This version of RC is 930 days old.
+         Visit downloads.cadence.com for the latest release of RC.
+
+
+================================================================================
+                  Welcome to Cadence Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+            object  attribute
+            ------  ---------
+       cpf_command  synthesize_complex_expressions
+    cpf_command_id  current_set_instance_macro
+    cpf_command_id  current_set_instance_module
+    cpf_command_id  done_in_apply_cpf
+    cpf_command_id  done_in_write_cpf
+    cpf_command_id  macro_definition_command
+    cpf_command_id  rc_command
+            design  disable_power_mode_factorization
+            design  dp_perform_rewriting_operations
+            design  lp_clock_gating_hierarchical
+            design  lp_map_to_srpg_cells
+            design  lp_optimize_dynamic_power_first
+            design  lp_srpg_pg_driver
+          instance  black_box
+          instance  dft_inherited_dont_scan
+          instance  gint_has_connected_pg_pin
+          instance  lp_map_to_srpg_cells
+          instance  lp_map_to_srpg_type
+          instance  lp_srpg_pg_driver
+           libcell  black_box
+           libcell  location
+               net  hier_net
+               net  logic0_driven
+               net  logic1_driven
+      power_domain  shutoff_signal
+      power_domain  shutoff_signal_polarity
+              root  auto_ungroup_min_effort
+              root  degenerate_complex_seqs
+              root  disable_power_mode
+              root  dp_perform_csa_operations
+              root  dp_perform_rewriting_operations
+              root  dp_perform_sharing_operations
+              root  dp_perform_speculation_operations
+              root  driver_for_unloaded_ports
+              root  enable_parallel_iopt
+              root  enc_in_place_opt
+              root  enc_opt_drv
+              root  hdl_flatten_array
+              root  hdl_old_reg_naming
+              root  hdl_reg_naming_style_scalar
+              root  hdl_reg_naming_style_vector
+              root  hdl_trim_target_index
+              root  ignore_unknown_embedded_commands
+              root  lbr_async_clr_pre_seqs_interchangable
+              root  lp_clock_gating_hierarchical
+              root  lp_insert_clock_gating_incremental
+              root  lp_iopt_mvt_multipass_flow
+              root  lp_multi_vt_optimization_effort
+              root  ovf_mode
+              root  ovf_verification_directory
+              root  ple_parameter_source_priority
+              root  power_optimization_effort
+              root  pqos_virtual_buffer
+              root  retime_preserve_state_points
+              root  wlec_env_var
+              root  wlec_flat_r2n
+              root  wlec_no_exit
+              root  wlec_old_lp_ec_flow
+              root  wlec_save_ssion
+              root  wlec_sim_lib
+              root  wlec_sim_plus_lib
+              root  wlec_skip_iso_check_hier_compare
+              root  wlec_skip_lvl_check_hier_compare
+              root  wlec_verbose
+         subdesign  allow_csa_subdesign
+         subdesign  allow_sharing_subdesign
+         subdesign  allow_speculation_subdesign
+         subdesign  auto_ungroup_ok
+         subdesign  dp_perform_rewriting_operations
+         subdesign  lp_clock_gating_hierarchical
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+Sourcing './r2g_input/r2g.tcl' (Mon May 15 15:26:59 -0500 2017)...
+Start at: 05/15/2017 15:27:00
+Sourcing '/vol/cadence2014/RC142/tools.lnx86/lib/etc/load_etc.tcl' (Mon May 15 15:27:00 -0500 2017)...
+Sourcing '/vol/cadence2014/RC142/tools.lnx86/lib/etc/toolbox/insert_io_buffers.tcl' (Mon May 15 15:27:00 -0500 2017)...
+Sourcing '/vol/cadence2014/RC142/tools.lnx86/lib/etc/toolbox/performance_statistics.tcl' (Mon May 15 15:27:00 -0500 2017)...
+  Setting attribute of root '/': 'information_level' = 9
+  Setting attribute of root '/': 'hdl_max_loop_limit' = 1024
+  Setting attribute of root '/': 'hdl_reg_naming_style' = %s_reg%s
+  Setting attribute of root '/': 'gen_module_prefix' = G2C_DP_
+  Setting attribute of root '/': 'optimize_constant_0_flops' = false
+  Setting attribute of root '/': 'optimize_constant_1_flops' = false
+  Setting attribute of root '/': 'input_pragma_keyword' = cadence synopsys get2chip g2c
+  Setting attribute of root '/': 'synthesis_off_command' = translate_off
+  Setting attribute of root '/': 'synthesis_on_command' = translate_on
+  Setting attribute of root '/': 'input_case_cover_pragma' = full_case
+  Setting attribute of root '/': 'input_case_decode_pragma' = parallel_case
+  Setting attribute of root '/': 'input_synchro_reset_pragma' = sync_set_reset
+  Setting attribute of root '/': 'input_synchro_reset_blk_pragma' = sync_set_reset_local
+  Setting attribute of root '/': 'input_asynchro_reset_pragma' = async_set_reset
+  Setting attribute of root '/': 'input_asynchro_reset_blk_pragma' = async_set_reset_local
+  Setting attribute of root '/': 'script_begin' = dc_script_begin
+  Setting attribute of root '/': 'script_end' = dc_script_end
+  Setting attribute of message 'LBR-30': 'max_print' = 0
+  Setting attribute of message 'LBR-31': 'max_print' = 0
+  Setting attribute of root '/': 'shrink_factor' = 1.0
+  Setting attribute of root '/': 'hdl_search_path' = ./
+  Setting attribute of root '/': 'lib_search_path' = ./
+    Loading library /vol/ece303/encounter_tutorial/NangateOpenCellLibrary_typical.lib
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : (NangateOpenCellLibrary_typical.lib, block starting at: 48) Unknown Liberty attribute (library_features) encountered. Ignoring
+        : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library.
+
+  Message Summary for Library /vol/ece303/encounter_tutorial/NangateOpenCellLibrary_typical.lib:
+  **********************************************************************************************
+  Could not find an attribute in the library. [LBR-436]: 147
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  **********************************************************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 25.000000) in library 'NangateOpenCellLibrary_typical.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA_X1' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA_X1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILLCELL_X32' must have an output pin.
+  Setting attribute of root '/': 'library' = /vol/ece303/encounter_tutorial/NangateOpenCellLibrary_typical.lib
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via1_4' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via1_0' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via1_1' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via1_2' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via1_3' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via1_5' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via1_6' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via1_7' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via1_8' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via2_8' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via2_4' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via2_5' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via2_7' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via2_6' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via2_0' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via2_1' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via2_2' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via2_3' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via3_2' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via3_0' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via3_1' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via4_0' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via5_0' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via6_0' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via7_0' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via8_0' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+        : Via 'via9_0' has no resistance value.
+
+  According to lef_library, there are total 10 routing layers [ V(5) / H(5) ]
+
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.07, 0.8) of 'WIDTH' for layers 'metal3' and 'metal9' is too large.
+        : Make sure to check the consistency of the parameters.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.14, 1.6) of 'PITCH' for layers 'metal3' and 'metal9' is too large.
+Warning : The variant range of wire parameters is too large. [PHYS-12]
+        : The variant range (0.065, 0.8) of 'MINSPACING' for layers 'metal1' and 'metal10' is too large.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'FA_X1'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'FA_X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'FA_X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'HA_X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'HA_X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'MUX2_X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'MUX2_X2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TLAT_X1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'ZN' in libcell 'XNOR2_X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'ZN' in libcell 'XNOR2_X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'ZN' in libcell 'XNOR2_X2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'ZN' in libcell 'XNOR2_X2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'XOR2_X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'XOR2_X1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'XOR2_X2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'XOR2_X2'.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5K_hvratio_1_1' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5K_hvratio_1_4' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_1' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_4' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '1K_hvratio_1_1' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '1K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '1K_hvratio_1_4' is non-monotonic.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'NangateOpenCellLibrary_typical.lib', Total cells: 134, Unusable cells: 10.
+	List of unusable cells: 'ANTENNA_X1 FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32 LOGIC0_X1 LOGIC1_X1 TLAT_X1 .'
+        : For more information, refer to 'Cells Identified as Unusable' in the RC User Guide. The number of unusable cells that is listed depends on the setting of the 'information_level' root attribute. If set to a value less than 6, the list is limited to 10 unusable cells. If set to a value equal to or higher than 6, all unusable cells are listed.
+  Setting attribute of root '/': 'lef_library' = /vol/ece303/encounter_tutorial/NangateOpenCellLibrary.lef
+
+EC INFO: Total cpu-time and memory after SETUP: 5 sec., 115.00 MBytes.
+
+  Setting attribute of root '/': 'hdl_language' = v2001
+            Reading Verilog file './../../alu_conv.v'
+
+EC INFO: Total cpu-time and memory after LOAD: 5 sec., 115.00 MBytes.
+
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TLAT_X1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5K_hvratio_1_1' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5K_hvratio_1_4' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_1' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_4' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '1K_hvratio_1_1' is non-monotonic.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'NangateOpenCellLibrary_typical.lib', Total cells: 134, Unusable cells: 10.
+	List of unusable cells: 'ANTENNA_X1 FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32 LOGIC0_X1 LOGIC1_X1 TLAT_X1 .'
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'alu_conv' from file './../../alu_conv.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'mux2_n' from file './../../alu_conv.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'mux2_n' with default parameters value.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=1 B=1 Z=1) at line 115 in the file './../../alu_conv.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=1 B=1 Z=1) at line 115 in the file './../../alu_conv.v' will be considered in the following order: {'/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'alu_main' from file './../../alu_conv.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'add' from file './../../alu_conv.v'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/add_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=8 B=8 Z=8) at line 68 in the file './../../alu_conv.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=8 B=8 Z=8) at line 68 in the file './../../alu_conv.v' will be considered in the following order: {'/hdl_libraries/GB/components/add_unsigned/implementations/very_fast' (priority 1), '/hdl_libraries/GB/components/add_unsigned/implementations/medium' (priority 1), '/hdl_libraries/GB/components/add_unsigned/implementations/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'sub' from file './../../alu_conv.v'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/sub_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SUB_UNS_OP' (pin widths: A=8 B=8 Z=8) at line 75 in the file './../../alu_conv.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SUB_UNS_OP' (pin widths: A=8 B=8 Z=8) at line 75 in the file './../../alu_conv.v' will be considered in the following order: {'/hdl_libraries/GB/components/sub_unsigned/implementations/very_fast' (priority 1), '/hdl_libraries/GB/components/sub_unsigned/implementations/medium' (priority 1), '/hdl_libraries/GB/components/sub_unsigned/implementations/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'lsl' from file './../../alu_conv.v'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding '/hdl_libraries/GB/components/decoder/bindings/b2' is invalid for the call to synthetic operator 'SLL_VLOG_UNS_OP' (pin widths: A=8 SH=3 Z=8) because the constraint '1' on the synthetic operator pin 'A' does not match the actual pin value 'bound'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/sll/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SLL_VLOG_UNS_OP' (pin widths: A=8 SH=3 Z=8).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SLL_VLOG_UNS_OP' (pin widths: A=8 SH=3 Z=8) will be considered in the following order: {'/hdl_libraries/GB/components/sll/implementations/very_fast' (priority 1), '/hdl_libraries/GB/components/sll/implementations/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'lsr' from file './../../alu_conv.v'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/srl/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SRL_VLOG_UNS_OP' (pin widths: A=8 SH=3 Z=8).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SRL_VLOG_UNS_OP' (pin widths: A=8 SH=3 Z=8) will be considered in the following order: {'/hdl_libraries/GB/components/srl/implementations/very_fast' (priority 1), '/hdl_libraries/GB/components/srl/implementations/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'cmp' from file './../../alu_conv.v'.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'out' [8] doesn't match the width of right hand side [32] in assignment in file './../../alu_conv.v' on line 98.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/geq_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'GEQ_UNS_OP' (pin widths: A=8 B=8 Z=1) at line 98 in the file './../../alu_conv.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'GEQ_UNS_OP' (pin widths: A=8 B=8 Z=1) at line 98 in the file './../../alu_conv.v' will be considered in the following order: {'/hdl_libraries/GB/components/geq_unsigned/implementations/very_fast' (priority 1), '/hdl_libraries/GB/components/geq_unsigned/implementations/medium' (priority 1), '/hdl_libraries/GB/components/geq_unsigned/implementations/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'xor_n_n8' from file './../../alu_conv.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'xor_n' with default parameters value.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'mux2_n_n8' from file './../../alu_conv.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'mux2_n' with default parameters value.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation '/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=1 B=1 Z=1) at line 115 in the file './../../alu_conv.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=1 B=1 Z=1) at line 115 in the file './../../alu_conv.v' will be considered in the following order: {'/hdl_libraries/GB/components/equal_unsigned/implementations/very_fast' (priority 1)}
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'sel' of instance 'mux_n_1' of module 'mux2_n_n8' in file './../../alu_conv.v' on line 163, column 20.
+        : Use the 'hdl_undriven_signal_value' attribute to control treatment of undriven input port during elaboration.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'out_tbd' in module 'alu_main' in file './../../alu_conv.v' on line 131, column 27.
+        : Use the 'hdl_undriven_output_port_value' attribute to control treatment of undriven output port during elaboration.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'mux8_n' from file './../../alu_conv.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'mux8_n' with default parameters value.
+Info    : Unused module input port. [CDFG-500]
+        : Input port 'sel' is not used in module 'alu_conv' in file './../../alu_conv.v' on line 17.
+        : The value of the input port is not used within the design.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'alu_conv'.
+        Computing net loads.
+  Setting attribute of root '/': 'remove_assigns' = true
+
+EC INFO: Total cpu-time and memory after ELAB: 5 sec., 113.00 MBytes.
+
+  Setting attribute of root '/': 'use_scan_seqs_for_non_dft' = false
+            Reading file '/home/bwj4163/eecs303/lab/alu/synthesis/../../alu_conv.sdc'
+Statistics for commands executed by read_sdc:
+ "all_inputs"              - successful      2 , failed      0 (runtime  0.00)
+ "all_outputs"             - successful      2 , failed      0 (runtime  0.00)
+ "current_design"          - successful      1 , failed      0 (runtime  0.00)
+ "set_load"                - successful      1 , failed      0 (runtime  0.00)
+ "set_max_capacitance"     - successful      1 , failed      0 (runtime  0.00)
+ "set_max_delay"           - successful      1 , failed      0 (runtime  1.00)
+ "set_max_transition"      - successful      1 , failed      0 (runtime  0.00)
+Total runtime 0
+
+EC INFO: Total cpu-time and memory after CONSTRAINT: 6 sec., 113.00 MBytes.
+
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TLAT_X1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'NangateOpenCellLibrary_typical.lib', Total cells: 134, Unusable cells: 10.
+	List of unusable cells: 'ANTENNA_X1 FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32 LOGIC0_X1 LOGIC1_X1 TLAT_X1 .'
+
+EC INFO: Total numbers of exceptions: 2
+
+
+EC INFO: Total cpu-time and memory after POST-SDC: 6 sec., 113.00 MBytes.
+
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+        Initializing DRC engine.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+        : Use 'report timing -lint' for more information.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+
+EC INFO: Reporting Initial QoR below...
+
+============================================================
+  Generated by:           Encounter(R) RTL Compiler RC14.20 - v14.20-p005_1
+  Generated on:           May 15 2017  03:27:01 pm
+  Module:                 alu_conv
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      global
+  Area mode:              physical library
+============================================================
+
+Warning : No clock. [RPT-10]
+        : There are no clocks in the design.
+        : Clock is not defined.
+Timing
+-------
+  Cost    Critical       Violating 
+ Group   Path Slack TNS    Paths   
+-----------------------------------
+default    No paths   0            
+I2O           608.6   0          0 
+-----------------------------------
+Total                 0          0 
+
+Instance Count
+--------------
+Leaf Instance Count             349 
+Sequential Instance Count         0 
+Combinational Instance Count    349 
+Hierarchical Instance Count      34 
+
+Area
+----
+Cell Area                          703.795
+Physical Cell Area                 0.000
+Total Cell Area (Cell+Physical)    703.795
+Net Area                           18.697
+Total Area (Cell+Physical+Net)     722.492
+
+Max Fanout                         25 (b[0])
+Min Fanout                         1 (a0_mux[0])
+Average Fanout                     2.0
+Terms to net ratio                 2.8
+Terms to instance ratio            3.3
+Runtime                            6.000 seconds
+Elapsed Runtime                    7 seconds
+RC peak memory usage:              116.00 
+EDI peak memory usage:             no_value 
+Hostname                           clayface.ece.northwestern.edu
+
+EC INFO: Reporting Initial Summary below...
+
+============================================================
+  Generated by:           Encounter(R) RTL Compiler RC14.20 - v14.20-p005_1
+  Generated on:           May 15 2017  03:27:01 pm
+  Module:                 alu_conv
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical 
+  Interconnect mode:      global
+  Area mode:              physical library
+============================================================
+
+	Timing
+	------
+
+ Slack      Endpoint    Cost Group 
+----------------------------------------
+ +609ps alu_conv/out[5] I2O        
+
+
+	Area
+	----
+
+Instance  Cells  Cell Area  Net Area  Total Area 
+-------------------------------------------------
+alu_conv    349        704        19         722 
+
+	Design Rule Check
+	-----------------
+
+Max_transition design rule: no violations.
+
+Max_capacitance design rule: no violations.
+
+
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Thermal factor      : 1.00
+Via Resistance      : 0.00 ohm (from default)
+Site size           : 1.59 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       lef_library
+------------------------------------------------
+metal1          H         1.00        0.000060  
+metal2          V         1.00        0.000053  
+metal3          H         1.00        0.000052  
+metal4          V         1.00        0.000065  
+metal5          H         1.00        0.000007  
+metal6          V         1.00        0.000049  
+metal7          H         1.00        0.000068  
+metal8          V         1.00        0.000050  
+metal9          H         1.00        0.000065  
+metal10         V         1.00        0.000049  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       lef_library
+-------------------------------------------------
+metal1          H         1.00         5.428571  
+metal2          V         1.00         3.571429  
+metal3          H         1.00         3.571429  
+metal4          V         1.00         1.500000  
+metal5          H         1.00         1.500000  
+metal6          V         1.00         1.500000  
+metal7          H         1.00         0.187500  
+metal8          V         1.00         0.187500  
+metal9          H         1.00         0.037500  
+metal10         V         1.00         0.037500  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+metal1          H         1.00         0.070000  
+metal2          V         1.00         0.070000  
+metal3          H         1.00         0.070000  
+metal4          V         1.00         0.140000  
+metal5          H         1.00         0.140000  
+metal6          V         1.00         0.140000  
+metal7          H         1.00         0.400000  
+metal8          V         1.00         0.400000  
+metal9          H         1.00         0.800000  
+metal10         V         1.00         0.800000  
+
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'alu_conv' to generic gates using 'medium' effort.
+Info    : Optimizing RTL. [RTLOPT-1]
+        : Optimizing RTL in 'alu_conv' using 'medium' effort.
+Info    : Done optimizing RTL. [RTLOPT-2]
+        : Done optimizing RTL in 'alu_conv'.
+      Removing temporary intermediate hierarchies under alu_conv
+              Optimizing muxes in design 'cmp'.
+              Optimizing muxes in design 'lsl'.
+              Optimizing muxes in design 'lsr'.
+              Optimizing muxes in design 'mux2_n'.
+              Optimizing muxes in design 'mux2_n_n8'.
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'alu_conv' to generic gates.
+        Computing net loads.
+
+EC INFO: Total cpu-time and memory after SYN2GEN: 6 sec., 115.00 MBytes.
+
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+        Initializing DRC engine.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Thermal factor      : 1.00
+Via Resistance      : 0.00 ohm (from default)
+Site size           : 1.59 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       lef_library
+------------------------------------------------
+metal1          H         1.00        0.000060  
+metal2          V         1.00        0.000053  
+metal3          H         1.00        0.000052  
+metal4          V         1.00        0.000065  
+metal5          H         1.00        0.000007  
+metal6          V         1.00        0.000049  
+metal7          H         1.00        0.000068  
+metal8          V         1.00        0.000050  
+metal9          H         1.00        0.000065  
+metal10         V         1.00        0.000049  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       lef_library
+-------------------------------------------------
+metal1          H         1.00         5.428571  
+metal2          V         1.00         3.571429  
+metal3          H         1.00         3.571429  
+metal4          V         1.00         1.500000  
+metal5          H         1.00         1.500000  
+metal6          V         1.00         1.500000  
+metal7          H         1.00         0.187500  
+metal8          V         1.00         0.187500  
+metal9          H         1.00         0.037500  
+metal10         V         1.00         0.037500  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+metal1          H         1.00         0.070000  
+metal2          V         1.00         0.070000  
+metal3          H         1.00         0.070000  
+metal4          V         1.00         0.140000  
+metal5          H         1.00         0.140000  
+metal6          V         1.00         0.140000  
+metal7          H         1.00         0.400000  
+metal8          V         1.00         0.400000  
+metal9          H         1.00         0.800000  
+metal10         V         1.00         0.800000  
+
+Info    : Mapping. [SYNTH-4]
+        : Mapping 'alu_conv' using 'high' effort.
+      Mapping 'alu_conv'...
+        Preparing the circuit
+          Pruning unused logic
+Multi-threaded constant propagation [1|1] ...
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'add_68_17' of datapath component 'G2C_DP_add_unsigned'.
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'gte_98_18' of datapath component 'G2C_DP_geq_unsigned'.
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'sll_83_20' of datapath component 'G2C_DP_shift_left_vlog_unsigned'.
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'srl_91_20' of datapath component 'G2C_DP_shift_right_vlog_unsigned'.
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'sub_75_17' of datapath component 'G2C_DP_sub_unsigned'.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'mux_1_3' in module 'mux8_n' would be automatically ungrouped.
+        : Hierarchical instances can be automatically ungrouped to allow for better area or timing optimization. You can control auto ungrouping using the root-level attribute 'auto_ungroup'. You can skip individual instances or modules using the attribute 'ungroup_ok'.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'add_1' in module 'alu_main' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'muxGroup_input' in module 'alu_conv' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'mux_3_1' in module 'mux8_n' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'mux_2_2' in module 'mux8_n' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'mux_2_1' in module 'mux8_n' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'mux_1_4' in module 'mux8_n' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'mux_1_2' in module 'mux8_n' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'mux_1_1' in module 'mux8_n' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'xor_n_1' in module 'alu_main' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'sub_1' in module 'alu_main' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'mux_n_1' in module 'alu_main' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'lsr_1' in module 'alu_main' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'lsl_1' in module 'alu_main' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'cmp_1' in module 'alu_main' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'muxGroup_ouput' in module 'alu_conv' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'alu' in module 'alu_conv' would be automatically ungrouped.
+          Analyzing hierarchical boundaries
+Warning : Internal Tcl control variable has been changed. [TUI-668]
+        : Variable 'case_handle_real_constants_too', value: '0' (default: '1')
+        : Some Tcl variables are used internally to enable features that are not officially supported.
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) alu_conv...
+Warning : Internal Tcl control variable has been changed. [TUI-668]
+        : Variable 'prcode_bt_scale', value: '100' (default: '50')
+            Starting partial collapsing (xors only) alu_conv
+            Finished partial collapsing.
+            Starting partial collapsing  alu_conv
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) alu_conv
+ 
+Global mapping target info
+==========================
+Cost Group 'I2O' target slack:    30 ps
+Target path end-point (Port: alu_conv/out[7])
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+   Pin               Type          Fanout Load Arrival  
+                                          (fF)   (ps)   
+--------------------------------------------------------
+a_sel      (u)  in port                16 80.0          
+g2480/in_1                                              
+g2480/z    (u)  unmapped_nand2          1  5.0          
+g2461/in_1                                              
+g2461/z    (u)  unmapped_nand2          8 40.0          
+g1779/in_0                                              
+g1779/z    (u)  unmapped_complex2       2 10.0          
+g2363/in_0                                              
+g2363/z    (u)  unmapped_nand2          1  5.0          
+g2334/in_0                                              
+g2334/z    (u)  unmapped_nand2          2 10.0          
+g2319/in_1                                              
+g2319/z    (u)  unmapped_nand2          1  5.0          
+g2296/in_0                                              
+g2296/z    (u)  unmapped_nand2          2 10.0          
+g2256/in_1                                              
+g2256/z    (u)  unmapped_nand2          1  5.0          
+g2230/in_0                                              
+g2230/z    (u)  unmapped_nand2          2 10.0          
+g2215/in_1                                              
+g2215/z    (u)  unmapped_nand2          1  5.0          
+g2213/in_0                                              
+g2213/z    (u)  unmapped_nand2          2 10.0          
+g2203/in_1                                              
+g2203/z    (u)  unmapped_nand2          1  5.0          
+g2193/in_1                                              
+g2193/z    (u)  unmapped_nand2          2 10.0          
+g2185/in_1                                              
+g2185/z    (u)  unmapped_nand2          1  5.0          
+g2181/in_1                                              
+g2181/z    (u)  unmapped_nand2          2 10.0          
+g2176/in_0                                              
+g2176/z    (u)  unmapped_complex2       1  5.0          
+g2167/in_1                                              
+g2167/z    (u)  unmapped_nand2          2 10.0          
+g2162/in_0                                              
+g2162/z    (u)  unmapped_complex2       1  5.0          
+g2163/in_1                                              
+g2163/z    (u)  unmapped_nand2          1  5.0          
+g2159/in_0                                              
+g2159/z    (u)  unmapped_complex2       1  5.0          
+g2156/in_1                                              
+g2156/z    (u)  unmapped_complex2       1  5.0          
+g2153/in_0                                              
+g2153/z    (u)  unmapped_complex2       1  5.0          
+g2152/in_1                                              
+g2152/z         unmapped_complex2       1  0.5          
+out[7]     <<<  out port                                
+--------------------------------------------------------
+Exception    : 'path_delays/alu_conv.sdc_line_13'    1000ps
+Cost Group   : 'I2O' (path_group 'I2O')
+Start-point  : a_sel
+End-point    : out[7]
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 641ps.
+ 
+          Restructuring (delay-based) alu_conv...
+          Done restructuring (delay-based) alu_conv
+        Optimizing component alu_conv...
+ 
+Global mapping timing result
+============================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+  Pin          Type      Fanout Load Slew Delay Arrival   
+                                (fF) (ps)  (ps)   (ps)    
+----------------------------------------------------------
+a_sel         in port         8 17.0    0    +0       0 R 
+g3986/S                                      +0       0   
+g3986/Z       MUX2_X1         5 11.5   20   +74      74 F 
+g3968/A1                                     +0      74   
+g3968/ZN      NOR2_X1         1  2.1   18   +30     104 R 
+g3908/A1                                     +0     104   
+g3908/ZN      OAI22_X1        2  3.0   13   +22     127 F 
+g3882/A                                      +0     127   
+g3882/ZN      OAI21_X1        1  2.1   21   +23     150 R 
+g3874/A                                      +0     150   
+g3874/ZN      OAI21_X1        2  3.0   12   +24     174 F 
+g3853/A                                      +0     174   
+g3853/ZN      OAI21_X1        1  2.1   21   +22     196 R 
+g3849/A                                      +0     196   
+g3849/ZN      OAI21_X1        2  3.0   12   +24     221 F 
+g3831/A                                      +0     221   
+g3831/ZN      OAI21_X1        1  2.1   21   +22     243 R 
+g3830/A                                      +0     243   
+g3830/ZN      OAI21_X1        2  3.0   12   +24     268 F 
+g3821/A                                      +0     268   
+g3821/ZN      OAI21_X1        1  2.1   21   +22     290 R 
+g3820/A                                      +0     290   
+g3820/ZN      OAI21_X1        2  3.0   12   +24     314 F 
+g3814/A                                      +0     314   
+g3814/ZN      OAI21_X1        1  2.1   21   +22     337 R 
+g3813/A                                      +0     337   
+g3813/ZN      OAI21_X1        1  1.3    9   +20     357 F 
+g3806/B                                      +0     357   
+g3806/Z       MUX2_X1         2  3.6   12   +63     420 F 
+g3800/A1                                     +0     420   
+g3800/ZN      NAND2_X1        1  2.0   10   +17     437 R 
+g3797/A                                      +0     437   
+g3797/ZN      OAI211_X1       1  1.9   19   +27     464 F 
+g3793/A                                      +0     464   
+g3793/ZN      AOI21_X1        1  2.1   24   +46     510 R 
+g3792/A                                      +0     510   
+g3792/ZN      INV_X1          1  0.5    6    +6     516 F 
+out[7]   <<<  out port                       +0     516 F 
+----------------------------------------------------------
+Exception    : 'path_delays/alu_conv.sdc_line_13'    1000ps
+Cost Group   : 'I2O' (path_group 'I2O')
+Timing slack :     484ps 
+Start-point  : a_sel
+End-point    : out[7]
+
+ 
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                 1275        0 
+
+    Cost Group            Target    Slack    Clock
+--------------------------------------------------
+           I2O                30      484     N.A. 
+
+ 
+Global incremental target info
+==============================
+Cost Group 'I2O' target slack:    20 ps
+Target path end-point (Port: alu_conv/out[7])
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+  Pin          Type      Fanout Load Arrival  
+                                (fF)   (ps)   
+----------------------------------------------
+a_sel         in port         8 17.0          
+g3986/S                                       
+g3986/Z       MUX2_X1         5 11.5          
+g3968/A1                                      
+g3968/ZN      NOR2_X1         1  2.1          
+g3908/A1                                      
+g3908/ZN      OAI22_X1        2  3.0          
+g3882/A                                       
+g3882/ZN      OAI21_X1        1  2.1          
+g3874/A                                       
+g3874/ZN      OAI21_X1        2  3.0          
+g3853/A                                       
+g3853/ZN      OAI21_X1        1  2.1          
+g3849/A                                       
+g3849/ZN      OAI21_X1        2  3.0          
+g3831/A                                       
+g3831/ZN      OAI21_X1        1  2.1          
+g3830/A                                       
+g3830/ZN      OAI21_X1        2  3.0          
+g3821/A                                       
+g3821/ZN      OAI21_X1        1  2.1          
+g3820/A                                       
+g3820/ZN      OAI21_X1        2  3.0          
+g3814/A                                       
+g3814/ZN      OAI21_X1        1  2.1          
+g3813/A                                       
+g3813/ZN      OAI21_X1        1  1.3          
+g3806/B                                       
+g3806/Z       MUX2_X1         2  3.6          
+g3800/A1                                      
+g3800/ZN      NAND2_X1        1  2.0          
+g3797/A                                       
+g3797/ZN      OAI211_X1       1  1.9          
+g3793/A                                       
+g3793/ZN      AOI21_X1        1  2.1          
+g3792/A                                       
+g3792/ZN      INV_X1          1  0.5          
+out[7]   <<<  out port                        
+----------------------------------------------
+Exception    : 'path_delays/alu_conv.sdc_line_13'    1000ps
+Cost Group   : 'I2O' (path_group 'I2O')
+Start-point  : a_sel
+End-point    : out[7]
+
+The global mapper estimates a slack for this path of 480ps.
+ 
+ 
+Global incremental timing result
+================================
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+  Pin          Type      Fanout Load Slew Delay Arrival   
+                                (fF) (ps)  (ps)   (ps)    
+----------------------------------------------------------
+a_sel         in port         8 17.0    0    +0       0 R 
+g3986/S                                      +0       0   
+g3986/Z       MUX2_X1         5 10.1   19   +72      72 F 
+g3978/A                                      +0      72   
+g3978/ZN      INV_X1          4  7.6   20   +32     104 R 
+g3908/B1                                     +0     104   
+g3908/ZN      OAI22_X1        2  3.0   13   +25     129 F 
+g3882/A                                      +0     129   
+g3882/ZN      OAI21_X1        1  2.1   20   +23     152 R 
+g3874/A                                      +0     152   
+g3874/ZN      OAI21_X1        2  3.0   12   +24     176 F 
+g3853/A                                      +0     176   
+g3853/ZN      OAI21_X1        1  2.1   21   +23     199 R 
+g3849/A                                      +0     199   
+g3849/ZN      OAI21_X1        2  3.0   12   +24     223 F 
+g3831/A                                      +0     223   
+g3831/ZN      OAI21_X1        1  2.1   21   +22     246 R 
+g3830/A                                      +0     246   
+g3830/ZN      OAI21_X1        2  3.0   12   +24     270 F 
+g3821/A                                      +0     270   
+g3821/ZN      OAI21_X1        1  2.1   20   +22     292 R 
+g3820/A                                      +0     292   
+g3820/ZN      OAI21_X1        2  3.0   12   +24     317 F 
+g3814/A                                      +0     317   
+g3814/ZN      OAI21_X1        1  2.1   20   +23     339 R 
+g3813/A                                      +0     339   
+g3813/ZN      OAI21_X1        1  1.3   10   +20     360 F 
+g3806/B                                      +0     360   
+g3806/Z       MUX2_X1         2  3.6   12   +63     423 F 
+g3800/A1                                     +0     423   
+g3800/ZN      NAND2_X1        1  2.0   10   +17     440 R 
+g3797/A                                      +0     440   
+g3797/ZN      OAI211_X1       1  1.9   19   +27     467 F 
+g3793/A                                      +0     467   
+g3793/ZN      AOI21_X1        1  2.1   24   +46     513 R 
+g3792/A                                      +0     513   
+g3792/ZN      INV_X1          1  0.5    6    +6     519 F 
+out[7]   <<<  out port                       +0     519 F 
+----------------------------------------------------------
+Exception    : 'path_delays/alu_conv.sdc_line_13'    1000ps
+Cost Group   : 'I2O' (path_group 'I2O')
+Timing slack :     481ps 
+Start-point  : a_sel
+End-point    : out[7]
+
+ 
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr                1273        0 
+
+    Cost Group            Target    Slack    Clock
+--------------------------------------------------
+           I2O                20      481     N.A. 
+
+
+Scan mapping status report
+==========================
+    Scan mapping: converting flip-flops that pass TDRC.
+    Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+
+    Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+Info    : 'Conformal LEC14.1-p100' or later builds is recommended for verification. [WDO-600]
+        : The use of 'Conformal LEC14.1-p100' or later builds is recommended to get better verification results.
+Generating a dofile for design 'alu_conv' in file 'fv/alu_conv/rtl_to_g1.do' ...
+Info    : Forcing flat compare. [WDO-212]
+        : No hierarchies found in design.
+Info    : Done mapping. [SYNTH-5]
+        : Done mapping 'alu_conv'.
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'alu_conv' using 'high' effort.
+Warning : The Parallel Incremental Optimization failed. [MAP-136]
+        : Cannot run parallel IOPT, design size less than 130000
+        : Switching to Normal Incremental Optimization flow.
+Warning : Internal Tcl control variable has been changed. [TUI-668]
+        : Variable 'incremental_opto', value: '0' (default: '1')
+Info    : Done incrementally optimizing. [SYNTH-8]
+        : Done incrementally optimizing 'alu_conv'.
+
+EC INFO: Total cpu-time and memory after SYN2MAP: 7 sec., 125.00 MBytes.
+
+        Initializing DRC engine.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Potential variable name conflict. [TUI-666]
+        : A variable that controls the tool's behavior was set. The 'incremental_opto' variable has the same name as an internal variable.
+        : Some Tcl variables are used internally to enable features that are not officially supported. If this variable was set as a part of a script that was not intended to change the tool's behavior (perhaps as a temporary variable to store a command result), choose another variable name. Otherwise, this variable name could produce unintended results. If you are setting this variable to change the tool's behavior, this warning can be ignored.
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Thermal factor      : 1.00
+Via Resistance      : 0.00 ohm (from default)
+Site size           : 1.59 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       lef_library
+------------------------------------------------
+metal1          H         1.00        0.000060  
+metal2          V         1.00        0.000053  
+metal3          H         1.00        0.000052  
+metal4          V         1.00        0.000065  
+metal5          H         1.00        0.000007  
+metal6          V         1.00        0.000049  
+metal7          H         1.00        0.000068  
+metal8          V         1.00        0.000050  
+metal9          H         1.00        0.000065  
+metal10         V         1.00        0.000049  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       lef_library
+-------------------------------------------------
+metal1          H         1.00         5.428571  
+metal2          V         1.00         3.571429  
+metal3          H         1.00         3.571429  
+metal4          V         1.00         1.500000  
+metal5          H         1.00         1.500000  
+metal6          V         1.00         1.500000  
+metal7          H         1.00         0.187500  
+metal8          V         1.00         0.187500  
+metal9          H         1.00         0.037500  
+metal10         V         1.00         0.037500  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+metal1          H         1.00         0.070000  
+metal2          V         1.00         0.070000  
+metal3          H         1.00         0.070000  
+metal4          V         1.00         0.140000  
+metal5          H         1.00         0.140000  
+metal6          V         1.00         0.140000  
+metal7          H         1.00         0.400000  
+metal8          V         1.00         0.400000  
+metal9          H         1.00         0.800000  
+metal10         V         1.00         0.800000  
+
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'alu_conv' using 'high' effort.
+Warning : The Parallel Incremental Optimization failed. [MAP-136]
+        : Cannot run parallel IOPT, design size less than 130000
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+-------------------------------------------------------------------------------
+ init_iopt                  1135        0         0         0      166
+ const_prop                 1135        0         0         0      166
+ simp_cc_inputs             1086        0         0         0      166
+ hi_fo_buf                  1086        0         0         0      166
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       hi_fo_buf         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                 1086        0         0         0      166
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+        in_phase         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+         crr_220         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_200         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_300         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_400         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_111         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_210         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_110         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_101         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_201         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_211         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+        in_phase         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+ init_drc                   1086        0         0         0      166
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+ incr_max_cap               1127        0         0         0      158
+ incr_max_cap               1221        0         0         0       74
+ incr_max_cap               1261        0         0         0       67
+ incr_max_cap               1271        0         0         0       51
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st        64  (        0 /        0 )  0.00
+        plc_star        64  (        0 /        0 )  0.00
+      drc_buf_sp       128  (       27 /       64 )  0.04
+        drc_bufs        74  (       11 /       37 )  0.03
+        drc_fopt        26  (        0 /        0 )  0.01
+        drc_bufb        26  (        0 /        0 )  0.00
+      simple_buf        26  (        0 /        0 )  0.00
+             dup        26  (        0 /        0 )  0.00
+       crit_dnsz        10  (       10 /       10 )  0.01
+       crit_upsz        16  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      drc_buf_sp         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_tns                   1271        0         0         0       51
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+            fopt         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+       crr_local         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+
+ init_area                  1271        0         0         0       51
+ rem_buf                    1217        0         0         0       51
+ rem_inv                    1127        0         0         0       51
+ merge_bi                   1124        0         0         0       51
+ io_phase                   1115        0         0         0       51
+ gate_comp                  1112        0         0         0       51
+ glob_area                  1112        0         0         0       50
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         0  (        0 /        0 )  0.00
+         rem_buf        27  (       16 /       16 )  0.02
+         rem_inv        30  (       28 /       28 )  0.03
+        merge_bi         1  (        1 /        1 )  0.00
+      rem_inv_qb         0  (        0 /        0 )  0.00
+    seq_res_area         0  (        0 /        0 )  0.00
+        io_phase         3  (        3 /        3 )  0.00
+       gate_comp         1  (        1 /        1 )  0.02
+       gcomp_mog         0  (        0 /        0 )  0.01
+       glob_area        19  (        2 /       19 )  0.00
+       area_down         1  (        0 /        0 )  0.00
+  gate_deco_area         0  (        0 /        0 )  0.00
+         rem_buf        11  (        0 /        0 )  0.01
+         rem_inv         1  (        0 /        0 )  0.00
+        merge_bi         0  (        0 /        0 )  0.00
+      rem_inv_qb         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                 1112        0         0         0       50
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+         crr_220         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_200         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_300         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_400         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_111         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_210         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_110         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_101         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_201         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_211         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+        in_phase         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+ init_drc                   1112        0         0         0       50
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+ incr_max_cap               1121        0         0         0       37
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st        39  (        0 /        0 )  0.00
+        plc_star        39  (        0 /        0 )  0.00
+        drc_bufs        78  (        1 /       39 )  0.02
+        drc_fopt        38  (        0 /        0 )  0.01
+        drc_bufb        38  (        0 /        0 )  0.00
+      simple_buf        38  (        0 /        0 )  0.00
+             dup        38  (        0 /        0 )  0.00
+       crit_dnsz        10  (       10 /       10 )  0.01
+       crit_upsz        28  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_tns                   1121        0         0         0       37
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+            fopt         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+       crr_local         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+
+ init_area                  1121        0         0         0       37
+ rem_buf                    1118        0         0         0       37
+ rem_inv                    1115        0         0         0       37
+ merge_bi                   1112        0         0         0       37
+ glob_area                  1112        0         0         0       37
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         0  (        0 /        0 )  0.00
+         rem_buf        11  (        1 /        1 )  0.01
+         rem_inv         4  (        1 /        1 )  0.00
+        merge_bi         1  (        1 /        1 )  0.00
+      rem_inv_qb         0  (        0 /        0 )  0.00
+        io_phase         0  (        0 /        0 )  0.00
+       gate_comp         0  (        0 /        0 )  0.02
+       gcomp_mog         0  (        0 /        0 )  0.01
+       glob_area        19  (        1 /       19 )  0.00
+       area_down         1  (        0 /        0 )  0.00
+  gate_deco_area         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                 1112        0         0         0       37
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+        in_phase         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+
+ init_drc                   1112        0         0         0       37
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st        28  (        0 /        0 )  0.00
+        plc_star        28  (        0 /        0 )  0.00
+        drc_bufs        56  (        0 /       28 )  0.02
+        drc_fopt        28  (        0 /        0 )  0.00
+        drc_bufb        28  (        0 /        0 )  0.00
+      simple_buf        28  (        0 /        0 )  0.00
+             dup        28  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz        28  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+  Inserting buffers to remove assign statements...
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay                 1112        0         0         0       37
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+        in_phase         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+
+ init_tns                   1112        0         0         0       37
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+            fopt         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+
+ init_drc                   1112        0         0         0       37
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st        28  (        0 /        0 )  0.00
+        plc_star        28  (        0 /        0 )  0.00
+        drc_bufs        56  (        0 /       28 )  0.02
+        drc_fopt        28  (        0 /        0 )  0.00
+        drc_bufb        28  (        0 /        0 )  0.00
+      simple_buf        28  (        0 /        0 )  0.00
+             dup        28  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz        28  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+Info    : Done incrementally optimizing. [SYNTH-8]
+        : Done incrementally optimizing 'alu_conv'.
+
+EC INFO: Total cpu-time and memory after INCR: 8 sec., 125.00 MBytes.
+
+        Initializing DRC engine.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+
+EC INFO: Total cpu-time and memory after ASSIGN: 8 sec., 125.00 MBytes.
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Finished SDC export (command execution time mm:ss (real) = 00:00).
+Info    : Design has no library or power domains. [ENC_MSV-301]
+        : No power domains will be created for Encounter.
+
+EC INFO: Total cpu-time and memory after WRITE: 8 sec., 126.00 MBytes.
+
+  Setting attribute of root '/': 'interconnect_mode' = wireload
+  Setting attribute of design 'alu_conv': 'force_wireload' = none
+  Setting attribute of root '/': 'wireload_mode' = top
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TLAT_X1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'NangateOpenCellLibrary_typical.lib', Total cells: 134, Unusable cells: 10.
+	List of unusable cells: 'ANTENNA_X1 FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32 LOGIC0_X1 LOGIC1_X1 TLAT_X1 .'
+        Tracing clock networks.
+        Levelizing the circuit.
+        Applying wireload models.
+        Computing net loads.
+        Computing delays.
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'alu_conv'.
+============================================================
+  Generated by:           Encounter(R) RTL Compiler RC14.20 - v14.20-p005_1
+  Generated on:           May 15 2017  03:27:04 pm
+  Module:                 alu_conv
+  Technology library:     NangateOpenCellLibrary revision 1.0
+  Operating conditions:   typical (balanced_tree)
+  Wireload mode:          top
+  Area mode:              timing library
+============================================================
+
+      Pin           Type      Fanout Load Slew Delay Arrival   
+                                     (fF) (ps)  (ps)   (ps)    
+---------------------------------------------------------------
+a_sel              in port         1  0.7    0    +0       0 F 
+drc_buf_sp4287/A                                  +0       0   
+drc_buf_sp4287/Z   CLKBUF_X1       8 14.4   35   +60      60 F 
+g3986/S                                           +0      60   
+g3986/Z            MUX2_X1         5  9.9   27   +82     142 R 
+g3978/A                                           +0     142   
+g3978/ZN           INV_X1          4  5.9   12   +18     161 F 
+g3937/B1                                          +0     161   
+g3937/ZN           AOI21_X1        1  1.7   22   +27     188 R 
+g3889/A1                                          +0     188   
+g3889/ZN           NOR2_X1         2  3.6    9   +14     202 F 
+g4009/CI                                          +0     202   
+g4009/CO           FA_X1           2  3.6   16   +72     274 F 
+g4008/CI                                          +0     274   
+g4008/CO           FA_X1           2  3.6   16   +74     348 F 
+g4007/CI                                          +0     348   
+g4007/CO           FA_X1           2  3.6   16   +74     422 F 
+g4006/CI                                          +0     422   
+g4006/CO           FA_X1           2  3.6   16   +74     496 F 
+g4005/CI                                          +0     496   
+g4005/CO           FA_X1           2  3.6   16   +74     571 F 
+g3806/A                                           +0     571   
+g3806/Z            MUX2_X1         2  3.0   12   +64     635 F 
+g3800/A1                                          +0     635   
+g3800/ZN           NAND2_X1        1  1.6   10   +15     650 R 
+g3797/A                                           +0     650   
+g3797/ZN           OAI211_X1       1  1.5   18   +26     676 F 
+g3793/A                                           +0     676   
+g3793/ZN           AOI21_X1        1  1.7   22   +43     719 R 
+g3792/A                                           +0     719   
+g3792/ZN           INV_X1          1  0.1    5    +5     724 F 
+out[7]             out port                       +0     724 F 
+---------------------------------------------------------------
+Exception    : 'path_delays/alu_conv.sdc_line_13'    1000ps
+Cost Group   : 'I2O' (path_group 'I2O')
+Timing slack :     276ps 
+Start-point  : a_sel
+End-point    : out[7]
+
+
+EC INFO: Total cpu-time and memory after FINAL: 8 sec., 126.00 MBytes.
+
+
+EC INFO: End at: 05/15/2017 15:27:04
+
+EC INFO: Elapsed-time: 4 seconds
+
+rc:/> 
+Normal exit.
+Finished compileDesign (elapsed-time: 10 seconds, or 0:0:10).
+
+*** Memory Usage v#1 (Current mem = 373.469M, initial mem = 97.723M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Encounter" (totcpu=0:00:28.0, real=0:02:52, mem=373.5M) ---

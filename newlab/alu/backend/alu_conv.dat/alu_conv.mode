@@ -1,0 +1,61 @@
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockGatingCheck true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -cppr none }
+catch { setAnalysisMode -enableMultipleDriveNet true }
+catch { setAnalysisMode -log true }
+catch { setAnalysisMode -sequentialConstProp false }
+catch { setAnalysisMode -skew true }
+catch { setAnalysisMode -timeBorrowing true }
+catch { setAnalysisMode -timingSelfLoopsNoSkew false }
+catch { setAnalysisMode -usefulSkew false }
+catch { setAnalysisMode -useOutputPinCap true }
+catch { setAnalysisMode -virtualIPO false }
+catch { setAnalysisMode -warn true }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -effort high }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -setupTargetSlack 0 }
+setExtractRCMode  -engine preRoute
+catch { setCTSMode -engine ck }
+catch { setCTSMode -moveGateLimit 25 }
+catch {setNanoRouteMode -quiet -drouteFixAntenna false}
+catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "false"}
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 6}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven false}
+
+catch { setPlaceMode -checkRoute false }
+catch { setPlaceMode -clkGateAware true }
+catch { setPlaceMode -congEffort auto }
+catch { setPlaceMode -CPR true }
+catch { setPlaceMode -fp false }
+catch { setPlaceMode -hardFence true }
+catch { setPlaceMode -ignoreScan true }
+catch { setPlaceMode -ignoreSpare false }
+catch { setPlaceMode -incrPlaceForOpt true }
+catch { setPlaceMode -moduleAwareSpare false }
+catch { setPlaceMode -modulePlan true }
+catch { setPlaceMode -placeIoPins false }
+catch { setPlaceMode -powerDriven false }
+catch { setPlaceMode -preserveRouting false }
+catch { setPlaceMode -reorderScan true }
+catch { setPlaceMode -rmAffectedRouting false }
+catch { setPlaceMode -rplaceIncrNPRollBackLevel 3 }
+catch { setPlaceMode -swapEEQ false }
+catch { setPlaceMode -timingDriven true }
+catch { setIlmMode -highFanoutPort true -loopBack false -keepFlatten false }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignore_clock_idealness false }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setPinAssignMode -pinEditInBatch true }
+catch { setTrialRouteMode -handlePreroute true }
+catch { setTrialRouteMode -keepMarkedOptRoutes true }
+catch { setImportMode -config true }
+catch { setImportMode -keepEmptyModule true }
+catch { setImportMode -treatUndefinedCellAsBbox false }
+catch { setEndCapMode -boundary_tap false }

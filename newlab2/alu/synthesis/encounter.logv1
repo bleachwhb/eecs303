@@ -1,0 +1,2253 @@
+Checking out Encounter license ...
+[05/30 11:40:32     0s] Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+[05/30 11:40:35     0s] 	Maximum number of instance allowed (1 x 50000).
+[05/30 11:40:35     0s] SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+[05/30 11:40:38     0s] This Encounter release has been compiled with OA version 22.43-p033.
+[05/30 11:40:44     0s] 
+[05/30 11:40:45     1s] *******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+[05/30 11:40:55     2s] @(#)CDS: Encounter v14.14-s028_1 (64bit) 09/15/2014 13:21 (Linux 2.6)
+[05/30 11:40:55     2s] @(#)CDS: NanoRoute v14.14-s012 NR140903-2301/14_14-UB (database version 2.30, 241.6.1) {superthreading v1.19}
+[05/30 11:40:55     2s] @(#)CDS: CeltIC v14.14-s011_1 (64bit) 09/01/2014 04:04:31 (Linux 2.6.18-194.el5)
+[05/30 11:40:55     2s] @(#)CDS: AAE 14.14-s011 (64bit) 09/15/2014 (Linux 2.6.18-194.el5)
+[05/30 11:40:55     2s] @(#)CDS: CTE 14.14-s011_1 (64bit) Sep  3 2014 06:24:39 (Linux 2.6.18-194.el5)
+[05/30 11:40:55     2s] @(#)CDS: CPE v14.14-s022
+[05/30 11:40:55     2s] @(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+[05/30 11:40:55     2s] --- Starting "Encounter v14.14-s028_1" on Tue May 30 11:40:55 2017 (mem=97.7M) ---
+[05/30 11:40:55     2s] --- Running on tlab-01.ece.northwestern.edu (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) ---
+[05/30 11:40:55     2s] This version was compiled on Mon Sep 15 13:21:48 PDT 2014.
+[05/30 11:40:55     2s] Set DBUPerIGU to 1000.
+[05/30 11:40:55     2s] Set net toggle Scale Factor to 1.00
+[05/30 11:40:55     2s] Set Shrink Factor to 1.00000
+[05/30 11:40:55     2s] 
+[05/30 11:40:56     3s] **INFO:  MMMC transition support version v31-84 
+[05/30 11:40:56     3s] 
+[05/30 11:40:56     3s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/30 11:40:56     3s] <CMD> suppressMessage ENCEXT-2799
+[05/30 11:40:56     3s] <CMD> win
+[05/30 11:40:56     3s] <CMD> loadRTLConfig ../../alu_conv.conf
+[05/30 11:42:04     6s] Loaded in RTL config file ../../alu_conv.conf.
+[05/30 11:42:05     6s] <CMD> compileDesign -noCommit
+[05/30 11:42:45     8s] Prepare to launch compileDesign.
+[05/30 11:42:45     8s]       synEffort = medium
+[05/30 11:42:45     8s]       mapEffort = high
+[05/30 11:42:45     8s]       incrEffort = high
+[05/30 11:42:45     8s]       opCond = 
+[05/30 11:42:45     8s]       wlmName = 
+[05/30 11:42:45     8s]       wlmLibrary = 
+[05/30 11:42:45     8s]       wlmMode = 
+[05/30 11:42:45     8s]       rcVar = 
+[05/30 11:42:45     8s]       rcAttr = 
+[05/30 11:42:45     8s]       preloadInclude = 
+[05/30 11:42:45     8s]       postloadInclude = 
+[05/30 11:42:45     8s]       prewriteInclude = 
+[05/30 11:42:45     8s]       endInclude = 
+[05/30 11:42:45     8s]       report = all
+[05/30 11:42:45     8s]       outDir = ./r2g_output
+[05/30 11:42:45     8s]       setupOnly = 0
+[05/30 11:42:45     8s]       removeTempFiles = 0
+[05/30 11:42:45     8s] 
+[05/30 11:42:45     8s] Launching rc -f ./r2g_input/r2g.tcl -logfile /dev/null ...
+[05/30 11:42:46     8s] Finished loading tool scripts (9 seconds elapsed)
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s]                        Cadence Encounter(R) RTL Compiler
+[05/30 11:43:04     8s]           Version RC14.20 - v14.20-p005_1 (64-bit), built Oct 28 2014
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s] Copyright notice: Copyright 1997-2014 Cadence Design Systems, Inc. All rights 
+[05/30 11:43:04     8s] reserved worldwide. 
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s] WARNING: This version of RC is 945 days old.
+[05/30 11:43:04     8s]          Visit downloads.cadence.com for the latest release of RC.
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s] ================================================================================
+[05/30 11:43:04     8s]                   Welcome to Cadence Encounter(R) RTL Compiler
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s] Here is a quick introduction on how to access our product information.  
+[05/30 11:43:04     8s] If you do not want this message to appear in the future, create an 
+[05/30 11:43:04     8s] initialization file (an empty file will do) in your home directory 
+[05/30 11:43:04     8s] called '~/.cadence/.synth_init'.
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s]   To access the product documentation in HTML and PDF, type 'cdnshelp'
+[05/30 11:43:04     8s]     at the system prompt. 
+[05/30 11:43:04     8s]   For a list of available commands, type 'help'. 
+[05/30 11:43:04     8s]   To view a man page for a command, type 'man <commandName>'.
+[05/30 11:43:04     8s]   To view a man page for an error message, type 'man <messageID>'.
+[05/30 11:43:04     8s]   For a list of all possible object types, type 'get_attribute -help'.
+[05/30 11:43:04     8s]   For a list of all available attributes by object type, type
+[05/30 11:43:04     8s]     'get_attribute * <object_type> -help'.
+[05/30 11:43:04     8s]   For a list of all attributes for every object type, type
+[05/30 11:43:04     8s]     'get_attribute * * -help'
+[05/30 11:43:04     8s]   To list only writable attributes, substitute 'get_attribute' with
+[05/30 11:43:04     8s]     'set_attribute'.
+[05/30 11:43:04     8s]   To get a template script to run RTL Compiler, use the 'write_template'
+[05/30 11:43:04     8s]     command.
+[05/30 11:43:04     8s]   To get a template script to run Conformal based on the current RTL
+[05/30 11:43:04     8s]     Compiler session, use the 'write_do_lec' command.
+[05/30 11:43:04     8s]   
+[05/30 11:43:04     8s]   Obsolete attributes in the current tool version.
+[05/30 11:43:04     8s]   To learn more, type 'get_attribute -help <attribute> <object>'.
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s]             object  attribute
+[05/30 11:43:04     8s]             ------  ---------
+[05/30 11:43:04     8s]        cpf_command  synthesize_complex_expressions
+[05/30 11:43:04     8s]     cpf_command_id  current_set_instance_macro
+[05/30 11:43:04     8s]     cpf_command_id  current_set_instance_module
+[05/30 11:43:04     8s]     cpf_command_id  done_in_apply_cpf
+[05/30 11:43:04     8s]     cpf_command_id  done_in_write_cpf
+[05/30 11:43:04     8s]     cpf_command_id  macro_definition_command
+[05/30 11:43:04     8s]     cpf_command_id  rc_command
+[05/30 11:43:04     8s]             design  disable_power_mode_factorization
+[05/30 11:43:04     8s]             design  dp_perform_rewriting_operations
+[05/30 11:43:04     8s]             design  lp_clock_gating_hierarchical
+[05/30 11:43:04     8s]             design  lp_map_to_srpg_cells
+[05/30 11:43:04     8s]             design  lp_optimize_dynamic_power_first
+[05/30 11:43:04     8s]             design  lp_srpg_pg_driver
+[05/30 11:43:04     8s]           instance  black_box
+[05/30 11:43:04     8s]           instance  dft_inherited_dont_scan
+[05/30 11:43:04     8s]           instance  gint_has_connected_pg_pin
+[05/30 11:43:04     8s]           instance  lp_map_to_srpg_cells
+[05/30 11:43:04     8s]           instance  lp_map_to_srpg_type
+[05/30 11:43:04     8s]           instance  lp_srpg_pg_driver
+[05/30 11:43:04     8s]            libcell  black_box
+[05/30 11:43:04     8s]            libcell  location
+[05/30 11:43:04     8s]                net  hier_net
+[05/30 11:43:04     8s]                net  logic0_driven
+[05/30 11:43:04     8s]                net  logic1_driven
+[05/30 11:43:04     8s]       power_domain  shutoff_signal
+[05/30 11:43:04     8s]       power_domain  shutoff_signal_polarity
+[05/30 11:43:04     8s]               root  auto_ungroup_min_effort
+[05/30 11:43:04     8s]               root  degenerate_complex_seqs
+[05/30 11:43:04     8s]               root  disable_power_mode
+[05/30 11:43:04     8s]               root  dp_perform_csa_operations
+[05/30 11:43:04     8s]               root  dp_perform_rewriting_operations
+[05/30 11:43:04     8s]               root  dp_perform_sharing_operations
+[05/30 11:43:04     8s]               root  dp_perform_speculation_operations
+[05/30 11:43:04     8s]               root  driver_for_unloaded_ports
+[05/30 11:43:04     8s]               root  enable_parallel_iopt
+[05/30 11:43:04     8s]               root  enc_in_place_opt
+[05/30 11:43:04     8s]               root  enc_opt_drv
+[05/30 11:43:04     8s]               root  hdl_flatten_array
+[05/30 11:43:04     8s]               root  hdl_old_reg_naming
+[05/30 11:43:04     8s]               root  hdl_reg_naming_style_scalar
+[05/30 11:43:04     8s]               root  hdl_reg_naming_style_vector
+[05/30 11:43:04     8s]               root  hdl_trim_target_index
+[05/30 11:43:04     8s]               root  ignore_unknown_embedded_commands
+[05/30 11:43:04     8s]               root  lbr_async_clr_pre_seqs_interchangable
+[05/30 11:43:04     8s]               root  lp_clock_gating_hierarchical
+[05/30 11:43:04     8s]               root  lp_insert_clock_gating_incremental
+[05/30 11:43:04     8s]               root  lp_iopt_mvt_multipass_flow
+[05/30 11:43:04     8s]               root  lp_multi_vt_optimization_effort
+[05/30 11:43:04     8s]               root  ovf_mode
+[05/30 11:43:04     8s]               root  ovf_verification_directory
+[05/30 11:43:04     8s]               root  ple_parameter_source_priority
+[05/30 11:43:04     8s]               root  power_optimization_effort
+[05/30 11:43:04     8s]               root  pqos_virtual_buffer
+[05/30 11:43:04     8s]               root  retime_preserve_state_points
+[05/30 11:43:04     8s]               root  wlec_env_var
+[05/30 11:43:04     8s]               root  wlec_flat_r2n
+[05/30 11:43:04     8s]               root  wlec_no_exit
+[05/30 11:43:04     8s]               root  wlec_old_lp_ec_flow
+[05/30 11:43:04     8s]               root  wlec_save_ssion
+[05/30 11:43:04     8s]               root  wlec_sim_lib
+[05/30 11:43:04     8s]               root  wlec_sim_plus_lib
+[05/30 11:43:04     8s]               root  wlec_skip_iso_check_hier_compare
+[05/30 11:43:04     8s]               root  wlec_skip_lvl_check_hier_compare
+[05/30 11:43:04     8s]               root  wlec_verbose
+[05/30 11:43:04     8s]          subdesign  allow_csa_subdesign
+[05/30 11:43:04     8s]          subdesign  allow_sharing_subdesign
+[05/30 11:43:04     8s]          subdesign  allow_speculation_subdesign
+[05/30 11:43:04     8s]          subdesign  auto_ungroup_ok
+[05/30 11:43:04     8s]          subdesign  dp_perform_rewriting_operations
+[05/30 11:43:04     8s]          subdesign  lp_clock_gating_hierarchical
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s] Send us feedback at rc_feedback@cadence.com.
+[05/30 11:43:04     8s] ================================================================================
+[05/30 11:43:04     8s] 
+[05/30 11:43:04     8s] Sourcing './r2g_input/r2g.tcl' (Tue May 30 11:43:04 -0500 2017)...
+[05/30 11:43:04     8s] Start at: 05/30/2017 11:43:04
+[05/30 11:43:04     8s] Sourcing '/vol/cadence2014/RC142/tools.lnx86/lib/etc/load_etc.tcl' (Tue May 30 11:43:04 -0500 2017)...
+[05/30 11:43:04     8s] Sourcing '/vol/cadence2014/RC142/tools.lnx86/lib/etc/toolbox/insert_io_buffers.tcl' (Tue May 30 11:43:04 -0500 2017)...
+[05/30 11:43:04     8s] Sourcing '/vol/cadence2014/RC142/tools.lnx86/lib/etc/toolbox/performance_statistics.tcl' (Tue May 30 11:43:04 -0500 2017)...
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'information_level' = 9
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'hdl_max_loop_limit' = 1024
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'hdl_reg_naming_style' = %s_reg%s
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'gen_module_prefix' = G2C_DP_
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'optimize_constant_0_flops' = false
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'optimize_constant_1_flops' = false
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'input_pragma_keyword' = cadence synopsys get2chip g2c
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'synthesis_off_command' = translate_off
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'synthesis_on_command' = translate_on
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'input_case_cover_pragma' = full_case
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'input_case_decode_pragma' = parallel_case
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'input_synchro_reset_pragma' = sync_set_reset
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'input_synchro_reset_blk_pragma' = sync_set_reset_local
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'input_asynchro_reset_pragma' = async_set_reset
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'input_asynchro_reset_blk_pragma' = async_set_reset_local
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'script_begin' = dc_script_begin
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'script_end' = dc_script_end
+[05/30 11:43:04     8s]   Setting attribute of message 'LBR-30': 'max_print' = 0
+[05/30 11:43:04     8s]   Setting attribute of message 'LBR-31': 'max_print' = 0
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'shrink_factor' = 1.0
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'hdl_search_path' = ./
+[05/30 11:43:04     8s]   Setting attribute of root '/': 'lib_search_path' = ./
+[05/30 11:43:04     8s]     Loading library /vol/ece303/encounter_tutorial/NangateOpenCellLibrary_typical.lib
+[05/30 11:43:04     8s] Info    : An unsupported construct was detected in this library. [LBR-40]
+[05/30 11:43:05     8s]         : (NangateOpenCellLibrary_typical.lib, block starting at: 48) Unknown Liberty attribute (library_features) encountered. Ignoring
+[05/30 11:43:05     8s]         : Check to see if this construct is really needed for synthesis.  Many liberty constructs are not actually required.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:05     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library.
+[05/30 11:43:05     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:06     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library.
+[05/30 11:43:06     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:06     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library.
+[05/30 11:43:06     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:06     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library.
+[05/30 11:43:06     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:06     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library.
+[05/30 11:43:06     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:06     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library.
+[05/30 11:43:06     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:06     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library.
+[05/30 11:43:06     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:06     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library.
+[05/30 11:43:06     8s] Info    : Could not find an attribute in the library. [LBR-436]
+[05/30 11:43:06     8s]         : Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library.
+[05/30 11:43:06     8s] 
+[05/30 11:43:06     8s]   Message Summary for Library /vol/ece303/encounter_tutorial/NangateOpenCellLibrary_typical.lib:
+[05/30 11:43:06     8s]   **********************************************************************************************
+[05/30 11:43:06     8s]   Could not find an attribute in the library. [LBR-436]: 147
+[05/30 11:43:06     8s]   An unsupported construct was detected in this library. [LBR-40]: 1
+[05/30 11:43:06     8s]   **********************************************************************************************
+[05/30 11:43:06     8s]  
+[05/30 11:43:06     8s] Info    : Created nominal operating condition. [LBR-412]
+[05/30 11:43:06     8s]         : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 25.000000) in library 'NangateOpenCellLibrary_typical.lib'.
+[05/30 11:43:06     8s]         : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'ANTENNA_X1' must have an output pin.
+[05/30 11:43:06     8s]         : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'ANTENNA_X1' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X1' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X1' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X2' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X2' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X4' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X4' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X8' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X8' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X16' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X16' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X32' must have an output pin.
+[05/30 11:43:06     8s] Warning : Library cell has no output pins defined. [LBR-9]
+[05/30 11:43:06     8s]         : Library cell 'FILLCELL_X32' must have an output pin.
+[05/30 11:43:06     8s]   Setting attribute of root '/': 'library' = /vol/ece303/encounter_tutorial/NangateOpenCellLibrary_typical.lib
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via1_4' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via1_0' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via1_1' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via1_2' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via1_3' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via1_5' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via1_6' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via1_7' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via1_8' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via2_8' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via2_4' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via2_5' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via2_7' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via2_6' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via2_0' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via2_1' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via2_2' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via2_3' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via3_2' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via3_0' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via3_1' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via4_0' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via5_0' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via6_0' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via7_0' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via8_0' has no resistance value.
+[05/30 11:43:06     8s] Info    : Via with no resistance will have a value of '0.0' assigned. [PHYS-129]
+[05/30 11:43:06     8s]         : Via 'via9_0' has no resistance value.
+[05/30 11:43:06     8s] 
+[05/30 11:43:06     8s]   According to lef_library, there are total 10 routing layers [ V(5) / H(5) ]
+[05/30 11:43:06     8s] 
+[05/30 11:43:06     8s] Warning : The variant range of wire parameters is too large. [PHYS-12]
+[05/30 11:43:06     8s]         : The variant range (0.07, 0.8) of 'WIDTH' for layers 'metal3' and 'metal9' is too large.
+[05/30 11:43:06     8s]         : Make sure to check the consistency of the parameters.
+[05/30 11:43:06     8s] Warning : The variant range of wire parameters is too large. [PHYS-12]
+[05/30 11:43:06     8s]         : The variant range (0.14, 1.6) of 'PITCH' for layers 'metal3' and 'metal9' is too large.
+[05/30 11:43:06     8s] Warning : The variant range of wire parameters is too large. [PHYS-12]
+[05/30 11:43:06     8s]         : The variant range (0.065, 0.8) of 'MINSPACING' for layers 'metal1' and 'metal10' is too large.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'FA_X1'.
+[05/30 11:43:06     8s]         : Setting the 'timing_sense' to non_unate.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'FA_X1'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'FA_X1'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'HA_X1'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'HA_X1'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'MUX2_X1'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'MUX2_X2'.
+[05/30 11:43:06     8s] Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+[05/30 11:43:06     8s]         : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TLAT_X1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+[05/30 11:43:06     8s]         : The 'timing_sense' attribute will be respected.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'B' and 'ZN' in libcell 'XNOR2_X1'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'A' and 'ZN' in libcell 'XNOR2_X1'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'B' and 'ZN' in libcell 'XNOR2_X2'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'A' and 'ZN' in libcell 'XNOR2_X2'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'XOR2_X1'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'XOR2_X1'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'B' and 'Z' in libcell 'XOR2_X2'.
+[05/30 11:43:06     8s] Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+[05/30 11:43:06     8s]         : Non_unate 'timing_sense' inferred between pin 'A' and 'Z' in libcell 'XOR2_X2'.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '5K_hvratio_1_1' is non-monotonic.
+[05/30 11:43:06     8s]         : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '5K_hvratio_1_2' is non-monotonic.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '5K_hvratio_1_4' is non-monotonic.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '3K_hvratio_1_1' is non-monotonic.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '3K_hvratio_1_4' is non-monotonic.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '1K_hvratio_1_1' is non-monotonic.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '1K_hvratio_1_2' is non-monotonic.
+[05/30 11:43:06     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:06     8s]         : 'Length' table in wireload model '1K_hvratio_1_4' is non-monotonic.
+[05/30 11:43:06     8s] Info    : Found unusable library cells. [LBR-415]
+[05/30 11:43:06     8s]         : Library: 'NangateOpenCellLibrary_typical.lib', Total cells: 134, Unusable cells: 10.
+[05/30 11:43:06     8s] 	List of unusable cells: 'ANTENNA_X1 FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32 LOGIC0_X1 LOGIC1_X1 TLAT_X1 .'
+[05/30 11:43:06     8s]         : For more information, refer to 'Cells Identified as Unusable' in the RC User Guide. The number of unusable cells that is listed depends on the setting of the 'information_level' root attribute. If set to a value less than 6, the list is limited to 10 unusable cells. If set to a value equal to or higher than 6, all unusable cells are listed.
+[05/30 11:43:06     8s]   Setting attribute of root '/': 'lef_library' = /vol/ece303/encounter_tutorial/NangateOpenCellLibrary.lef
+[05/30 11:43:06     8s] 
+[05/30 11:43:06     8s] EC INFO: Total cpu-time and memory after SETUP: 5 sec., 114.00 MBytes.
+[05/30 11:43:06     8s] 
+[05/30 11:43:06     8s]   Setting attribute of root '/': 'hdl_language' = v2001
+[05/30 11:43:06     8s]             Reading Verilog file './../../alu_conv.v'
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] EC INFO: Total cpu-time and memory after LOAD: 5 sec., 114.00 MBytes.
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+[05/30 11:43:07     8s]         : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TLAT_X1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+[05/30 11:43:07     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:07     8s]         : 'Length' table in wireload model '5K_hvratio_1_1' is non-monotonic.
+[05/30 11:43:07     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:07     8s]         : 'Length' table in wireload model '5K_hvratio_1_2' is non-monotonic.
+[05/30 11:43:07     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:07     8s]         : 'Length' table in wireload model '5K_hvratio_1_4' is non-monotonic.
+[05/30 11:43:07     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:07     8s]         : 'Length' table in wireload model '3K_hvratio_1_1' is non-monotonic.
+[05/30 11:43:07     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:07     8s]         : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+[05/30 11:43:07     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:07     8s]         : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+[05/30 11:43:07     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:07     8s]         : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+[05/30 11:43:07     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:07     8s]         : 'Length' table in wireload model '3K_hvratio_1_4' is non-monotonic.
+[05/30 11:43:07     8s] Warning : Non-monotonic wireload model found. [LBR-81]
+[05/30 11:43:07     8s]         : 'Length' table in wireload model '1K_hvratio_1_1' is non-monotonic.
+[05/30 11:43:07     8s] Info    : Found unusable library cells. [LBR-415]
+[05/30 11:43:07     8s]         : Library: 'NangateOpenCellLibrary_typical.lib', Total cells: 134, Unusable cells: 10.
+[05/30 11:43:07     8s] 	List of unusable cells: 'ANTENNA_X1 FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32 LOGIC0_X1 LOGIC1_X1 TLAT_X1 .'
+[05/30 11:43:07     8s] Info    : Elaborating Design. [ELAB-1]
+[05/30 11:43:07     8s]         : Elaborating top-level block 'alu_conv' from file './../../alu_conv.v'.
+[05/30 11:43:07     8s] Warning : Using default parameter value for module elaboration. [CDFG-818]
+[05/30 11:43:07     8s]         : Elaborating block 'alu_conv' with default parameters value.
+[05/30 11:43:07     8s] Info    : Bitwidth mismatch in assignment. [CDFG-372]
+[05/30 11:43:07     8s]         : Width of left hand side 'A_int' [16] doesn't match the width of right hand side [32] in assignment in file './../../alu_conv.v' on line 14.
+[05/30 11:43:07     8s] Info    : Bitwidth mismatch in assignment. [CDFG-372]
+[05/30 11:43:07     8s]         : Width of left hand side 'B_int' [16] doesn't match the width of right hand side [32] in assignment in file './../../alu_conv.v' on line 15.
+[05/30 11:43:07     8s] Info    : Bitwidth mismatch in assignment. [CDFG-372]
+[05/30 11:43:07     8s]         : Width of left hand side 'C_int' [18] doesn't match the width of right hand side [32] in assignment in file './../../alu_conv.v' on line 16.
+[05/30 11:43:07     8s] Info    : Bitwidth mismatch in assignment. [CDFG-372]
+[05/30 11:43:07     8s]         : Width of left hand side 'Y' [18] doesn't match the width of right hand side [32] in assignment in file './../../alu_conv.v' on line 18.
+[05/30 11:43:07     8s] Info    : Bitwidth mismatch in assignment. [CDFG-372]
+[05/30 11:43:07     8s]         : Width of left hand side 'C_int' [18] doesn't match the width of right hand side [16] in assignment in file './../../alu_conv.v' on line 28.
+[05/30 11:43:07     8s] Info    : An implementation was inferred. [CWD-19]
+[05/30 11:43:07     8s]         : The implementation '/hdl_libraries/GB/components/add_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=16 B=16 Z=17) at line 28 in the file './../../alu_conv.v'.
+[05/30 11:43:07     8s] Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+[05/30 11:43:07     8s]         : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=16 B=16 Z=17) at line 28 in the file './../../alu_conv.v' will be considered in the following order: {'/hdl_libraries/GB/components/add_unsigned/implementations/very_fast' (priority 1), '/hdl_libraries/GB/components/add_unsigned/implementations/medium' (priority 1), '/hdl_libraries/GB/components/add_unsigned/implementations/slow' (priority 1)}
+[05/30 11:43:07     8s] Info    : An implementation was inferred. [CWD-19]
+[05/30 11:43:07     8s]         : The implementation '/hdl_libraries/GB/components/add_unsigned/implementations/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=16 B=18 Z=18) at line 33 in the file './../../alu_conv.v'.
+[05/30 11:43:07     8s] Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+[05/30 11:43:07     8s]         : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=16 B=18 Z=18) at line 33 in the file './../../alu_conv.v' will be considered in the following order: {'/hdl_libraries/GB/components/add_unsigned/implementations/very_fast' (priority 1), '/hdl_libraries/GB/components/add_unsigned/implementations/medium' (priority 1), '/hdl_libraries/GB/components/add_unsigned/implementations/slow' (priority 1)}
+[05/30 11:43:07     8s] Info    : Done Elaborating Design. [ELAB-3]
+[05/30 11:43:07     8s]         : Done elaborating 'alu_conv'.
+[05/30 11:43:07     8s]         Computing net loads.
+[05/30 11:43:07     8s]   Setting attribute of root '/': 'remove_assigns' = true
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] EC INFO: Total cpu-time and memory after ELAB: 5 sec., 115.00 MBytes.
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s]   Setting attribute of root '/': 'use_scan_seqs_for_non_dft' = false
+[05/30 11:43:07     8s] Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+[05/30 11:43:07     8s]         : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TLAT_X1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+[05/30 11:43:07     8s] Info    : Found unusable library cells. [LBR-415]
+[05/30 11:43:07     8s]         : Library: 'NangateOpenCellLibrary_typical.lib', Total cells: 134, Unusable cells: 10.
+[05/30 11:43:07     8s] 	List of unusable cells: 'ANTENNA_X1 FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32 LOGIC0_X1 LOGIC1_X1 TLAT_X1 .'
+[05/30 11:43:07     8s] Error   : A command argument is of the wrong type. [TUI-66] [parse_options]
+[05/30 11:43:07     8s]         : A floating point number was expected, but '?max' was seen instead.
+[05/30 11:43:07     8s]         : Check the command usage and correct the input to the command.
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] Usage: set_input_delay  [-clock <clock>] [-clock_rise] [-clock_fall]
+[05/30 11:43:07     8s]            [-level_sensitive] [-network_latency_included]
+[05/30 11:43:07     8s]            [-source_latency_included] [-max] [-min] [-rise] [-fall] [-add_delay]
+[05/30 11:43:07     8s]            [-name <string>] <float> <port|pin|port_bus>+
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s]     [-clock <clock>]:
+[05/30 11:43:07     8s]         the clock waveform 
+[05/30 11:43:07     8s]     [-clock_rise]:
+[05/30 11:43:07     8s]         rise clock edge 
+[05/30 11:43:07     8s]     [-clock_fall]:
+[05/30 11:43:07     8s]         fall clock edge 
+[05/30 11:43:07     8s]     [-level_sensitive]:
+[05/30 11:43:07     8s]         clocked obj is a latch 
+[05/30 11:43:07     8s]     [-network_latency_included]:
+[05/30 11:43:07     8s]         value includes clock latency 
+[05/30 11:43:07     8s]     [-source_latency_included]:
+[05/30 11:43:07     8s]         value includes clock latency 
+[05/30 11:43:07     8s]     [-max]:
+[05/30 11:43:07     8s]         maximum delays 
+[05/30 11:43:07     8s]     [-min]:
+[05/30 11:43:07     8s]         minimum delays 
+[05/30 11:43:07     8s]     [-rise]:
+[05/30 11:43:07     8s]         rise delays 
+[05/30 11:43:07     8s]     [-fall]:
+[05/30 11:43:07     8s]         fall delays 
+[05/30 11:43:07     8s]     [-add_delay]:
+[05/30 11:43:07     8s]         don't remove existing delays 
+[05/30 11:43:07     8s]     [-name <string>]:
+[05/30 11:43:07     8s]         a name for the external delay object 
+[05/30 11:43:07     8s]     <float>:
+[05/30 11:43:07     8s]         delay value 
+[05/30 11:43:07     8s]     <port|pin|port_bus>+:
+[05/30 11:43:07     8s]         ports to receive the external delay 
+[05/30 11:43:07     8s] Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+[05/30 11:43:07     8s]         : The 'read_sdc' command encountered an error while processing this command on line '31' of the SDC file '../../alu_conv.sdc': set_input_delay ?max 0.2 -clock clk [get_ports [list A B]].
+[05/30 11:43:07     8s]         : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+[05/30 11:43:07     8s] Error   : A command argument is of the wrong type. [TUI-66] [parse_options]
+[05/30 11:43:07     8s]         : A floating point number was expected, but '?min' was seen instead.
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] Usage: set_input_delay  [-clock <clock>] [-clock_rise] [-clock_fall]
+[05/30 11:43:07     8s]            [-level_sensitive] [-network_latency_included]
+[05/30 11:43:07     8s]            [-source_latency_included] [-max] [-min] [-rise] [-fall] [-add_delay]
+[05/30 11:43:07     8s]            [-name <string>] <float> <port|pin|port_bus>+
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s]     [-clock <clock>]:
+[05/30 11:43:07     8s]         the clock waveform 
+[05/30 11:43:07     8s]     [-clock_rise]:
+[05/30 11:43:07     8s]         rise clock edge 
+[05/30 11:43:07     8s]     [-clock_fall]:
+[05/30 11:43:07     8s]         fall clock edge 
+[05/30 11:43:07     8s]     [-level_sensitive]:
+[05/30 11:43:07     8s]         clocked obj is a latch 
+[05/30 11:43:07     8s]     [-network_latency_included]:
+[05/30 11:43:07     8s]         value includes clock latency 
+[05/30 11:43:07     8s]     [-source_latency_included]:
+[05/30 11:43:07     8s]         value includes clock latency 
+[05/30 11:43:07     8s]     [-max]:
+[05/30 11:43:07     8s]         maximum delays 
+[05/30 11:43:07     8s]     [-min]:
+[05/30 11:43:07     8s]         minimum delays 
+[05/30 11:43:07     8s]     [-rise]:
+[05/30 11:43:07     8s]         rise delays 
+[05/30 11:43:07     8s]     [-fall]:
+[05/30 11:43:07     8s]         fall delays 
+[05/30 11:43:07     8s]     [-add_delay]:
+[05/30 11:43:07     8s]         don't remove existing delays 
+[05/30 11:43:07     8s]     [-name <string>]:
+[05/30 11:43:07     8s]         a name for the external delay object 
+[05/30 11:43:07     8s]     <float>:
+[05/30 11:43:07     8s]         delay value 
+[05/30 11:43:07     8s]     <port|pin|port_bus>+:
+[05/30 11:43:07     8s]         ports to receive the external delay 
+[05/30 11:43:07     8s] Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+[05/30 11:43:07     8s]         : The 'read_sdc' command encountered an error while processing this command on line '32' of the SDC file '../../alu_conv.sdc': set_input_delay ?min 0.2 -clock clk [get_ports [list A B]].
+[05/30 11:43:07     8s] Error   : A command argument did not match any of the acceptable command options. [TUI-64] [parse_options]
+[05/30 11:43:07     8s]         : The argument in question is '?capacitance'.
+[05/30 11:43:07     8s]         : Check the command usage and correct the input to the command.
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] Usage: set_units  [-capacitance <string>] [-resistance <string>] [-time <string>]
+[05/30 11:43:07     8s]            [-voltage <string>] [-current <string>] [-power <string>]
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s]     [-capacitance <string>]:
+[05/30 11:43:07     8s]         the format for specifying the capacitance unit is (optional 
+[05/30 11:43:07     8s]         float)(optional scale_value f|p|n|u|m|k|M)F 
+[05/30 11:43:07     8s]     [-resistance <string>]:
+[05/30 11:43:07     8s]         the format for specifying the resistance unit is (optional 
+[05/30 11:43:07     8s]         float)(optional scale_value f|p|n|u|m|k|M)Ohm 
+[05/30 11:43:07     8s]     [-time <string>]:
+[05/30 11:43:07     8s]         the format for specifying the time unit is (optional float)(optional 
+[05/30 11:43:07     8s]         scale_value f|p|n|u|m|k|M)s 
+[05/30 11:43:07     8s]     [-voltage <string>]:
+[05/30 11:43:07     8s]         the format for specifying the voltage unit is (optional float)(optional 
+[05/30 11:43:07     8s]         scale_value f|p|n|u|m|k|M)V 
+[05/30 11:43:07     8s]     [-current <string>]:
+[05/30 11:43:07     8s]         the format for specifying the current unit is (optional float)(optional 
+[05/30 11:43:07     8s]         scale_value f|p|n|u|m|k|M)A 
+[05/30 11:43:07     8s]     [-power <string>]:
+[05/30 11:43:07     8s]         the format for specifying the power unit is (optional float)(optional 
+[05/30 11:43:07     8s]         scale_value f|p|n|u|m|k|M)W 
+[05/30 11:43:07     8s] Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+[05/30 11:43:07     8s]         : The 'read_sdc' command encountered an error while processing this command on line '35' of the SDC file '../../alu_conv.sdc': set_units ?capacitance 1.0pF.
+[05/30 11:43:07     8s] Error   : A command argument did not match any of the acceptable command options. [TUI-64] [parse_options]
+[05/30 11:43:07     8s]         : The argument in question is '?time'.
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] Usage: set_units  [-capacitance <string>] [-resistance <string>] [-time <string>]
+[05/30 11:43:07     8s]            [-voltage <string>] [-current <string>] [-power <string>]
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s]     [-capacitance <string>]:
+[05/30 11:43:07     8s]         the format for specifying the capacitance unit is (optional 
+[05/30 11:43:07     8s]         float)(optional scale_value f|p|n|u|m|k|M)F 
+[05/30 11:43:07     8s]     [-resistance <string>]:
+[05/30 11:43:07     8s]         the format for specifying the resistance unit is (optional 
+[05/30 11:43:07     8s]         float)(optional scale_value f|p|n|u|m|k|M)Ohm 
+[05/30 11:43:07     8s]     [-time <string>]:
+[05/30 11:43:07     8s]         the format for specifying the time unit is (optional float)(optional 
+[05/30 11:43:07     8s]         scale_value f|p|n|u|m|k|M)s 
+[05/30 11:43:07     8s]     [-voltage <string>]:
+[05/30 11:43:07     8s]         the format for specifying the voltage unit is (optional float)(optional 
+[05/30 11:43:07     8s]         scale_value f|p|n|u|m|k|M)V 
+[05/30 11:43:07     8s]     [-current <string>]:
+[05/30 11:43:07     8s]         the format for specifying the current unit is (optional float)(optional 
+[05/30 11:43:07     8s]         scale_value f|p|n|u|m|k|M)A 
+[05/30 11:43:07     8s]     [-power <string>]:
+[05/30 11:43:07     8s]         the format for specifying the power unit is (optional float)(optional 
+[05/30 11:43:07     8s]         scale_value f|p|n|u|m|k|M)W 
+[05/30 11:43:07     8s] Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+[05/30 11:43:07     8s]         : The 'read_sdc' command encountered an error while processing this command on line '36' of the SDC file '../../alu_conv.sdc': set_units ?time 1.0ns.
+[05/30 11:43:07     8s]             Reading file '/home/bwj4163/eecs303/newlab/alu/synthesis/../../alu_conv.sdc'
+[05/30 11:43:07     8s] Statistics for commands executed by read_sdc:
+[05/30 11:43:07     8s]  "all_inputs"              - successful      2 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "all_outputs"             - successful      2 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "create_clock"            - successful      1 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "current_design"          - successful      1 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "get_clocks"              - successful      2 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "get_ports"               - successful      3 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "set_clock_uncertainty"   - successful      2 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "set_input_delay"         - successful      0 , failed      2 (runtime  0.00)
+[05/30 11:43:07     8s]  "set_load"                - successful      1 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "set_max_capacitance"     - successful      1 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "set_max_delay"           - successful      1 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "set_max_transition"      - successful      1 , failed      0 (runtime  0.00)
+[05/30 11:43:07     8s]  "set_units"               - successful      0 , failed      2 (runtime  0.00)
+[05/30 11:43:07     8s] Warning : Total failed commands during read_sdc are 4
+[05/30 11:43:07     8s] Warning : One or more commands failed when these constraints were applied. [SDC-209]
+[05/30 11:43:07     8s]         : The 'read_sdc' command encountered a problem while processing commands.
+[05/30 11:43:07     8s]         : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+[05/30 11:43:07     8s] Total runtime 0
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] EC INFO: Total cpu-time and memory after CONSTRAINT: 5 sec., 115.00 MBytes.
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] EC INFO: Total numbers of exceptions: 6
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s] EC INFO: Total cpu-time and memory after POST-SDC: 5 sec., 115.00 MBytes.
+[05/30 11:43:07     8s] 
+[05/30 11:43:07     8s]         Tracing clock networks.
+[05/30 11:43:08     8s]         Levelizing the circuit.
+[05/30 11:43:08     8s]         Computing net loads.
+[05/30 11:43:08     8s]         Computing delays.
+[05/30 11:43:08     8s]         Computing arrivals and requireds.
+[05/30 11:43:08     8s]         Initializing DRC engine.
+[05/30 11:43:08     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:08     8s]         : The design is 'alu_conv'.
+[05/30 11:43:08     8s]         : Use 'report timing -lint' for more information.
+[05/30 11:43:08     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:08     8s]         : The design is 'alu_conv'.
+[05/30 11:43:08     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:08     8s]         : The design is 'alu_conv'.
+[05/30 11:43:08     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:08     8s]         : The design is 'alu_conv'.
+[05/30 11:43:08     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:08     8s]         : The design is 'alu_conv'.
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] EC INFO: Reporting Initial QoR below...
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] ============================================================
+[05/30 11:43:08     8s]   Generated by:           Encounter(R) RTL Compiler RC14.20 - v14.20-p005_1
+[05/30 11:43:08     8s]   Generated on:           May 30 2017  11:43:08 am
+[05/30 11:43:08     8s]   Module:                 alu_conv
+[05/30 11:43:08     8s]   Technology library:     NangateOpenCellLibrary revision 1.0
+[05/30 11:43:08     8s]   Operating conditions:   typical 
+[05/30 11:43:08     8s]   Interconnect mode:      global
+[05/30 11:43:08     8s]   Area mode:              physical library
+[05/30 11:43:08     8s] ============================================================
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] Timing
+[05/30 11:43:08     8s] --------
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] Clock Period 
+[05/30 11:43:08     8s] -------------
+[05/30 11:43:08     8s] clk   1000.0 
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s]   Cost    Critical       Violating 
+[05/30 11:43:08     8s]  Group   Path Slack TNS    Paths   
+[05/30 11:43:08     8s] -----------------------------------
+[05/30 11:43:08     8s] C2C           463.0   0          0 
+[05/30 11:43:08     8s] C2O        No paths   0            
+[05/30 11:43:08     8s] clk        No paths   0            
+[05/30 11:43:08     8s] default    No paths   0            
+[05/30 11:43:08     8s] I2C        No paths   0            
+[05/30 11:43:08     8s] I2O        No paths   0            
+[05/30 11:43:08     8s] -----------------------------------
+[05/30 11:43:08     8s] Total                 0          0 
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] Instance Count
+[05/30 11:43:08     8s] --------------
+[05/30 11:43:08     8s] Leaf Instance Count             546 
+[05/30 11:43:08     8s] Sequential Instance Count        70 
+[05/30 11:43:08     8s] Combinational Instance Count    476 
+[05/30 11:43:08     8s] Hierarchical Instance Count      10 
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] Area
+[05/30 11:43:08     8s] ----
+[05/30 11:43:08     8s] Cell Area                          1225.863
+[05/30 11:43:08     8s] Physical Cell Area                 0.000
+[05/30 11:43:08     8s] Total Cell Area (Cell+Physical)    1225.863
+[05/30 11:43:08     8s] Net Area                           42.067
+[05/30 11:43:08     8s] Total Area (Cell+Physical+Net)     1267.930
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] Max Fanout                         140 (n_79)
+[05/30 11:43:08     8s] Min Fanout                         0 (mux_state_13_20/z[1])
+[05/30 11:43:08     8s] Average Fanout                     1.7
+[05/30 11:43:08     8s] Terms to net ratio                 2.3
+[05/30 11:43:08     8s] Terms to instance ratio            3.7
+[05/30 11:43:08     8s] Runtime                            5.000 seconds
+[05/30 11:43:08     8s] Elapsed Runtime                    17 seconds
+[05/30 11:43:08     8s] RC peak memory usage:              117.00 
+[05/30 11:43:08     8s] EDI peak memory usage:             no_value 
+[05/30 11:43:08     8s] Hostname                           tlab-01.ece.northwestern.edu
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] EC INFO: Reporting Initial Summary below...
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] ============================================================
+[05/30 11:43:08     8s]   Generated by:           Encounter(R) RTL Compiler RC14.20 - v14.20-p005_1
+[05/30 11:43:08     8s]   Generated on:           May 30 2017  11:43:08 am
+[05/30 11:43:08     8s]   Module:                 alu_conv
+[05/30 11:43:08     8s]   Technology library:     NangateOpenCellLibrary revision 1.0
+[05/30 11:43:08     8s]   Operating conditions:   typical 
+[05/30 11:43:08     8s]   Interconnect mode:      global
+[05/30 11:43:08     8s]   Area mode:              physical library
+[05/30 11:43:08     8s] ============================================================
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] 	Timing
+[05/30 11:43:08     8s] 	------
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s]  Slack      Endpoint    Cost Group 
+[05/30 11:43:08     8s] ----------------------------------------
+[05/30 11:43:08     8s]  +463ps C_int_reg[17]/d C2C        
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] 	Area
+[05/30 11:43:08     8s] 	----
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] Instance  Cells  Cell Area  Net Area  Total Area 
+[05/30 11:43:08     8s] -------------------------------------------------
+[05/30 11:43:08     8s] alu_conv    546       1226        42        1268 
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] 	Design Rule Check
+[05/30 11:43:08     8s] 	-----------------
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] Max_transition design rule: no violations.
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] Max_capacitance design rule: no violations.
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] 
+[05/30 11:43:08     8s] Current PLE settings:
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s] Aspect ratio        : 1.00
+[05/30 11:43:09     8s] Shrink factor       : 1.00
+[05/30 11:43:09     8s] Scale of res/length : 1.00
+[05/30 11:43:09     8s] Scale of cap/length : 1.00
+[05/30 11:43:09     8s] Net derating factor : 1.00
+[05/30 11:43:09     8s] Thermal factor      : 1.00
+[05/30 11:43:09     8s] Via Resistance      : 0.00 ohm (from default)
+[05/30 11:43:09     8s] Site size           : 1.59 um (from lef [tech+cell])
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s]                                    Capacitance  
+[05/30 11:43:09     8s]   Layer                             / Length         Data source:
+[05/30 11:43:09     8s] Name        Direction Utilization  (pF/micron)       lef_library
+[05/30 11:43:09     8s] ------------------------------------------------
+[05/30 11:43:09     8s] metal1          H         1.00        0.000060  
+[05/30 11:43:09     8s] metal2          V         1.00        0.000053  
+[05/30 11:43:09     8s] metal3          H         1.00        0.000052  
+[05/30 11:43:09     8s] metal4          V         1.00        0.000065  
+[05/30 11:43:09     8s] metal5          H         1.00        0.000007  
+[05/30 11:43:09     8s] metal6          V         1.00        0.000049  
+[05/30 11:43:09     8s] metal7          H         1.00        0.000068  
+[05/30 11:43:09     8s] metal8          V         1.00        0.000050  
+[05/30 11:43:09     8s] metal9          H         1.00        0.000065  
+[05/30 11:43:09     8s] metal10         V         1.00        0.000049  
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s]                                     Resistance   
+[05/30 11:43:09     8s]   Layer                              / Length         Data source:
+[05/30 11:43:09     8s] Name        Direction Utilization  (ohm/micron)       lef_library
+[05/30 11:43:09     8s] -------------------------------------------------
+[05/30 11:43:09     8s] metal1          H         1.00         5.428571  
+[05/30 11:43:09     8s] metal2          V         1.00         3.571429  
+[05/30 11:43:09     8s] metal3          H         1.00         3.571429  
+[05/30 11:43:09     8s] metal4          V         1.00         1.500000  
+[05/30 11:43:09     8s] metal5          H         1.00         1.500000  
+[05/30 11:43:09     8s] metal6          V         1.00         1.500000  
+[05/30 11:43:09     8s] metal7          H         1.00         0.187500  
+[05/30 11:43:09     8s] metal8          V         1.00         0.187500  
+[05/30 11:43:09     8s] metal9          H         1.00         0.037500  
+[05/30 11:43:09     8s] metal10         V         1.00         0.037500  
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s]                                         Area     
+[05/30 11:43:09     8s]   Layer                               / Length        Data source:
+[05/30 11:43:09     8s] Name        Direction Utilization     (micron)        lef_library
+[05/30 11:43:09     8s] -------------------------------------------------
+[05/30 11:43:09     8s] metal1          H         1.00         0.070000  
+[05/30 11:43:09     8s] metal2          V         1.00         0.070000  
+[05/30 11:43:09     8s] metal3          H         1.00         0.070000  
+[05/30 11:43:09     8s] metal4          V         1.00         0.140000  
+[05/30 11:43:09     8s] metal5          H         1.00         0.140000  
+[05/30 11:43:09     8s] metal6          V         1.00         0.140000  
+[05/30 11:43:09     8s] metal7          H         1.00         0.400000  
+[05/30 11:43:09     8s] metal8          V         1.00         0.400000  
+[05/30 11:43:09     8s] metal9          H         1.00         0.800000  
+[05/30 11:43:09     8s] metal10         V         1.00         0.800000  
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s] Info    : Synthesizing. [SYNTH-1]
+[05/30 11:43:09     8s]         : Synthesizing 'alu_conv' to generic gates using 'medium' effort.
+[05/30 11:43:09     8s] Info    : Deleting instances not driving any primary outputs. [GLO-34]
+[05/30 11:43:09     8s]         : Deleting 5 hierarchical instances. 
+[05/30 11:43:09     8s] Following instances are deleted as they do not drive any primary output:
+[05/30 11:43:09     8s] 'mux_A_int_13_20', 'mux_B_int_13_20', 'mux_C_int_13_20', 'mux_Y_13_20', 
+[05/30 11:43:09     8s] 'mux_state_13_20'.
+[05/30 11:43:09     8s]         : Optimizations such as constant propagation or redundancy removal could change the connections so an instance does not drive any primary outputs anymore. To see the list of deleted instances,        set the 'information_level' attribute to 2 or above.
+[05/30 11:43:09     8s] Info    : Optimizing RTL. [RTLOPT-1]
+[05/30 11:43:09     8s]         : Optimizing RTL in 'alu_conv' using 'medium' effort.
+[05/30 11:43:09     8s] Info    : Optimization score is better. [RTLOPT-50]
+[05/30 11:43:09     8s]         : New score: WNS=0, TNS =0, Area=92457800; Old score: WNS=LLONG_MAX, TNS =LLONG_MAX, Area=LLONG_MAX
+[05/30 11:43:09     8s] Info    : Optimization score is the same. [RTLOPT-52]
+[05/30 11:43:09     8s]         : New score: WNS=0, TNS =0, Area=92457800; Old score: WNS=0, TNS =0, Area=92457800
+[05/30 11:43:09     8s] Info    : Optimization score is better. [RTLOPT-50]
+[05/30 11:43:09     8s]         : New score: WNS=0, TNS =0, Area=76516800; Old score: WNS=0, TNS =0, Area=92457800
+[05/30 11:43:09     8s] Info    : Done optimizing RTL. [RTLOPT-2]
+[05/30 11:43:09     8s]         : Done optimizing RTL in 'alu_conv'.
+[05/30 11:43:09     8s]       Removing temporary intermediate hierarchies under alu_conv
+[05/30 11:43:09     8s]               Optimizing muxes in design 'alu_conv'.
+[05/30 11:43:09     8s] Info    : Done synthesizing. [SYNTH-2]
+[05/30 11:43:09     8s]         : Done synthesizing 'alu_conv' to generic gates.
+[05/30 11:43:09     8s]         Computing net loads.
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s] EC INFO: Total cpu-time and memory after SYN2GEN: 6 sec., 118.00 MBytes.
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s]         Tracing clock networks.
+[05/30 11:43:09     8s]         Levelizing the circuit.
+[05/30 11:43:09     8s]         Computing delays.
+[05/30 11:43:09     8s]         Computing arrivals and requireds.
+[05/30 11:43:09     8s]         Initializing DRC engine.
+[05/30 11:43:09     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:09     8s]         : The design is 'alu_conv'.
+[05/30 11:43:09     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:09     8s]         : The design is 'alu_conv'.
+[05/30 11:43:09     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:09     8s]         : The design is 'alu_conv'.
+[05/30 11:43:09     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:09     8s]         : The design is 'alu_conv'.
+[05/30 11:43:09     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:09     8s]         : The design is 'alu_conv'.
+[05/30 11:43:09     8s] Current PLE settings:
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s] Aspect ratio        : 1.00
+[05/30 11:43:09     8s] Shrink factor       : 1.00
+[05/30 11:43:09     8s] Scale of res/length : 1.00
+[05/30 11:43:09     8s] Scale of cap/length : 1.00
+[05/30 11:43:09     8s] Net derating factor : 1.00
+[05/30 11:43:09     8s] Thermal factor      : 1.00
+[05/30 11:43:09     8s] Via Resistance      : 0.00 ohm (from default)
+[05/30 11:43:09     8s] Site size           : 1.59 um (from lef [tech+cell])
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s]                                    Capacitance  
+[05/30 11:43:09     8s]   Layer                             / Length         Data source:
+[05/30 11:43:09     8s] Name        Direction Utilization  (pF/micron)       lef_library
+[05/30 11:43:09     8s] ------------------------------------------------
+[05/30 11:43:09     8s] metal1          H         1.00        0.000060  
+[05/30 11:43:09     8s] metal2          V         1.00        0.000053  
+[05/30 11:43:09     8s] metal3          H         1.00        0.000052  
+[05/30 11:43:09     8s] metal4          V         1.00        0.000065  
+[05/30 11:43:09     8s] metal5          H         1.00        0.000007  
+[05/30 11:43:09     8s] metal6          V         1.00        0.000049  
+[05/30 11:43:09     8s] metal7          H         1.00        0.000068  
+[05/30 11:43:09     8s] metal8          V         1.00        0.000050  
+[05/30 11:43:09     8s] metal9          H         1.00        0.000065  
+[05/30 11:43:09     8s] metal10         V         1.00        0.000049  
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s]                                     Resistance   
+[05/30 11:43:09     8s]   Layer                              / Length         Data source:
+[05/30 11:43:09     8s] Name        Direction Utilization  (ohm/micron)       lef_library
+[05/30 11:43:09     8s] -------------------------------------------------
+[05/30 11:43:09     8s] metal1          H         1.00         5.428571  
+[05/30 11:43:09     8s] metal2          V         1.00         3.571429  
+[05/30 11:43:09     8s] metal3          H         1.00         3.571429  
+[05/30 11:43:09     8s] metal4          V         1.00         1.500000  
+[05/30 11:43:09     8s] metal5          H         1.00         1.500000  
+[05/30 11:43:09     8s] metal6          V         1.00         1.500000  
+[05/30 11:43:09     8s] metal7          H         1.00         0.187500  
+[05/30 11:43:09     8s] metal8          V         1.00         0.187500  
+[05/30 11:43:09     8s] metal9          H         1.00         0.037500  
+[05/30 11:43:09     8s] metal10         V         1.00         0.037500  
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s]                                         Area     
+[05/30 11:43:09     8s]   Layer                               / Length        Data source:
+[05/30 11:43:09     8s] Name        Direction Utilization     (micron)        lef_library
+[05/30 11:43:09     8s] -------------------------------------------------
+[05/30 11:43:09     8s] metal1          H         1.00         0.070000  
+[05/30 11:43:09     8s] metal2          V         1.00         0.070000  
+[05/30 11:43:09     8s] metal3          H         1.00         0.070000  
+[05/30 11:43:09     8s] metal4          V         1.00         0.140000  
+[05/30 11:43:09     8s] metal5          H         1.00         0.140000  
+[05/30 11:43:09     8s] metal6          V         1.00         0.140000  
+[05/30 11:43:09     8s] metal7          H         1.00         0.400000  
+[05/30 11:43:09     8s] metal8          V         1.00         0.400000  
+[05/30 11:43:09     8s] metal9          H         1.00         0.800000  
+[05/30 11:43:09     8s] metal10         V         1.00         0.800000  
+[05/30 11:43:09     8s] 
+[05/30 11:43:09     8s] Info    : Mapping. [SYNTH-4]
+[05/30 11:43:09     8s]         : Mapping 'alu_conv' using 'high' effort.
+[05/30 11:43:09     8s]       Mapping 'alu_conv'...
+[05/30 11:43:09     8s]         Preparing the circuit
+[05/30 11:43:09     8s]           Pruning unused logic
+[05/30 11:43:09     8s] Multi-threaded constant propagation [1|1] ...
+[05/30 11:43:09     8s]           Analyzing hierarchical boundaries
+[05/30 11:43:09     8s] Warning : Internal Tcl control variable has been changed. [TUI-668]
+[05/30 11:43:09     8s]         : Variable 'case_handle_real_constants_too', value: '0' (default: '1')
+[05/30 11:43:09     8s]         : Some Tcl variables are used internally to enable features that are not officially supported.
+[05/30 11:43:09     8s]           Propagating constants
+[05/30 11:43:10     8s]         Done preparing the circuit
+[05/30 11:43:10     8s]           Structuring (delay-based) alu_conv...
+[05/30 11:43:10     8s]           Done structuring (delay-based) alu_conv
+[05/30 11:43:10     8s]           Structuring (delay-based) G2C_DP_add_unsigned_2...
+[05/30 11:43:10     8s] Warning : Internal Tcl control variable has been changed. [TUI-668]
+[05/30 11:43:10     8s]         : Variable 'prcode_bt_scale', value: '100' (default: '50')
+[05/30 11:43:10     8s]             Starting partial collapsing (xors only) G2C_DP_add_unsigned_2
+[05/30 11:43:10     8s] Warning : Internal Tcl control variable has been changed. [TUI-668]
+[05/30 11:43:10     8s]         : Variable 'gbf_factor_xor_penalty', value: '10' (default: '2')
+[05/30 11:43:10     8s]             Finished partial collapsing.
+[05/30 11:43:10     8s]             Starting partial collapsing  G2C_DP_add_unsigned_2
+[05/30 11:43:10     8s]             Finished partial collapsing.
+[05/30 11:43:10     8s]           Done structuring (delay-based) G2C_DP_add_unsigned_2
+[05/30 11:43:10     8s]         Mapping component G2C_DP_add_unsigned_2...
+[05/30 11:43:10     8s]           Structuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:10     8s]             Starting partial collapsing (xors only) G2C_DP_add_unsigned
+[05/30 11:43:10     8s]             Finished partial collapsing.
+[05/30 11:43:10     8s]             Starting partial collapsing  G2C_DP_add_unsigned
+[05/30 11:43:10     8s]             Finished partial collapsing.
+[05/30 11:43:10     8s]           Done structuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:10     8s]         Mapping component G2C_DP_add_unsigned...
+[05/30 11:43:10     8s]           Structuring (delay-based) logic partition in alu_conv...
+[05/30 11:43:10     8s]             Starting partial collapsing  mux_ctl_0x
+[05/30 11:43:10     8s]             Finished partial collapsing.
+[05/30 11:43:10     8s]             Starting redundancy-removal...
+[05/30 11:43:10     8s]             Finished redundancy-removal...
+[05/30 11:43:10     8s]           Done structuring (delay-based) logic partition in alu_conv
+[05/30 11:43:10     8s]         Mapping logic partition in alu_conv...
+[05/30 11:43:10     8s]  
+[05/30 11:43:10     8s] Global mapping target info
+[05/30 11:43:10     8s] ==========================
+[05/30 11:43:10     8s] Cost Group 'C2C' target slack:    27 ps
+[05/30 11:43:10     8s] Target path end-point (Pin: C_int_reg[17]/d)
+[05/30 11:43:10     8s] 
+[05/30 11:43:10     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:10     8s]         : The design is 'alu_conv'.
+[05/30 11:43:10     8s]        Pin                    Type          Fanout Load Arrival   
+[05/30 11:43:10     8s]                                                    (fF)   (ps)    
+[05/30 11:43:10     8s] ------------------------------------------------------------------
+[05/30 11:43:10     8s] (clock clk)         <<<  launch                               0 R 
+[05/30 11:43:10     8s] mux_ctl_0xi
+[05/30 11:43:10     8s]   C_int_reg[0]/clk                                                
+[05/30 11:43:10     8s]   C_int_reg[0]/q    (u)  unmapped_d_flop         5 25.0           
+[05/30 11:43:10     8s] mux_ctl_0xi/add_33_48_B[0] 
+[05/30 11:43:10     8s] add_33_48/B[0] 
+[05/30 11:43:10     8s]   g2/in_1                                                         
+[05/30 11:43:10     8s]   g2/z              (u)  unmapped_nand2          3 15.0           
+[05/30 11:43:10     8s]   g702/in_0                                                       
+[05/30 11:43:10     8s]   g702/z            (u)  unmapped_complex2       1  5.0           
+[05/30 11:43:10     8s]   g698/in_0                                                       
+[05/30 11:43:10     8s]   g698/z            (u)  unmapped_nand2          3 15.0           
+[05/30 11:43:10     8s]   g692/in_1                                                       
+[05/30 11:43:10     8s]   g692/z            (u)  unmapped_nand2          1  5.0           
+[05/30 11:43:10     8s]   g691/in_1                                                       
+[05/30 11:43:10     8s]   g691/z            (u)  unmapped_nand2          3 15.0           
+[05/30 11:43:10     8s]   g688/in_1                                                       
+[05/30 11:43:10     8s]   g688/z            (u)  unmapped_nand2          1  5.0           
+[05/30 11:43:10     8s]   g684/in_0                                                       
+[05/30 11:43:10     8s]   g684/z            (u)  unmapped_nand2          4 20.0           
+[05/30 11:43:10     8s]   g682/in_0                                                       
+[05/30 11:43:10     8s]   g682/z            (u)  unmapped_complex2       1  5.0           
+[05/30 11:43:10     8s]   g677/in_1                                                       
+[05/30 11:43:10     8s]   g677/z            (u)  unmapped_complex2       3 15.0           
+[05/30 11:43:10     8s]   g672/in_1                                                       
+[05/30 11:43:10     8s]   g672/z            (u)  unmapped_nand2          1  5.0           
+[05/30 11:43:10     8s]   g668/in_1                                                       
+[05/30 11:43:10     8s]   g668/z            (u)  unmapped_nand2          3 15.0           
+[05/30 11:43:10     8s]   g664/in_0                                                       
+[05/30 11:43:10     8s]   g664/z            (u)  unmapped_nand2          1  5.0           
+[05/30 11:43:10     8s]   g663/in_0                                                       
+[05/30 11:43:10     8s]   g663/z            (u)  unmapped_nand2          4 20.0           
+[05/30 11:43:10     8s]   g658/in_1                                                       
+[05/30 11:43:10     8s]   g658/z            (u)  unmapped_complex2       2 10.0           
+[05/30 11:43:10     8s]   g655/in_0                                                       
+[05/30 11:43:10     8s]   g655/z            (u)  unmapped_or2            1  5.0           
+[05/30 11:43:10     8s]   g647/in_1                                                       
+[05/30 11:43:10     8s]   g647/z            (u)  unmapped_complex2       4 20.0           
+[05/30 11:43:10     8s]   g641/in_0                                                       
+[05/30 11:43:10     8s]   g641/z            (u)  unmapped_complex2       1  5.0           
+[05/30 11:43:10     8s]   g640/in_1                                                       
+[05/30 11:43:10     8s]   g640/z            (u)  unmapped_complex2       3 15.0           
+[05/30 11:43:10     8s]   g635/in_1                                                       
+[05/30 11:43:10     8s]   g635/z            (u)  unmapped_nand2          1  5.0           
+[05/30 11:43:10     8s]   g628/in_1                                                       
+[05/30 11:43:10     8s]   g628/z            (u)  unmapped_nand2          3 15.0           
+[05/30 11:43:10     8s]   g624/in_1                                                       
+[05/30 11:43:10     8s]   g624/z            (u)  unmapped_nand2          1  5.0           
+[05/30 11:43:10     8s]   g623/in_1                                                       
+[05/30 11:43:10     8s]   g623/z            (u)  unmapped_nand2          3 15.0           
+[05/30 11:43:10     8s]   g158/in_0                                                       
+[05/30 11:43:10     8s]   g158/z            (u)  unmapped_nand2          2 10.0           
+[05/30 11:43:10     8s]   g618/in_0                                                       
+[05/30 11:43:10     8s]   g618/z            (u)  unmapped_or2            1  5.0           
+[05/30 11:43:10     8s]   g619/in_1                                                       
+[05/30 11:43:10     8s]   g619/z            (u)  unmapped_nand2          1  5.0           
+[05/30 11:43:10     8s] add_33_48/Z[17] 
+[05/30 11:43:10     8s] mux_ctl_0xi/add_33_48_Z[17] 
+[05/30 11:43:10     8s]   g397/in_1                                                       
+[05/30 11:43:10     8s]   g397/z            (u)  unmapped_complex2       1  5.0           
+[05/30 11:43:10     8s]   g365/in_1                                                       
+[05/30 11:43:10     8s]   g365/z            (u)  unmapped_nand2          1  5.0           
+[05/30 11:43:10     8s]   C_int_reg[17]/d   <<<  unmapped_d_flop                          
+[05/30 11:43:10     8s]   C_int_reg[17]/clk      setup                                    
+[05/30 11:43:10     8s] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+[05/30 11:43:10     8s] (clock clk)              capture                           1000 R 
+[05/30 11:43:10     8s]                          uncertainty                              
+[05/30 11:43:10     8s] ------------------------------------------------------------------
+[05/30 11:43:10     8s] Cost Group   : 'C2C' (path_group 'C2C')
+[05/30 11:43:10     8s] Start-point  : mux_ctl_0xi/C_int_reg[0]/clk
+[05/30 11:43:10     8s] End-point    : mux_ctl_0xi/C_int_reg[17]/d
+[05/30 11:43:10     8s] 
+[05/30 11:43:10     8s] (u) : Net has unmapped pin(s).
+[05/30 11:43:10     8s] 
+[05/30 11:43:10     8s] The global mapper estimates a slack for this path of 209ps.
+[05/30 11:43:10     8s]  
+[05/30 11:43:10     8s]           Restructuring (delay-based) mux_ctl_0x...
+[05/30 11:43:10     8s]           Done restructuring (delay-based) mux_ctl_0x
+[05/30 11:43:10     8s]         Optimizing component mux_ctl_0x...
+[05/30 11:43:10     8s]           Restructuring (delay-based) G2C_DP_add_unsigned_2...
+[05/30 11:43:11     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned_2
+[05/30 11:43:11     8s]         Optimizing component G2C_DP_add_unsigned_2...
+[05/30 11:43:11     8s]         Early Area Reclamation for G2C_DP_add_unsigned_2 'very_fast' (slack=45, area=126)...
+[05/30 11:43:11     8s]                   			o_slack=26,  bc_slack=64
+[05/30 11:43:11     8s]           Restructuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:11     8s]         Optimizing component G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Restructuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:11     8s]         Optimizing component G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Restructuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:11     8s]         Optimizing component G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Restructuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:11     8s]         Optimizing component G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Restructuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:11     8s]         Optimizing component G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]         Early Area Reclamation for G2C_DP_add_unsigned 'very_fast' (slack=49, area=118)...
+[05/30 11:43:11     8s]                   			o_slack=33,  bc_slack=65
+[05/30 11:43:11     8s]           Restructuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:11     8s]         Optimizing component G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Restructuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:11     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:12     8s]         Optimizing component G2C_DP_add_unsigned...
+[05/30 11:43:12     8s]           Restructuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:12     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:12     8s]         Optimizing component G2C_DP_add_unsigned...
+[05/30 11:43:12     8s]           Restructuring (delay-based) G2C_DP_add_unsigned...
+[05/30 11:43:12     8s]           Done restructuring (delay-based) G2C_DP_add_unsigned
+[05/30 11:43:12     8s]         Optimizing component G2C_DP_add_unsigned...
+[05/30 11:43:12     8s]  
+[05/30 11:43:12     8s] Global mapping timing result
+[05/30 11:43:12     8s] ============================
+[05/30 11:43:12     8s]         Tracing clock networks.
+[05/30 11:43:12     8s]         Levelizing the circuit.
+[05/30 11:43:12     8s]         Computing net loads.
+[05/30 11:43:12     8s]         Computing delays.
+[05/30 11:43:12     8s]         Computing arrivals and requireds.
+[05/30 11:43:12     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:12     8s]         : The design is 'alu_conv'.
+[05/30 11:43:12     8s]        Pin                Type       Fanout Load Slew Delay Arrival   
+[05/30 11:43:12     8s]                                             (fF) (ps)  (ps)   (ps)    
+[05/30 11:43:12     8s] ----------------------------------------------------------------------
+[05/30 11:43:12     8s] (clock clk)             launch                                    0 R 
+[05/30 11:43:12     8s] mux_ctl_0xi
+[05/30 11:43:12     8s]   A_int_reg[1]/CK                                   0             0 R 
+[05/30 11:43:12     8s]   A_int_reg[1]/Q        SDFFR_X2          7 11.5   24  +105     105 F 
+[05/30 11:43:12     8s] mux_ctl_0xi/add_28_48_A[1] 
+[05/30 11:43:12     8s] add_28_48/A[1] 
+[05/30 11:43:12     8s]   g1192/A1                                               +0     105   
+[05/30 11:43:12     8s]   g1192/ZN              OR2_X1            1  1.8    9   +52     157 F 
+[05/30 11:43:12     8s]   g1155/B2                                               +0     157   
+[05/30 11:43:12     8s]   g1155/ZN              AOI21_X1          2  5.9   41   +52     209 R 
+[05/30 11:43:12     8s]   g1152/B1                                               +0     209   
+[05/30 11:43:12     8s]   g1152/ZN              OAI21_X2          1  1.9   13   +17     226 F 
+[05/30 11:43:12     8s]   g1151/A                                                +0     226   
+[05/30 11:43:12     8s]   g1151/ZN              INV_X1            2  4.5   13   +22     248 R 
+[05/30 11:43:12     8s]   g1148/B1                                               +0     248   
+[05/30 11:43:12     8s]   g1148/ZN              OAI21_X1          1  1.9   10   +15     263 F 
+[05/30 11:43:12     8s]   g1147/A                                                +0     263   
+[05/30 11:43:12     8s]   g1147/ZN              INV_X1            2  4.5   13   +20     284 R 
+[05/30 11:43:12     8s]   g1144/B1                                               +0     284   
+[05/30 11:43:12     8s]   g1144/ZN              OAI21_X1          1  1.9   10   +15     299 F 
+[05/30 11:43:12     8s]   g1143/A                                                +0     299   
+[05/30 11:43:12     8s]   g1143/ZN              INV_X1            2  4.5   13   +20     320 R 
+[05/30 11:43:12     8s]   g1140/B1                                               +0     320   
+[05/30 11:43:12     8s]   g1140/ZN              OAI21_X1          1  1.9   10   +15     335 F 
+[05/30 11:43:12     8s]   g1139/A                                                +0     335   
+[05/30 11:43:12     8s]   g1139/ZN              INV_X1            2  5.9   16   +24     359 R 
+[05/30 11:43:12     8s]   g1136/B1                                               +0     359   
+[05/30 11:43:12     8s]   g1136/ZN              OAI21_X2          1  3.3   12   +16     375 F 
+[05/30 11:43:12     8s]   g1135/A                                                +0     375   
+[05/30 11:43:12     8s]   g1135/ZN              INV_X2            2  5.9   10   +17     392 R 
+[05/30 11:43:12     8s]   g1132/B1                                               +0     392   
+[05/30 11:43:12     8s]   g1132/ZN              OAI21_X2          1  3.3   12   +14     406 F 
+[05/30 11:43:12     8s]   g1131/A                                                +0     406   
+[05/30 11:43:12     8s]   g1131/ZN              INV_X2            2  6.1   10   +18     424 R 
+[05/30 11:43:12     8s]   g1129/A1                                               +0     424   
+[05/30 11:43:12     8s]   g1129/ZN              NOR2_X2           2  4.1   11    +9     433 F 
+[05/30 11:43:12     8s]   g1126/B1                                               +0     433   
+[05/30 11:43:12     8s]   g1126/ZN              AOI21_X2          2  5.9   27   +33     466 R 
+[05/30 11:43:12     8s]   g1123/B1                                               +0     466   
+[05/30 11:43:12     8s]   g1123/ZN              OAI21_X2          2  3.6   12   +18     484 F 
+[05/30 11:43:12     8s]   g1120/A1                                               +0     484   
+[05/30 11:43:12     8s]   g1120/ZN              NAND2_X1          1  3.5   13   +20     505 R 
+[05/30 11:43:12     8s]   g1118/A1                                               +0     505   
+[05/30 11:43:12     8s]   g1118/ZN              NAND2_X2          2  7.8   11   +19     524 F 
+[05/30 11:43:12     8s]   g1115/A1                                               +0     524   
+[05/30 11:43:12     8s]   g1115/ZN              NAND2_X4          1  6.4   10   +15     539 R 
+[05/30 11:43:12     8s]   g1113/A1                                               +0     539   
+[05/30 11:43:12     8s]   g1113/ZN              NAND2_X4          2  7.8    8   +13     552 F 
+[05/30 11:43:12     8s]   g1110/A1                                               +0     552   
+[05/30 11:43:12     8s]   g1110/ZN              NAND2_X4          1  6.4   10   +14     566 R 
+[05/30 11:43:12     8s]   g1108/A1                                               +0     566   
+[05/30 11:43:12     8s]   g1108/ZN              NAND2_X4          2  8.4    9   +14     580 F 
+[05/30 11:43:12     8s]   g1106/A1                                               +0     580   
+[05/30 11:43:12     8s]   g1106/ZN              NAND2_X4          1  6.4   10   +14     594 R 
+[05/30 11:43:12     8s]   g1104/A1                                               +0     594   
+[05/30 11:43:12     8s]   g1104/ZN              NAND2_X4          2  4.2    7   +11     605 F 
+[05/30 11:43:12     8s]   g1102/A                                                +0     605   
+[05/30 11:43:12     8s]   g1102/ZN              XNOR2_X1          1  1.9   10   +37     642 F 
+[05/30 11:43:12     8s] add_28_48/Z[15] 
+[05/30 11:43:12     8s] mux_ctl_0xi/add_28_48_Z[15] 
+[05/30 11:43:12     8s]   g731/C1                                                +0     642   
+[05/30 11:43:12     8s]   g731/ZN               AOI222_X1         1  2.1   50   +88     730 R 
+[05/30 11:43:12     8s]   g722/A                                                 +0     730   
+[05/30 11:43:12     8s]   g722/ZN               INV_X1            1  1.5   11    +9     739 F 
+[05/30 11:43:12     8s]   C_int_reg[15]/D  <<<  DFFR_X1                          +0     739   
+[05/30 11:43:12     8s]   C_int_reg[15]/CK      setup                       0   +42     780 R 
+[05/30 11:43:12     8s] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+[05/30 11:43:12     8s] (clock clk)             capture                                1000 R 
+[05/30 11:43:12     8s]                         uncertainty                     -50     950 R 
+[05/30 11:43:12     8s] ----------------------------------------------------------------------
+[05/30 11:43:12     8s] Cost Group   : 'C2C' (path_group 'C2C')
+[05/30 11:43:12     8s] Timing slack :     170ps 
+[05/30 11:43:12     8s] Start-point  : mux_ctl_0xi/A_int_reg[1]/CK
+[05/30 11:43:12     8s] End-point    : mux_ctl_0xi/C_int_reg[15]/D
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s]  
+[05/30 11:43:12     8s]  
+[05/30 11:43:12     8s] Global mapping status
+[05/30 11:43:12     8s] =====================
+[05/30 11:43:12     8s]                                    Group   
+[05/30 11:43:12     8s]                                   Tot Wrst 
+[05/30 11:43:12     8s]                            Total  Weighted 
+[05/30 11:43:12     8s] Operation                   Area   Slacks  
+[05/30 11:43:12     8s] -------------------------------------------------------------------------------
+[05/30 11:43:12     8s]  global_map                 2106        0 
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s]     Cost Group            Target    Slack    Clock
+[05/30 11:43:12     8s] --------------------------------------------------
+[05/30 11:43:12     8s]            C2C                27      170     1000 
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s]  
+[05/30 11:43:12     8s] Global incremental target info
+[05/30 11:43:12     8s] ==============================
+[05/30 11:43:12     8s] Cost Group 'C2C' target slack:    18 ps
+[05/30 11:43:12     8s] Target path end-point (Pin: C_int_reg[16]/D (DFFR_X1/D))
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:12     8s]         : The design is 'alu_conv'.
+[05/30 11:43:12     8s]        Pin                Type       Fanout Load Arrival   
+[05/30 11:43:12     8s]                                             (fF)   (ps)    
+[05/30 11:43:12     8s] -----------------------------------------------------------
+[05/30 11:43:12     8s] (clock clk)        <<<  launch                         0 R 
+[05/30 11:43:12     8s] mux_ctl_0xi
+[05/30 11:43:12     8s]   A_int_reg[1]/CK                                          
+[05/30 11:43:12     8s]   A_int_reg[1]/Q        SDFFR_X2          7 11.5           
+[05/30 11:43:12     8s] mux_ctl_0xi/add_28_48_A[1] 
+[05/30 11:43:12     8s] add_28_48/A[1] 
+[05/30 11:43:12     8s]   g1192/A1                                                 
+[05/30 11:43:12     8s]   g1192/ZN              OR2_X1            1  1.8           
+[05/30 11:43:12     8s]   g1155/B2                                                 
+[05/30 11:43:12     8s]   g1155/ZN              AOI21_X1          2  5.9           
+[05/30 11:43:12     8s]   g1152/B1                                                 
+[05/30 11:43:12     8s]   g1152/ZN              OAI21_X2          1  1.9           
+[05/30 11:43:12     8s]   g1151/A                                                  
+[05/30 11:43:12     8s]   g1151/ZN              INV_X1            2  4.5           
+[05/30 11:43:12     8s]   g1148/B1                                                 
+[05/30 11:43:12     8s]   g1148/ZN              OAI21_X1          1  1.9           
+[05/30 11:43:12     8s]   g1147/A                                                  
+[05/30 11:43:12     8s]   g1147/ZN              INV_X1            2  4.5           
+[05/30 11:43:12     8s]   g1144/B1                                                 
+[05/30 11:43:12     8s]   g1144/ZN              OAI21_X1          1  1.9           
+[05/30 11:43:12     8s]   g1143/A                                                  
+[05/30 11:43:12     8s]   g1143/ZN              INV_X1            2  4.5           
+[05/30 11:43:12     8s]   g1140/B1                                                 
+[05/30 11:43:12     8s]   g1140/ZN              OAI21_X1          1  1.9           
+[05/30 11:43:12     8s]   g1139/A                                                  
+[05/30 11:43:12     8s]   g1139/ZN              INV_X1            2  5.9           
+[05/30 11:43:12     8s]   g1136/B1                                                 
+[05/30 11:43:12     8s]   g1136/ZN              OAI21_X2          1  3.3           
+[05/30 11:43:12     8s]   g1135/A                                                  
+[05/30 11:43:12     8s]   g1135/ZN              INV_X2            2  5.9           
+[05/30 11:43:12     8s]   g1132/B1                                                 
+[05/30 11:43:12     8s]   g1132/ZN              OAI21_X2          1  3.3           
+[05/30 11:43:12     8s]   g1131/A                                                  
+[05/30 11:43:12     8s]   g1131/ZN              INV_X2            2  6.1           
+[05/30 11:43:12     8s]   g1129/A1                                                 
+[05/30 11:43:12     8s]   g1129/ZN              NOR2_X2           2  4.1           
+[05/30 11:43:12     8s]   g1126/B1                                                 
+[05/30 11:43:12     8s]   g1126/ZN              AOI21_X2          2  5.9           
+[05/30 11:43:12     8s]   g1123/B1                                                 
+[05/30 11:43:12     8s]   g1123/ZN              OAI21_X2          2  3.6           
+[05/30 11:43:12     8s]   g1120/A1                                                 
+[05/30 11:43:12     8s]   g1120/ZN              NAND2_X1          1  3.5           
+[05/30 11:43:12     8s]   g1118/A1                                                 
+[05/30 11:43:12     8s]   g1118/ZN              NAND2_X2          2  7.8           
+[05/30 11:43:12     8s]   g1115/A1                                                 
+[05/30 11:43:12     8s]   g1115/ZN              NAND2_X4          1  6.4           
+[05/30 11:43:12     8s]   g1113/A1                                                 
+[05/30 11:43:12     8s]   g1113/ZN              NAND2_X4          2  7.8           
+[05/30 11:43:12     8s]   g1110/A1                                                 
+[05/30 11:43:12     8s]   g1110/ZN              NAND2_X4          1  6.4           
+[05/30 11:43:12     8s]   g1108/A1                                                 
+[05/30 11:43:12     8s]   g1108/ZN              NAND2_X4          2  8.4           
+[05/30 11:43:12     8s]   g1106/A1                                                 
+[05/30 11:43:12     8s]   g1106/ZN              NAND2_X4          1  6.4           
+[05/30 11:43:12     8s]   g1104/A1                                                 
+[05/30 11:43:12     8s]   g1104/ZN              NAND2_X4          2  4.2           
+[05/30 11:43:12     8s]   g1103/A1                                                 
+[05/30 11:43:12     8s]   g1103/ZN              NAND2_X1          1  2.0           
+[05/30 11:43:12     8s]   g1101/A1                                                 
+[05/30 11:43:12     8s]   g1101/ZN              NAND2_X1          1  1.9           
+[05/30 11:43:12     8s] add_28_48/Z[16] 
+[05/30 11:43:12     8s] mux_ctl_0xi/add_28_48_Z[16] 
+[05/30 11:43:12     8s]   g732/C1                                                  
+[05/30 11:43:12     8s]   g732/ZN               AOI222_X1         1  2.1           
+[05/30 11:43:12     8s]   g723/A                                                   
+[05/30 11:43:12     8s]   g723/ZN               INV_X1            1  1.5           
+[05/30 11:43:12     8s]   C_int_reg[16]/D  <<<  DFFR_X1                            
+[05/30 11:43:12     8s]   C_int_reg[16]/CK      setup                              
+[05/30 11:43:12     8s] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[05/30 11:43:12     8s] (clock clk)             capture                     1000 R 
+[05/30 11:43:12     8s]                         uncertainty                        
+[05/30 11:43:12     8s] -----------------------------------------------------------
+[05/30 11:43:12     8s] Cost Group   : 'C2C' (path_group 'C2C')
+[05/30 11:43:12     8s] Start-point  : mux_ctl_0xi/A_int_reg[1]/CK
+[05/30 11:43:12     8s] End-point    : mux_ctl_0xi/C_int_reg[16]/D
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s] The global mapper estimates a slack for this path of 129ps.
+[05/30 11:43:12     8s]  
+[05/30 11:43:12     8s]  
+[05/30 11:43:12     8s] Global incremental timing result
+[05/30 11:43:12     8s] ================================
+[05/30 11:43:12     8s]         Tracing clock networks.
+[05/30 11:43:12     8s]         Levelizing the circuit.
+[05/30 11:43:12     8s]         Computing net loads.
+[05/30 11:43:12     8s]         Computing delays.
+[05/30 11:43:12     8s]         Computing arrivals and requireds.
+[05/30 11:43:12     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:12     8s]         : The design is 'alu_conv'.
+[05/30 11:43:12     8s]        Pin                Type       Fanout Load Slew Delay Arrival   
+[05/30 11:43:12     8s]                                             (fF) (ps)  (ps)   (ps)    
+[05/30 11:43:12     8s] ----------------------------------------------------------------------
+[05/30 11:43:12     8s] (clock clk)             launch                                    0 R 
+[05/30 11:43:12     8s] mux_ctl_0xi
+[05/30 11:43:12     8s]   C_int_reg[0]/CK                                   0             0 R 
+[05/30 11:43:12     8s]   C_int_reg[0]/Q        DFFR_X2           3  6.9   14  +132     132 R 
+[05/30 11:43:12     8s] mux_ctl_0xi/add_33_48_B[0] 
+[05/30 11:43:12     8s] add_33_48/B[0] 
+[05/30 11:43:12     8s]   g1194/A                                                +0     132   
+[05/30 11:43:12     8s]   g1194/CO              HA_X1             2  4.8   15   +40     172 R 
+[05/30 11:43:12     8s]   g1191/B1                                               +0     172   
+[05/30 11:43:12     8s]   g1191/ZN              AOI21_X1          2  4.2   12   +21     194 F 
+[05/30 11:43:12     8s]   g1186/B1                                               +0     194   
+[05/30 11:43:12     8s]   g1186/ZN              OAI21_X1          1  2.1   20   +30     224 R 
+[05/30 11:43:12     8s]   g1185/A                                                +0     224   
+[05/30 11:43:12     8s]   g1185/ZN              INV_X1            2  4.2    9   +14     238 F 
+[05/30 11:43:12     8s]   g1182/B1                                               +0     238   
+[05/30 11:43:12     8s]   g1182/ZN              OAI21_X1          1  2.1   20   +29     267 R 
+[05/30 11:43:12     8s]   g1181/A                                                +0     267   
+[05/30 11:43:12     8s]   g1181/ZN              INV_X1            2  4.2    9   +14     281 F 
+[05/30 11:43:12     8s]   g1178/B1                                               +0     281   
+[05/30 11:43:12     8s]   g1178/ZN              OAI21_X1          1  2.1   20   +29     310 R 
+[05/30 11:43:12     8s]   g1177/A                                                +0     310   
+[05/30 11:43:12     8s]   g1177/ZN              INV_X1            2  4.2    9   +14     324 F 
+[05/30 11:43:12     8s]   g1174/B1                                               +0     324   
+[05/30 11:43:12     8s]   g1174/ZN              OAI21_X1          1  2.1   20   +29     353 R 
+[05/30 11:43:12     8s]   g1173/A                                                +0     353   
+[05/30 11:43:12     8s]   g1173/ZN              INV_X1            2  4.2    9   +14     367 F 
+[05/30 11:43:12     8s]   g1170/B1                                               +0     367   
+[05/30 11:43:12     8s]   g1170/ZN              OAI21_X1          2  6.2   39   +50     417 R 
+[05/30 11:43:12     8s]   g1167/A1                                               +0     417   
+[05/30 11:43:12     8s]   g1167/ZN              NAND2_X1          1  1.9   13   +19     436 F 
+[05/30 11:43:12     8s]   g1165/A1                                               +0     436   
+[05/30 11:43:12     8s]   g1165/ZN              NAND2_X1          3  6.2   20   +28     463 R 
+[05/30 11:43:12     8s]   g1161/A1                                               +0     463   
+[05/30 11:43:12     8s]   g1161/ZN              NAND3_X1          2  3.0   14   +25     488 F 
+[05/30 11:43:12     8s]   g1157/B1                                               +0     488   
+[05/30 11:43:12     8s]   g1157/ZN              OAI21_X1          2  6.2   39   +52     540 R 
+[05/30 11:43:12     8s]   g1153/A1                                               +0     540   
+[05/30 11:43:12     8s]   g1153/ZN              NAND2_X1          1  1.9   13   +19     559 F 
+[05/30 11:43:12     8s]   g1151/A1                                               +0     559   
+[05/30 11:43:12     8s]   g1151/ZN              NAND2_X1          2  6.2   20   +28     587 R 
+[05/30 11:43:12     8s]   g1147/A1                                               +0     587   
+[05/30 11:43:12     8s]   g1147/ZN              NAND2_X1          1  1.9    9   +16     603 F 
+[05/30 11:43:12     8s]   g1145/A1                                               +0     603   
+[05/30 11:43:12     8s]   g1145/ZN              NAND2_X1          2  6.2   20   +26     628 R 
+[05/30 11:43:12     8s]   g1142/A1                                               +0     628   
+[05/30 11:43:12     8s]   g1142/ZN              NAND2_X1          1  1.9    9   +16     644 F 
+[05/30 11:43:12     8s]   g1140/A1                                               +0     644   
+[05/30 11:43:12     8s]   g1140/ZN              NAND2_X1          1  3.2   13   +18     663 R 
+[05/30 11:43:12     8s]   g1138/CI                                               +0     663   
+[05/30 11:43:12     8s]   g1138/CO              FA_X1             2  4.4   16   +51     714 R 
+[05/30 11:43:12     8s]   g1137/A1                                               +0     714   
+[05/30 11:43:12     8s]   g1137/ZN              NAND2_X1          1  2.6    9   +17     731 F 
+[05/30 11:43:12     8s]   g1249/A                                                +0     731   
+[05/30 11:43:12     8s]   g1249/Z               XOR2_X1           1  1.9   12   +50     781 F 
+[05/30 11:43:12     8s]   g1134/A                                                +0     781   
+[05/30 11:43:12     8s]   g1134/ZN              INV_X1            1  2.0    8   +15     796 R 
+[05/30 11:43:12     8s] add_33_48/Z[17] 
+[05/30 11:43:12     8s] mux_ctl_0xi/add_33_48_Z[17] 
+[05/30 11:43:12     8s]   g802/B1                                                +0     796   
+[05/30 11:43:12     8s]   g802/ZN               AOI22_X1          1  1.9   17   +19     815 F 
+[05/30 11:43:12     8s]   g776/A                                                 +0     815   
+[05/30 11:43:12     8s]   g776/ZN               INV_X1            1  1.5    8   +16     831 R 
+[05/30 11:43:12     8s]   C_int_reg[17]/D  <<<  DFFRS_X1                         +0     831   
+[05/30 11:43:12     8s]   C_int_reg[17]/CK      setup                       0   +33     864 R 
+[05/30 11:43:12     8s] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+[05/30 11:43:12     8s] (clock clk)             capture                                1000 R 
+[05/30 11:43:12     8s]                         uncertainty                     -50     950 R 
+[05/30 11:43:12     8s] ----------------------------------------------------------------------
+[05/30 11:43:12     8s] Cost Group   : 'C2C' (path_group 'C2C')
+[05/30 11:43:12     8s] Timing slack :      86ps 
+[05/30 11:43:12     8s] Start-point  : mux_ctl_0xi/C_int_reg[0]/CK
+[05/30 11:43:12     8s] End-point    : mux_ctl_0xi/C_int_reg[17]/D
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s]  
+[05/30 11:43:12     8s]  
+[05/30 11:43:12     8s] Global incremental optimization status
+[05/30 11:43:12     8s] ======================================
+[05/30 11:43:12     8s]                                    Group   
+[05/30 11:43:12     8s]                                   Tot Wrst 
+[05/30 11:43:12     8s]                            Total  Weighted 
+[05/30 11:43:12     8s] Operation                   Area   Slacks  
+[05/30 11:43:12     8s] -------------------------------------------------------------------------------
+[05/30 11:43:12     8s]  global_incr                1950        0 
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s]     Cost Group            Target    Slack    Clock
+[05/30 11:43:12     8s] --------------------------------------------------
+[05/30 11:43:12     8s]            C2C                18       86     1000 
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s] Scan mapping status report
+[05/30 11:43:12     8s] ==========================
+[05/30 11:43:12     8s]     Scan mapping: converting flip-flops that pass TDRC.
+[05/30 11:43:12     8s]     Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+[05/30 11:43:12     8s] 
+[05/30 11:43:12     8s]     Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+[05/30 11:43:12     8s] Info    : 'Conformal LEC14.1-p100' or later builds is recommended for verification. [WDO-600]
+[05/30 11:43:12     8s]         : The use of 'Conformal LEC14.1-p100' or later builds is recommended to get better verification results.
+[05/30 11:43:12     8s] Generating a dofile for design 'alu_conv' in file 'fv/alu_conv/rtl_to_g1.do' ...
+[05/30 11:43:12     8s] Info    : Done mapping. [SYNTH-5]
+[05/30 11:43:12     8s]         : Done mapping 'alu_conv'.
+[05/30 11:43:12     8s] Info    : Incrementally optimizing. [SYNTH-7]
+[05/30 11:43:12     8s]         : Incrementally optimizing 'alu_conv' using 'high' effort.
+[05/30 11:43:12     8s] Warning : The Parallel Incremental Optimization failed. [MAP-136]
+[05/30 11:43:12     8s]         : Cannot run parallel IOPT, design size less than 130000
+[05/30 11:43:12     8s]         : Switching to Normal Incremental Optimization flow.
+[05/30 11:43:12     8s] Warning : Internal Tcl control variable has been changed. [TUI-668]
+[05/30 11:43:12     8s]         : Variable 'incremental_opto', value: '0' (default: '1')
+[05/30 11:43:12     8s] Info    : Done incrementally optimizing. [SYNTH-8]
+[05/30 11:43:12     8s]         : Done incrementally optimizing 'alu_conv'.
+[05/30 11:43:12     8s] 
+[05/30 11:43:13     8s] EC INFO: Total cpu-time and memory after SYN2MAP: 9 sec., 125.00 MBytes.
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]         Initializing DRC engine.
+[05/30 11:43:13     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:13     8s]         : The design is 'alu_conv'.
+[05/30 11:43:13     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:13     8s]         : The design is 'alu_conv'.
+[05/30 11:43:13     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:13     8s]         : The design is 'alu_conv'.
+[05/30 11:43:13     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:13     8s]         : The design is 'alu_conv'.
+[05/30 11:43:13     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:13     8s]         : The design is 'alu_conv'.
+[05/30 11:43:13     8s] Warning : Potential variable name conflict. [TUI-666]
+[05/30 11:43:13     8s]         : A variable that controls the tool's behavior was set. The 'incremental_opto' variable has the same name as an internal variable.
+[05/30 11:43:13     8s]         : Some Tcl variables are used internally to enable features that are not officially supported. If this variable was set as a part of a script that was not intended to change the tool's behavior (perhaps as a temporary variable to store a command result), choose another variable name. Otherwise, this variable name could produce unintended results. If you are setting this variable to change the tool's behavior, this warning can be ignored.
+[05/30 11:43:13     8s] Current PLE settings:
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s] Aspect ratio        : 1.00
+[05/30 11:43:13     8s] Shrink factor       : 1.00
+[05/30 11:43:13     8s] Scale of res/length : 1.00
+[05/30 11:43:13     8s] Scale of cap/length : 1.00
+[05/30 11:43:13     8s] Net derating factor : 1.00
+[05/30 11:43:13     8s] Thermal factor      : 1.00
+[05/30 11:43:13     8s] Via Resistance      : 0.00 ohm (from default)
+[05/30 11:43:13     8s] Site size           : 1.59 um (from lef [tech+cell])
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]                                    Capacitance  
+[05/30 11:43:13     8s]   Layer                             / Length         Data source:
+[05/30 11:43:13     8s] Name        Direction Utilization  (pF/micron)       lef_library
+[05/30 11:43:13     8s] ------------------------------------------------
+[05/30 11:43:13     8s] metal1          H         1.00        0.000060  
+[05/30 11:43:13     8s] metal2          V         1.00        0.000053  
+[05/30 11:43:13     8s] metal3          H         1.00        0.000052  
+[05/30 11:43:13     8s] metal4          V         1.00        0.000065  
+[05/30 11:43:13     8s] metal5          H         1.00        0.000007  
+[05/30 11:43:13     8s] metal6          V         1.00        0.000049  
+[05/30 11:43:13     8s] metal7          H         1.00        0.000068  
+[05/30 11:43:13     8s] metal8          V         1.00        0.000050  
+[05/30 11:43:13     8s] metal9          H         1.00        0.000065  
+[05/30 11:43:13     8s] metal10         V         1.00        0.000049  
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]                                     Resistance   
+[05/30 11:43:13     8s]   Layer                              / Length         Data source:
+[05/30 11:43:13     8s] Name        Direction Utilization  (ohm/micron)       lef_library
+[05/30 11:43:13     8s] -------------------------------------------------
+[05/30 11:43:13     8s] metal1          H         1.00         5.428571  
+[05/30 11:43:13     8s] metal2          V         1.00         3.571429  
+[05/30 11:43:13     8s] metal3          H         1.00         3.571429  
+[05/30 11:43:13     8s] metal4          V         1.00         1.500000  
+[05/30 11:43:13     8s] metal5          H         1.00         1.500000  
+[05/30 11:43:13     8s] metal6          V         1.00         1.500000  
+[05/30 11:43:13     8s] metal7          H         1.00         0.187500  
+[05/30 11:43:13     8s] metal8          V         1.00         0.187500  
+[05/30 11:43:13     8s] metal9          H         1.00         0.037500  
+[05/30 11:43:13     8s] metal10         V         1.00         0.037500  
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]                                         Area     
+[05/30 11:43:13     8s]   Layer                               / Length        Data source:
+[05/30 11:43:13     8s] Name        Direction Utilization     (micron)        lef_library
+[05/30 11:43:13     8s] -------------------------------------------------
+[05/30 11:43:13     8s] metal1          H         1.00         0.070000  
+[05/30 11:43:13     8s] metal2          V         1.00         0.070000  
+[05/30 11:43:13     8s] metal3          H         1.00         0.070000  
+[05/30 11:43:13     8s] metal4          V         1.00         0.140000  
+[05/30 11:43:13     8s] metal5          H         1.00         0.140000  
+[05/30 11:43:13     8s] metal6          V         1.00         0.140000  
+[05/30 11:43:13     8s] metal7          H         1.00         0.400000  
+[05/30 11:43:13     8s] metal8          V         1.00         0.400000  
+[05/30 11:43:13     8s] metal9          H         1.00         0.800000  
+[05/30 11:43:13     8s] metal10         V         1.00         0.800000  
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s] Info    : Incrementally optimizing. [SYNTH-7]
+[05/30 11:43:13     8s]         : Incrementally optimizing 'alu_conv' using 'high' effort.
+[05/30 11:43:13     8s] Warning : The Parallel Incremental Optimization failed. [MAP-136]
+[05/30 11:43:13     8s]         : Cannot run parallel IOPT, design size less than 130000
+[05/30 11:43:13     8s]  
+[05/30 11:43:13     8s] Incremental optimization status
+[05/30 11:43:13     8s] ===============================
+[05/30 11:43:13     8s]                                    Group   
+[05/30 11:43:13     8s]                                   Tot Wrst     Total - - DRC Totals - -
+[05/30 11:43:13     8s]                            Total  Weighted      Neg      Max       Max 
+[05/30 11:43:13     8s] Operation                   Area   Slacks      Slack    Trans      Cap 
+[05/30 11:43:13     8s] -------------------------------------------------------------------------------
+[05/30 11:43:13     8s]  init_iopt                  1950        0         0         0       42
+[05/30 11:43:13     8s]  const_prop                 1950        0         0         0       42
+[05/30 11:43:13     8s]  simp_cc_inputs             1940        0         0         0       42
+[05/30 11:43:13     8s]  hi_fo_buf                  1940        0         0         0       42
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]        hi_fo_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]  
+[05/30 11:43:13     8s] Incremental optimization status
+[05/30 11:43:13     8s] ===============================
+[05/30 11:43:13     8s]                                    Group   
+[05/30 11:43:13     8s]                                   Tot Wrst     Total - - DRC Totals - -
+[05/30 11:43:13     8s]                            Total  Weighted      Neg      Max       Max 
+[05/30 11:43:13     8s] Operation                   Area   Slacks      Slack    Trans      Cap 
+[05/30 11:43:13     8s] -------------------------------------------------------------------------------
+[05/30 11:43:13     8s]  init_delay                 1940        0         0         0       42
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]         crit_msz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_slew         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     plc_bal_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftimb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftims         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        plc_lo_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        mux2_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]            phase         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         in_phase         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        merge_bit         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_idrvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_iload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     merge_idload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_drvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_load         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         p_decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         levelize         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         mb_split         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       mux_retime         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          buf2inv         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              exp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        gate_deco         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        gcomp_tim         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]   inv_pair_2_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]          crr_220         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_200         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_300         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_400         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_111         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_210         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_110         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_101         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_201         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_211         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crit_msz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_slew         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     plc_bal_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftimb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftims         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        plc_lo_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        mux2_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        merge_bit         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_idrvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_iload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     merge_idload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_drvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_load         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]            phase         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         p_decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         levelize         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         mb_split         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         in_phase         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       mux_retime         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          buf2inv         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              exp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        gate_deco         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        gcomp_tim         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]   inv_pair_2_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]  init_drc                   1940        0         0         0       42
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufs         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       simple_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_slew         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]           plc_st        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         plc_star        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       drc_buf_sp        64  (        0 /       32 )  0.01
+[05/30 11:43:13     8s]         drc_bufs        64  (        0 /       32 )  0.02
+[05/30 11:43:13     8s]         drc_fopt        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufb        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       simple_buf        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       drc_buf_sp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufs         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]  init_tns                   1940        0         0         0       42
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     plc_bal_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftimb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftims         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crit_msz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        plc_lo_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        mux2_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        merge_bit         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_idrvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_iload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     merge_idload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_drvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_load         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]            phase         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         p_decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         levelize         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         mb_split         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       mux_retime         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crr_local         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          buf2inv         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]  init_area                  1940        0         0         0       42
+[05/30 11:43:13     8s]  seq_res_area               1939        0         0         0       42
+[05/30 11:43:13     8s]  seq_res_area               1932        0         0         0       42
+[05/30 11:43:13     8s]  io_phase                   1889        0         0         0       42
+[05/30 11:43:13     8s]  gate_comp                  1868        0         0         0       42
+[05/30 11:43:13     8s]  glob_area                  1859        0         0         0       42
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]            undup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          rem_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          rem_inv         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         merge_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       rem_inv_qb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     seq_res_area         4  (        2 /        2 )  0.43
+[05/30 11:43:13     8s]         io_phase        15  (       15 /       15 )  0.02
+[05/30 11:43:13     8s]        gate_comp        12  (        9 /        9 )  0.04
+[05/30 11:43:13     8s]        gcomp_mog        10  (        0 /        0 )  0.03
+[05/30 11:43:13     8s]        glob_area        32  (       10 /       32 )  0.01
+[05/30 11:43:13     8s]        area_down         2  (        0 /        0 )  0.01
+[05/30 11:43:13     8s]   gate_deco_area         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          rem_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          rem_inv         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         merge_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       rem_inv_qb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]  
+[05/30 11:43:13     8s] Incremental optimization status
+[05/30 11:43:13     8s] ===============================
+[05/30 11:43:13     8s]                                    Group   
+[05/30 11:43:13     8s]                                   Tot Wrst     Total - - DRC Totals - -
+[05/30 11:43:13     8s]                            Total  Weighted      Neg      Max       Max 
+[05/30 11:43:13     8s] Operation                   Area   Slacks      Slack    Trans      Cap 
+[05/30 11:43:13     8s] -------------------------------------------------------------------------------
+[05/30 11:43:13     8s]  init_delay                 1859        0         0         0       42
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]          crr_220         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_200         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_300         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_400         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_111         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_210         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_110         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_101         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_201         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          crr_211         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crr_glob         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crit_msz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_slew         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     plc_bal_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftimb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftims         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        plc_lo_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        mux2_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        merge_bit         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_idrvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_iload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     merge_idload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_drvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_load         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]            phase         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         p_decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         levelize         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         mb_split         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         in_phase         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       mux_retime         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          buf2inv         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              exp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        gate_deco         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        gcomp_tim         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]   inv_pair_2_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]  init_drc                   1859        0         0         0       42
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufs         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       simple_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_slew         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]           plc_st        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         plc_star        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufs        64  (        0 /       32 )  0.01
+[05/30 11:43:13     8s]         drc_fopt        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufb        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       simple_buf        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz        32  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufs         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         drc_bufb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]  init_tns                   1859        0         0         0       42
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:13     8s] -----------------------------------------------------------
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     plc_bal_star         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftimb         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      drc_buftims         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         crit_msz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        plc_lo_st         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        mux2_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        merge_bit         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_idrvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]      merge_iload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]     merge_idload         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_drvr         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       merge_load         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]            phase         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]           decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         p_decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         levelize         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]         mb_split         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]       mux_retime         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]        crr_local         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s]          buf2inv         0  (        0 /        0 )  0.00
+[05/30 11:43:13     8s] 
+[05/30 11:43:13     8s]  init_area                  1859        0         0         0       42
+[05/30 11:43:13     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]            undup         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]          rem_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]          rem_inv         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         merge_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       rem_inv_qb         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         io_phase         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        gate_comp         3  (        0 /        0 )  0.02
+[05/30 11:43:14     8s]        gcomp_mog        10  (        0 /        0 )  0.03
+[05/30 11:43:14     8s]        glob_area        32  (        0 /       32 )  0.00
+[05/30 11:43:14     8s]        area_down         2  (        0 /        0 )  0.01
+[05/30 11:43:14     8s]   gate_deco_area         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]  
+[05/30 11:43:14     8s] Incremental optimization status
+[05/30 11:43:14     8s] ===============================
+[05/30 11:43:14     8s]                                    Group   
+[05/30 11:43:14     8s]                                   Tot Wrst     Total - - DRC Totals - -
+[05/30 11:43:14     8s]                            Total  Weighted      Neg      Max       Max 
+[05/30 11:43:14     8s] Operation                   Area   Slacks      Slack    Trans      Cap 
+[05/30 11:43:14     8s] -------------------------------------------------------------------------------
+[05/30 11:43:14     8s]  init_delay                 1859        0         0         0       42
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]         crit_msz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_slew         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]     plc_bal_star         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]      drc_buftimb         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]      drc_buftims         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        plc_lo_st         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        mux2_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        load_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         move_for         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]           rem_bi         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]          offload         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]            phase         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         in_phase         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        merge_bit         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]      merge_idrvr         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]      merge_iload         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]     merge_idload         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       merge_drvr         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       merge_load         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]           decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         p_decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         levelize         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         mb_split         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       mux_retime         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]          buf2inv         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              exp         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        gate_deco         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        gcomp_tim         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]   inv_pair_2_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]  init_drc                   1859        0         0         0       42
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufs         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufb         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       simple_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_slew         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]           plc_st        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         plc_star        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufs        64  (        0 /       32 )  0.01
+[05/30 11:43:14     8s]         drc_fopt        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufb        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       simple_buf        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              dup        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_upsz        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufs         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufb         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]   Inserting buffers to remove assign statements...
+[05/30 11:43:14     8s]  
+[05/30 11:43:14     8s] Incremental optimization status
+[05/30 11:43:14     8s] ===============================
+[05/30 11:43:14     8s]                                    Group   
+[05/30 11:43:14     8s]                                   Tot Wrst     Total - - DRC Totals - -
+[05/30 11:43:14     8s]                            Total  Weighted      Neg      Max       Max 
+[05/30 11:43:14     8s] Operation                   Area   Slacks      Slack    Trans      Cap 
+[05/30 11:43:14     8s] -------------------------------------------------------------------------------
+[05/30 11:43:14     8s]  init_delay                 1859        0         0         0       42
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]         crit_msz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_slew         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]     plc_bal_star         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]      drc_buftimb         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]      drc_buftims         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        plc_lo_st         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        mux2_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        load_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]            phase         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         in_phase         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]           decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         p_decomp         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         levelize         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       mux_retime         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]          buf2inv         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              exp         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]   inv_pair_2_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]  init_tns                   1859        0         0         0       42
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]     plc_bal_star         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]      drc_buftimb         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]      drc_buftims         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         crit_msz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        plc_lo_st         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        mux2_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        load_swap         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]             fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         setup_dn         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        load_isol         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         levelize         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       mux_retime         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]          buf2inv         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]  init_drc                   1859        0         0         0       42
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufs         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufb         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       simple_buf         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_slew         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]           plc_st        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         plc_star        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufs        64  (        0 /       32 )  0.01
+[05/30 11:43:14     8s]         drc_fopt        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufb        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]       simple_buf        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              dup        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_upsz        32  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]            Trick     Calls     Accepts   Attempts    Time(secs) 
+[05/30 11:43:14     8s] -----------------------------------------------------------
+[05/30 11:43:14     8s]           plc_st         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         plc_star         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufs         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_fopt         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]         drc_bufb         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]              dup         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_dnsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s]        crit_upsz         0  (        0 /        0 )  0.00
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s] Info    : Done incrementally optimizing. [SYNTH-8]
+[05/30 11:43:14     8s]         : Done incrementally optimizing 'alu_conv'.
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s] EC INFO: Total cpu-time and memory after INCR: 10 sec., 127.00 MBytes.
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s]         Initializing DRC engine.
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s] EC INFO: Total cpu-time and memory after ASSIGN: 10 sec., 127.00 MBytes.
+[05/30 11:43:14     8s] 
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:14     8s]         : The design is 'alu_conv'.
+[05/30 11:43:14     8s] Finished SDC export (command execution time mm:ss (real) = 00:01).
+[05/30 11:43:15     8s] Info    : Design has no library or power domains. [ENC_MSV-301]
+[05/30 11:43:16     8s]         : No power domains will be created for Encounter.
+[05/30 11:43:16     8s] 
+[05/30 11:43:16     8s] EC INFO: Total cpu-time and memory after WRITE: 10 sec., 127.00 MBytes.
+[05/30 11:43:16     8s] 
+[05/30 11:43:16     8s]   Setting attribute of root '/': 'interconnect_mode' = wireload
+[05/30 11:43:16     8s]   Setting attribute of design 'alu_conv': 'force_wireload' = none
+[05/30 11:43:16     8s]   Setting attribute of root '/': 'wireload_mode' = top
+[05/30 11:43:16     8s] Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+[05/30 11:43:16     8s]         : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TLAT_X1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+[05/30 11:43:16     8s] Info    : Found unusable library cells. [LBR-415]
+[05/30 11:43:16     8s]         : Library: 'NangateOpenCellLibrary_typical.lib', Total cells: 134, Unusable cells: 10.
+[05/30 11:43:16     8s] 	List of unusable cells: 'ANTENNA_X1 FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32 LOGIC0_X1 LOGIC1_X1 TLAT_X1 .'
+[05/30 11:43:16     8s]         Tracing clock networks.
+[05/30 11:43:16     8s]         Levelizing the circuit.
+[05/30 11:43:16     8s]         Applying wireload models.
+[05/30 11:43:16     8s]         Computing net loads.
+[05/30 11:43:16     8s]         Computing delays.
+[05/30 11:43:16     8s]         Computing arrivals and requireds.
+[05/30 11:43:16     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:16     8s]         : The design is 'alu_conv'.
+[05/30 11:43:16     8s] Warning : Possible timing problems have been detected in this design. [TIM-11]
+[05/30 11:43:16     8s]         : The design is 'alu_conv'.
+[05/30 11:43:16     8s] ============================================================
+[05/30 11:43:16     8s]   Generated by:           Encounter(R) RTL Compiler RC14.20 - v14.20-p005_1
+[05/30 11:43:16     8s]   Generated on:           May 30 2017  11:43:16 am
+[05/30 11:43:16     8s]   Module:                 alu_conv
+[05/30 11:43:16     8s]   Technology library:     NangateOpenCellLibrary revision 1.0
+[05/30 11:43:16     8s]   Operating conditions:   typical (balanced_tree)
+[05/30 11:43:16     8s]   Wireload mode:          top
+[05/30 11:43:16     8s]   Area mode:              timing library
+[05/30 11:43:16     8s] ============================================================
+[05/30 11:43:16     8s] 
+[05/30 11:43:16     8s]        Pin             Type       Fanout Load Slew Delay Arrival   
+[05/30 11:43:16     8s]                                          (fF) (ps)  (ps)   (ps)    
+[05/30 11:43:16     8s] -------------------------------------------------------------------
+[05/30 11:43:16     8s] (clock clk)          launch                                    0 R 
+[05/30 11:43:16     8s] A_int_reg[0]/CK                                  0             0 R 
+[05/30 11:43:16     8s] A_int_reg[0]/Q       SDFFR_X1          3  7.5   19   +82      82 F 
+[05/30 11:43:16     8s] add_28_48/A[0] 
+[05/30 11:43:16     8s] add_28_48/g1158/A                                     +0      82   
+[05/30 11:43:16     8s] add_28_48/g1158/CO   HA_X1             2  5.4   10   +39     122 F 
+[05/30 11:43:16     8s] add_28_48/g1209/CI                                    +0     122   
+[05/30 11:43:16     8s] add_28_48/g1209/CO   FA_X1             1  1.5   12   +66     188 F 
+[05/30 11:43:16     8s] add_28_48/g1208/A                                     +0     188   
+[05/30 11:43:16     8s] add_28_48/g1208/ZN   INV_X1            2  3.9   12   +20     208 R 
+[05/30 11:43:16     8s] add_28_48/g1152/B1                                    +0     208   
+[05/30 11:43:16     8s] add_28_48/g1152/ZN   OAI21_X1          1  1.5   10   +14     222 F 
+[05/30 11:43:16     8s] add_28_48/g1151/A                                     +0     222   
+[05/30 11:43:16     8s] add_28_48/g1151/ZN   INV_X1            2  3.9   12   +18     240 R 
+[05/30 11:43:16     8s] add_28_48/g1148/B1                                    +0     240   
+[05/30 11:43:16     8s] add_28_48/g1148/ZN   OAI21_X1          1  1.5   10   +14     254 F 
+[05/30 11:43:16     8s] add_28_48/g1147/A                                     +0     254   
+[05/30 11:43:16     8s] add_28_48/g1147/ZN   INV_X1            2  3.9   12   +18     272 R 
+[05/30 11:43:16     8s] add_28_48/g1144/B1                                    +0     272   
+[05/30 11:43:16     8s] add_28_48/g1144/ZN   OAI21_X1          1  1.5   10   +14     286 F 
+[05/30 11:43:16     8s] add_28_48/g1143/A                                     +0     286   
+[05/30 11:43:16     8s] add_28_48/g1143/ZN   INV_X1            2  3.9   12   +18     305 R 
+[05/30 11:43:16     8s] add_28_48/g1224/A1                                    +0     305   
+[05/30 11:43:16     8s] add_28_48/g1224/ZN   NOR2_X1           1  1.5    7    +9     314 F 
+[05/30 11:43:16     8s] add_28_48/g1223/A                                     +0     314   
+[05/30 11:43:16     8s] add_28_48/g1223/ZN   AOI21_X1          2  3.9   32   +50     363 R 
+[05/30 11:43:16     8s] add_28_48/g1222/A1                                    +0     363   
+[05/30 11:43:16     8s] add_28_48/g1222/ZN   NOR2_X1           1  1.5    9   +10     373 F 
+[05/30 11:43:16     8s] add_28_48/g1221/A                                     +0     373   
+[05/30 11:43:16     8s] add_28_48/g1221/ZN   AOI21_X1          2  3.9   32   +50     424 R 
+[05/30 11:43:16     8s] add_28_48/g1220/A1                                    +0     424   
+[05/30 11:43:16     8s] add_28_48/g1220/ZN   NOR2_X1           1  1.5    9   +10     434 F 
+[05/30 11:43:16     8s] add_28_48/g1219/A                                     +0     434   
+[05/30 11:43:16     8s] add_28_48/g1219/ZN   AOI21_X1          2  3.9   32   +50     485 R 
+[05/30 11:43:16     8s] add_28_48/g1129/A1                                    +0     485   
+[05/30 11:43:16     8s] add_28_48/g1129/ZN   NOR2_X1           2  2.3   10   +12     497 F 
+[05/30 11:43:16     8s] add_28_48/g3/B1                                       +0     497   
+[05/30 11:43:16     8s] add_28_48/g3/ZN      OAI21_X1          1  0.9   15   +23     520 R 
+[05/30 11:43:16     8s] add_28_48/g1207/A1                                    +0     520   
+[05/30 11:43:16     8s] add_28_48/g1207/ZN   AND2_X1           2  3.9   13   +39     559 R 
+[05/30 11:43:16     8s] add_28_48/g1123/B1                                    +0     559   
+[05/30 11:43:16     8s] add_28_48/g1123/ZN   OAI21_X1          2  3.6   13   +19     578 F 
+[05/30 11:43:16     8s] add_28_48/g1120/A1                                    +0     578   
+[05/30 11:43:16     8s] add_28_48/g1120/ZN   NAND2_X1          1  1.6   10   +16     594 R 
+[05/30 11:43:16     8s] add_28_48/g1118/A1                                    +0     594   
+[05/30 11:43:16     8s] add_28_48/g1118/ZN   NAND2_X1          2  3.6   10   +17     611 F 
+[05/30 11:43:16     8s] add_28_48/g1115/A1                                    +0     611   
+[05/30 11:43:16     8s] add_28_48/g1115/ZN   NAND2_X1          1  1.6   10   +15     625 R 
+[05/30 11:43:16     8s] add_28_48/g1113/A1                                    +0     625   
+[05/30 11:43:16     8s] add_28_48/g1113/ZN   NAND2_X1          2  3.6   10   +17     642 F 
+[05/30 11:43:16     8s] add_28_48/g1110/A1                                    +0     642   
+[05/30 11:43:16     8s] add_28_48/g1110/ZN   NAND2_X1          1  1.6   10   +15     657 R 
+[05/30 11:43:16     8s] add_28_48/g1108/A1                                    +0     657   
+[05/30 11:43:16     8s] add_28_48/g1108/ZN   NAND2_X1          2  3.6   10   +17     674 F 
+[05/30 11:43:16     8s] add_28_48/g1106/A1                                    +0     674   
+[05/30 11:43:16     8s] add_28_48/g1106/ZN   NAND2_X1          1  1.6   10   +15     688 R 
+[05/30 11:43:16     8s] add_28_48/g1104/A1                                    +0     688   
+[05/30 11:43:16     8s] add_28_48/g1104/ZN   NAND2_X1          2  3.6   10   +17     705 F 
+[05/30 11:43:16     8s] add_28_48/g1102/A                                     +0     705   
+[05/30 11:43:16     8s] add_28_48/g1102/ZN   XNOR2_X1          1  1.5    9   +38     743 F 
+[05/30 11:43:16     8s] add_28_48/Z[15] 
+[05/30 11:43:16     8s] g731/C1                                               +0     743   
+[05/30 11:43:16     8s] g731/ZN              AOI222_X1         1  1.7   47   +84     827 R 
+[05/30 11:43:16     8s] g722/A                                                +0     827   
+[05/30 11:43:16     8s] g722/ZN              INV_X1            1  1.1   10    +8     834 F 
+[05/30 11:43:16     8s] C_int_reg[15]/D      DFFR_X1                          +0     834   
+[05/30 11:43:16     8s] C_int_reg[15]/CK     setup                       0   +41     876 R 
+[05/30 11:43:16     8s] - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[05/30 11:43:16     8s] (clock clk)          capture                                1000 R 
+[05/30 11:43:16     8s]                      uncertainty                     -50     950 R 
+[05/30 11:43:16     8s] -------------------------------------------------------------------
+[05/30 11:43:16     8s] Cost Group   : 'C2C' (path_group 'C2C')
+[05/30 11:43:16     8s] Timing slack :      74ps 
+[05/30 11:43:16     8s] Start-point  : A_int_reg[0]/CK
+[05/30 11:43:16     8s] End-point    : C_int_reg[15]/D
+[05/30 11:43:16     8s] 
+[05/30 11:43:16     8s] 
+[05/30 11:43:16     8s] EC INFO: Total cpu-time and memory after FINAL: 10 sec., 127.00 MBytes.
+[05/30 11:43:16     8s] 
+[05/30 11:43:16     8s] 
+[05/30 11:43:16     8s] EC INFO: End at: 05/30/2017 11:43:16
+[05/30 11:43:16     8s] 
+[05/30 11:43:16     8s] EC INFO: Elapsed-time: 12 seconds
+[05/30 11:43:16     8s] 
+[05/30 11:43:16     8s] rc:/> 
+[05/30 11:43:16     8s] Normal exit.
+[05/30 11:43:16     8s] Finished compileDesign (elapsed-time: 30 seconds, or 0:0:30).
+[05/30 11:43:16    38s] 
+[05/30 11:44:26    42s] *** Memory Usage v#1 (Current mem = 373.531M, initial mem = 97.723M) ***
+[05/30 11:44:26    42s] *** Message Summary: 0 warning(s), 0 error(s)
+[05/30 11:44:26    42s] 
+[05/30 11:44:26    42s] --- Ending "Encounter" (totcpu=0:00:42.9, real=0:03:54, mem=373.5M) ---
+[05/30 11:44:26    42s] 

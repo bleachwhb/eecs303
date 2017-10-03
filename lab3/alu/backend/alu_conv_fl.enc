@@ -1,0 +1,1 @@
+restoreDesign [file dirname [file normalize [info script]]]/alu_conv_fl.enc.dat alu_conv

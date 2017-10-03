@@ -1,0 +1,4 @@
+Total numbers of exceptions: 2
+
+/designs/alu_conv/timing/exceptions/path_delays/alu_conv.sdc_line_13
+/designs/alu_conv/timing/exceptions/path_groups/I2O

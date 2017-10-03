@@ -1,0 +1,24 @@
+irun: *W,BADPRF: The linedebug option may have an adverse performance impact.
+	Top level design units:
+		alu_conv_test
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /vol/cadence2014/INCISIV141/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> run
+Simulation complete via $finish(1) at time 40 NS + 0
+../newlab/alu_conv_test.v:47                 #40  $finish;
+ncsim> probe -create -shm alu_conv_test.doubile.A alu_conv_test.doubile.A_int alu_conv_test.doubile.B alu_conv_test.doubile.B_int alu_conv_test.doubile.C_int alu_conv_test.doubile.Y alu_conv_test.doubile.clk alu_conv_test.doubile.reset alu_conv_test.doubile.state
+Created probe 1
+ncsim> run
+ncsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+ncsim> reset
+Loaded snapshot worklib.alu_conv_test:v
+ncsim> run
+Simulation complete via $finish(1) at time 40 NS + 0
+../newlab/alu_conv_test.v:47                 #40  $finish;
+ncsim> ^C
+ncsim> exit

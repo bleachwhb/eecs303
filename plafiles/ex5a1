@@ -1,0 +1,11 @@
+# espresso -Dexact -t ex5.pla
+# UC Berkeley, Espresso Version #2.3, Release date 01/31/88
+# READ       	Time was 0.00 sec, cost is c=256(256) in=2048 out=7620 tot=9668
+# COMPL      	Time was 0.00 sec, cost is c=134(123) in=634 out=430 tot=1064
+# PLA is ex5.pla with 8 inputs and 63 outputs
+# ON-set cost is  c=256(256) in=2048 out=7620 tot=9668
+# OFF-set cost is c=134(123) in=634 out=430 tot=1064
+# DC-set cost is  c=0(0) in=0 out=0 tot=0
+# PRIMES     	Time was 0.27 sec, cost is c=2532(2532) in=11683 out=52764 tot=64447
+# ESSENTIALS 	Time was 0.35 sec, cost is c=28(28) in=197 out=857 tot=1054
+# PI-TABLE   	Time was 1.34 sec, cost is c=2479(2479) in=11345 out=51270 tot=62615

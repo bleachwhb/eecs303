@@ -1,0 +1,7 @@
+define NCSIMRC	( /vol/cadence2014/INCISIV141/tools/inca/files/ncsimrc, ~/.ncsimrc )
+include ./hdlrun.var
+define SNAPSHOT worklib.alu_conv_test:v
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP ( + => worklib )
+define ELAB_SNAPSHOT
+define SNAPSHOT worklib.alu_conv_test:v

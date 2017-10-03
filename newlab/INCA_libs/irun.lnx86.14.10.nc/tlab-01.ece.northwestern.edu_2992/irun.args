@@ -1,0 +1,11 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+/home/bwj4163/eecs303/lab2/alu_conv_test.v
+/home/bwj4163/eecs303/lab2/alu_conv.v
+-s
++gui
++linedebug
++access+rwc
+-q

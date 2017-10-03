@@ -1,0 +1,52 @@
+Checking out Encounter license ...
+[05/30 11:40:05     0s] Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+[05/30 11:40:05     0s] 	Maximum number of instance allowed (1 x 50000).
+[05/30 11:40:05     0s] SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+[05/30 11:40:06     0s] This Encounter release has been compiled with OA version 22.43-p033.
+[05/30 11:40:07     0s] 
+[05/30 11:40:07     1s] *******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+[05/30 11:40:10     3s] @(#)CDS: Encounter v14.14-s028_1 (64bit) 09/15/2014 13:21 (Linux 2.6)
+[05/30 11:40:10     3s] @(#)CDS: NanoRoute v14.14-s012 NR140903-2301/14_14-UB (database version 2.30, 241.6.1) {superthreading v1.19}
+[05/30 11:40:10     3s] @(#)CDS: CeltIC v14.14-s011_1 (64bit) 09/01/2014 04:04:31 (Linux 2.6.18-194.el5)
+[05/30 11:40:10     3s] @(#)CDS: AAE 14.14-s011 (64bit) 09/15/2014 (Linux 2.6.18-194.el5)
+[05/30 11:40:10     3s] @(#)CDS: CTE 14.14-s011_1 (64bit) Sep  3 2014 06:24:39 (Linux 2.6.18-194.el5)
+[05/30 11:40:10     3s] @(#)CDS: CPE v14.14-s022
+[05/30 11:40:10     3s] @(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+[05/30 11:40:10     3s] --- Starting "Encounter v14.14-s028_1" on Tue May 30 11:40:10 2017 (mem=97.9M) ---
+[05/30 11:40:10     3s] --- Running on bane.ece.northwestern.edu (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) ---
+[05/30 11:40:10     3s] This version was compiled on Mon Sep 15 13:21:48 PDT 2014.
+[05/30 11:40:10     3s] Set DBUPerIGU to 1000.
+[05/30 11:40:10     3s] Set net toggle Scale Factor to 1.00
+[05/30 11:40:10     3s] Set Shrink Factor to 1.00000
+[05/30 11:40:10     3s] 
+[05/30 11:40:11     3s] **INFO:  MMMC transition support version v31-84 
+[05/30 11:40:11     3s] 
+[05/30 11:40:11     3s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/30 11:40:11     3s] <CMD> suppressMessage ENCEXT-2799
+[05/30 11:40:11     3s] <CMD> win
+[05/30 11:40:11     3s] 
+[05/30 11:40:19     4s] *** Memory Usage v#1 (Current mem = 347.242M, initial mem = 97.855M) ***
+[05/30 11:40:19     4s] *** Message Summary: 0 warning(s), 0 error(s)
+[05/30 11:40:19     4s] 
+[05/30 11:40:19     4s] --- Ending "Encounter" (totcpu=0:00:04.4, real=0:00:14.0, mem=347.2M) ---
+[05/30 11:40:19     4s] 

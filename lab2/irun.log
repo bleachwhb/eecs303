@@ -1,0 +1,16 @@
+	Top level design units:
+		alu_conv_test
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /vol/cadence2014/INCISIV141/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm alu_conv_test.B alu_conv_test.A alu_conv_test.Y alu_conv_test.clk alu_conv_test.reset
+Created probe 1
+ncsim> run
+Simulation complete via $finish(1) at time 40 NS + 0
+./alu_conv_test.v:47                 #40  $finish;
+ncsim> ^C
+ncsim> exit

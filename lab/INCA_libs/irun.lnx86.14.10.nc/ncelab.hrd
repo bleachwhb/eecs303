@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-ACCESS
++rwc
+
+-autosdf
+-DELAY_MODE
+-DELAY_MODE
+NONE
+-MAXDELAYS

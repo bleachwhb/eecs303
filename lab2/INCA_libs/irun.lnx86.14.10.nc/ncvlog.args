@@ -1,0 +1,17 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx86.14.10.nc
+-RUNMODE
+/home/bwj4163/eecs303/lab2/alu_conv.v
+/home/bwj4163/eecs303/lab2/alu_conv_test.v
+-CDSLIB
+./INCA_libs/irun.lnx86.14.10.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.14.10.nc/hdlrun.var
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx86.14.10.nc/xllibs
+-ALLOWUNBOUND

@@ -1,0 +1,8 @@
+catch { setAnalysisMode -analysisType single }
+setExtractRCMode  -engine preRoute
+catch { setIlmMode -highFanoutPort true -loopBack false -keepFlatten false }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignore_clock_idealness false }
+catch { setPinAssignMode -pinEditInBatch true }
+catch { setImportMode -keepEmptyModule true }
+catch { setImportMode -treatUndefinedCellAsBbox false }
